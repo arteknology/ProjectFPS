@@ -7,14 +7,18 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerCamera.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerControls.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerCamera.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/HarpoonScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerControls.cs" />
       </list>
     </option>
   </component>
@@ -58,6 +62,7 @@
       <option name="presentableId" value="Default" />
       <updated>1603632486860</updated>
       <workItem from="1603632493330" duration="223000" />
+      <workItem from="1603718160910" duration="2940000" />
     </task>
     <servers />
   </component>

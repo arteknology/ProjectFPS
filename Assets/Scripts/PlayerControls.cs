@@ -6,6 +6,11 @@
 
 
         private Rigidbody rb;
+        
+        //Harpoon prefab
+        public GameObject harpoonOBJ;
+
+        public Transform cam;
     
         // Start is called before the first frame update
         private void Start()
@@ -16,7 +21,11 @@
         // Update is called once per frame
         private void Update()
         {
-            
+            if (Input.GetKeyDown(KeyCode.Mouse0))
+            {
+                Harpoon();
+            }
+                
         } 
 
         private void FixedUpdate()
@@ -35,4 +44,9 @@
             rb.MovePosition(newPosition);
         }
 
+        void Harpoon()
+        {
+            var harpoon = Instantiate(harpoonOBJ, cam.position + cam.forward, cam.rotation);
+            harpoon.GetComponent<HarpoonScript>().caster = transform;
+        }
     }
