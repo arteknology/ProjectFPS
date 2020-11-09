@@ -6,7 +6,7 @@ using System.Linq;
 
 public class HarpoonScript : MonoBehaviour
 {
-    public string[] tagsToCheck;
+    /*public string[] tagsToCheck;
 
     public float speed, returnSpeed, range, stopRange;
 
@@ -15,6 +15,8 @@ public class HarpoonScript : MonoBehaviour
 
     private LineRenderer line;
     private bool hasCollided;
+
+    private bool _enemyCollided = false, _wallCollided = false;
     
     // Start is called before the first frame update
     void Start()
@@ -32,11 +34,12 @@ public class HarpoonScript : MonoBehaviour
             if (hasCollided)
             {
                 transform.LookAt(caster);
-
                 var dist = Vector3.Distance(transform.position, caster.position);
                 if (dist < stopRange)
                 {
                     Destroy(gameObject);
+                    _enemyCollided = false;
+                    _wallCollided = false;
                 }
             }
             else
@@ -44,14 +47,20 @@ public class HarpoonScript : MonoBehaviour
                 var dist = Vector3.Distance(transform.position, caster.position);
                 if (dist > range)
                 {
-                    Collision(null);
+                    CollisionEnemy(null);
+                    _enemyCollided = false;
+                    _wallCollided = false;
                 }
             }
             
             transform.Translate(Vector3.forward * speed * Time.deltaTime);
-            if (collidedWith)
+            if (collidedWith && _enemyCollided == true)
             {
                 collidedWith.transform.position = transform.position;
+            }
+            if (collidedWith && _wallCollided == true)
+            {
+                GetComponent<PlayerControls>().HarpoonMovement();
             }
         }
         else
@@ -62,13 +71,19 @@ public class HarpoonScript : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (!hasCollided && tagsToCheck.Contains(other.tag))
+        if (!hasCollided && CompareTag("Enemy"))
         {
-            Collision(other.transform);
+            _enemyCollided = true;
+            CollisionEnemy(other.transform);
+        }
+        if (!hasCollided && CompareTag("Wall"))
+        {
+            _wallCollided = true;
+            CollisionWall(other.transform);
         }
     }
 
-    void Collision(Transform col)
+    void CollisionEnemy(Transform col)
     {
         speed = returnSpeed;
         hasCollided = true;
@@ -79,5 +94,17 @@ public class HarpoonScript : MonoBehaviour
             collidedWith = col;
         }
     }
+    void CollisionWall(Transform col)
+    {
+        speed = returnSpeed;
+        hasCollided = true;
+
+        if (col)
+        {
+            transform.position = col.position;
+            collidedWith = col;
+        }
+    }*/
+
     
 }

@@ -11,14 +11,15 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EE47BE73-F7EF-409C-A5E5-CE4B121745B7/0c/8ff67625/Component.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerCamera.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerCamera.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/HarpoonScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerControls.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerCamera.cs" />
       </list>
     </option>
   </component>
@@ -65,6 +66,10 @@
       <workItem from="1603718160910" duration="2940000" />
       <workItem from="1603796750460" duration="38000" />
       <workItem from="1603796912216" duration="506000" />
+      <workItem from="1604331675966" duration="1276000" />
+      <workItem from="1604668631521" duration="8170000" />
+      <workItem from="1604676985104" duration="3011000" />
+      <workItem from="1604937792255" duration="1518000" />
     </task>
     <servers />
   </component>
@@ -75,5 +80,11 @@
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="936" y="332" key="run.anything.popup" timestamp="1604669963857">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="936" y="332" key="run.anything.popup/2560.160.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1604669963857" />
   </component>
 </project>

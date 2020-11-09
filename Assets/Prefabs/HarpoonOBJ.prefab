@@ -176,6 +176,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tagsToCheck:
   - Enemy
+  - Wall
   speed: 20
   returnSpeed: 30
   range: 20
