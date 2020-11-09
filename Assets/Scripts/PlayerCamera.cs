@@ -7,7 +7,7 @@ namespace Monobehaviours
         [SerializeField] private float look_sensivity;
         [SerializeField] private float _smoothing;
 
-        private GameObject _player;
+        private Transform _player;
         private Vector2 smoothVelocity;
         private Vector2 currentLooking;
     
@@ -15,7 +15,7 @@ namespace Monobehaviours
         // Start is called before the first frame update
         private void Start()
         {
-            _player = transform.parent.gameObject;
+            _player = transform.parent;
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
         }
@@ -37,7 +37,7 @@ namespace Monobehaviours
             currentLooking += smoothVelocity;
         
             transform.localRotation = Quaternion.AngleAxis(-currentLooking.y, Vector3.right);
-            _player.transform.localRotation = Quaternion.AngleAxis(currentLooking.x, _player.transform.up);
+            _player.localRotation = Quaternion.AngleAxis(currentLooking.x, _player.transform.up);
         }
     }
 }

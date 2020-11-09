@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\poupo\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\poupo\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_ProjectFPS.-1871719946.00" t="ExcludeRecursive" />
-    <e p="C:\Users\poupo\Desktop\ProjectFPS" t="IncludeRecursive">
+    <e p="C:\Users\Drevok\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Drevok\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_ProjectFPS.-586377897.00" t="ExcludeRecursive" />
+    <e p="I:\ANNEE 2\PROJETS EN GROUPES\ProjectFPS" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
+          <e p="HarpoonScript.cs" t="Include" />
           <e p="PlayerCamera.cs" t="Include" />
           <e p="PlayerControls.cs" t="Include" />
         </e>
