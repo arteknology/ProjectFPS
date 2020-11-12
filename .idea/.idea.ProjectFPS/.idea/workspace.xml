@@ -10,6 +10,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/../../../Dev/FPS_Serialisation/Assets/Scripts/Monobehaviours/EnemyAI.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -17,6 +20,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerControls.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerCamera.cs" />
         <option value="$PROJECT_DIR$/Assets/Collaborators/Arthur/Scripts/CameraBillboard.cs" />
+        <option value="$PROJECT_DIR$/Assets/Collaborators/Arthur/Scripts/CacAI.cs" />
       </list>
     </option>
   </component>
@@ -67,7 +71,9 @@
       <workItem from="1604668631521" duration="8170000" />
       <workItem from="1604676985104" duration="3011000" />
       <workItem from="1604937792255" duration="1518000" />
-      <workItem from="1604952362980" duration="20000" />
+      <workItem from="1604952362980" duration="649000" />
+      <workItem from="1605192793515" duration="5120000" />
+      <workItem from="1605218412966" duration="1802000" />
     </task>
     <servers />
   </component>
@@ -80,6 +86,10 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="92" y="92" width="2376" height="856" key="DiffContextDialog" timestamp="1605199966870">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="92" y="92" width="2376" height="856" key="DiffContextDialog/0.0.2560.1040@0.0.2560.1040" timestamp="1605199966870" />
     <state x="936" y="332" key="run.anything.popup" timestamp="1604669963857">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
