@@ -12,6 +12,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/../../../Dev/FPS_Serialisation/Assets/Scripts/Monobehaviours/EnemyAI.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Collaborators/Arthur/Scripts/ProjectileDamage.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -21,6 +22,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerCamera.cs" />
         <option value="$PROJECT_DIR$/Assets/Collaborators/Arthur/Scripts/CameraBillboard.cs" />
         <option value="$PROJECT_DIR$/Assets/Collaborators/Arthur/Scripts/CacAI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Collaborators/Arthur/Scripts/DistAI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Collaborators/Arthur/Scripts/ProjectileDamage.cs" />
       </list>
     </option>
   </component>
@@ -73,7 +76,8 @@
       <workItem from="1604937792255" duration="1518000" />
       <workItem from="1604952362980" duration="649000" />
       <workItem from="1605192793515" duration="5120000" />
-      <workItem from="1605218412966" duration="1802000" />
+      <workItem from="1605218412966" duration="3021000" />
+      <workItem from="1605279453219" duration="2804000" />
     </task>
     <servers />
   </component>
