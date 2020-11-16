@@ -3668,7 +3668,6 @@ GameObject:
   - component: {fileID: 1883572690}
   - component: {fileID: 1883572694}
   - component: {fileID: 1883572693}
-  - component: {fileID: 1883572692}
   - component: {fileID: 1883572691}
   m_Layer: 8
   m_Name: Camera
@@ -3752,20 +3751,6 @@ MonoBehaviour:
   m_BeforeTransparentBundles: []
   m_BeforeStackBundles: []
   m_AfterStackBundles: []
---- !u!114 &1883572692
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1883572689}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0e6bfacb629d53645be4ac3a9b0a19cc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  look_sensivity: 5
-  _smoothing: 1
 --- !u!81 &1883572693
 AudioListener:
   m_ObjectHideFlags: 0

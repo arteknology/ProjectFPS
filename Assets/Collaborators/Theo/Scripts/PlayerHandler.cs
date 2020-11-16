@@ -50,8 +50,9 @@ public class PlayerHandler : MonoBehaviour
     {
         switch (_state)
         {
-            default:
+            //default:
             case State.Normal: 
+                Debug.Log(("Normal"));
                 HandleCharacterLook();
                 HandleCharacterMovement();
                 if (TestInputDownHarpoonShot()) HandleHarpoonShotStart();
@@ -81,8 +82,10 @@ public class PlayerHandler : MonoBehaviour
     void HandleCharacterLook()
     {
         float lookX = Input.GetAxisRaw("Mouse X");
-
-        transform.Rotate(new Vector3(0f, lookX * mouseSensivity, 0f), Space.Self);
+        
+        if (lookX != 0)
+            
+            transform.Rotate(new Vector3(0f, lookX * mouseSensivity, 0f), Space.Self);
 
         _cameraVerticalAngle = Mathf.Clamp(_cameraVerticalAngle, 0f, 0f);
 
@@ -149,7 +152,7 @@ public class PlayerHandler : MonoBehaviour
 
         float reachedHarpoonPositionDistance = 2f;*/
 
-        Vector3 Movement = (Pointe.position - transform.position).normalized * (40f * Time.deltaTime);
+        Vector3 Movement = (Pointe.position - transform.position).normalized * (10f * Time.deltaTime);
         _characterController.Move(Movement);
         _harpoonSize -= Movement.magnitude;
         if (_harpoonSize <= 2f)
