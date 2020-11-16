@@ -17,6 +17,7 @@ public class PlayerHandler : MonoBehaviour
     private float _harpoonSize;
     public Transform Pointe;
     private Vector3 _oldPointePos;
+    private IHarpoonable enemy;
     
     //Player stuff
     private CharacterController _characterController;
@@ -52,24 +53,23 @@ public class PlayerHandler : MonoBehaviour
             case State.Normal: 
                 HandleCharacterLook();
                 HandleCharacterMovement();
-                HandleHarpoonShotStart();
-                
+                if (TestInputDownHarpoonShot()) HandleHarpoonShotStart();
                 break;
             case State.HarpoonThrown:
-                Debug.Log("Harpoon Thrown");
+                //Debug.Log("Harpoon Thrown");
                 HandleHarpoonShotThrow();
                 HandleCharacterLook();
                 HandleCharacterMovement();
                 HandleHarpoonStop();
-                Debug.Log(_harpoonSize);
+                //Debug.Log(_harpoonSize);
                 break;
             case State.HarpoonMovingPlayer:
-                Debug.Log("Harpoon Moving Player");
+                //Debug.Log("Harpoon Moving Player");
                 HandleHarpoonMovement();
                 HandleCharacterLook();
                 break;
             case State.HarpoonRetract:
-                Debug.Log("Harpoon Retract");
+                //Debug.Log("Harpoon Retract");
                 HandleCharacterMovement();
                 HandleCharacterLook();
                 HandleHarpoonBack();
@@ -110,19 +110,13 @@ public class PlayerHandler : MonoBehaviour
         _characterVelocityY = 0;
     }
 
-    void HandleHarpoonShotStart()
+    void HandleHarpoonShotStart() // PAN ! LE HARPON PART
     {
-        if (TestInputDownHarpoonShot())
-        {
-            //if (Physics.Raycast(_playerCamera.transform.position, _playerCamera.transform.forward, out RaycastHit raycastHit))
-            //{
-                //_harpoonPosition = raycastHit.point;
-                _harpoonSize = 0f;
-                harpoonTransform.gameObject.SetActive(true);
-                //harpoonTransform.localScale = Vector3.zero;
-                _state = State.HarpoonThrown;
-            //}
-        }
+        _harpoonSize = 0f;
+        harpoonTransform.gameObject.SetActive(true);
+        _oldPointePos = Pointe.position;
+        _state = State.HarpoonThrown;
+        
     }
 
         void HandleHarpoonStop()
@@ -136,37 +130,51 @@ public class PlayerHandler : MonoBehaviour
         
         private void HandleHarpoonShotThrow()
         {
-            //harpoonTransform.LookAt(_harpoonPosition);
 
             float harpoonSpeed = 70f;
             _harpoonSize += harpoonSpeed * Time.deltaTime;
-            //harpoonTransform.localScale = new Vector3(1, 1, _harpoonSize);
             Pointe.localPosition = Vector3.forward * _harpoonSize;
 
-            /*if (_harpoonSize >= Vector3.Distance(transform.position, _harpoonPosition))
-            {
-                _state = State.HarpoonMovingPlayer; 
-            }*/
+
             RaycastHit hit;
             if (Physics.Raycast(_oldPointePos, Pointe.forward, out hit, (Pointe.position - _oldPointePos).magnitude))
             {
-                if (hit.transform.CompareTag("Wall"))
-                {
-                    _state = State.HarpoonMovingPlayer;
-                }
-            }
+                Debug.Log("Le harpon a touché "+hit.transform.name);
+                _harpoonSize = (hit.point - harpoonTransform.position).magnitude;
+                IHarpoonable tructouche = hit.transform.GetComponentInParent<IHarpoonable>();
 
-            else
+                if (tructouche!=null) // SI LE HARPON A TOUCHÉ UN ENNEMI
+                {
+                    enemy = tructouche;
+                    enemy.Harpooned();
+                    _state = State.HarpoonRetract;
+                }
+                else if (hit.transform.CompareTag("Wall")) // SI LE HARPON A TOUCHÉ UN MUR HARPONNABLE
+                {
+                    //_state = State.HarpoonMovingPlayer;
+                    _state = State.HarpoonRetract;
+                }
+                else // SI LE HARPON A TOUCHÉ N'IMPORTE QUOI D'AUTRE
+                {
+                    _state = State.HarpoonRetract;
+                }
+
+            }
+            else // SI LE HARPON N'A RIEN TOUCHÉ
             {
                 
             }
 
-            if (_harpoonSize >= maximumRange)
+            if (_harpoonSize >= maximumRange) // SI LE HARPON A ATTEINT SA LONGUEUR MAX
             {
                 _state = State.HarpoonRetract;
             }
+
+            _oldPointePos = Pointe.position;
     }
-    void HandleHarpoonMovement()
+    
+    
+    void HandleHarpoonMovement() // LE JOUEUR EST ATTIRÉ VERS LE HARPON
     {
         //harpoonTransform.LookAt(_harpoonPosition);
         
@@ -198,23 +206,26 @@ public class PlayerHandler : MonoBehaviour
         
     }*/
 
-    void HandleHarpoonBack()
+
+    void HandleHarpoonBack() // LE HARPON REVIENT SANS RIEN
     {
         float harpoonSpeed = 80f;
         _harpoonSize -= harpoonSpeed * Time.deltaTime;
-        //harpoonTransform.localScale = new Vector3(1, 1, _harpoonSize);
         Pointe.localPosition = Vector3.forward * _harpoonSize;
         if (_harpoonSize <= 1)
         {
-            _state = State.Normal;
+            StopHarpoon();
         }
     }
 
     void StopHarpoon()
     {
+        if (enemy!=null) enemy.Released();
+        enemy = null;
+        Pointe.localPosition = Vector3.forward;
         _state = State.Normal;
         ResetGravityEffect();
-        harpoonTransform.gameObject.SetActive(false);
+        //harpoonTransform.gameObject.SetActive(false);
     }
 
     bool TestInputDownHarpoonShot()
