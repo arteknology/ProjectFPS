@@ -62,7 +62,7 @@ public class PlayerHandler : MonoBehaviour
                 HandleHarpoonShotThrow();
                 HandleCharacterLook();
                 HandleCharacterMovement();
-                HandleHarpoonStop();
+                HandleHarpoonCancel();
                 //Debug.Log(_harpoonSize);
                 break;
             case State.HarpoonMovingPlayer:
@@ -97,7 +97,7 @@ public class PlayerHandler : MonoBehaviour
         float moveX = Input.GetAxisRaw("Horizontal");
         float moveZ = Input.GetAxisRaw("Vertical");
 
-        float moveSpeed = 20f;
+        float moveSpeed = 10f;
 
         Vector3 characterVelocity = transform.right * (moveX * moveSpeed) + transform.forward * (moveZ * moveSpeed);
 
@@ -123,7 +123,7 @@ public class PlayerHandler : MonoBehaviour
         
     }
 
-        void HandleHarpoonStop()
+        void HandleHarpoonCancel()
         {
             if (Input.GetButtonUp("Fire1"))
             {
@@ -134,7 +134,7 @@ public class PlayerHandler : MonoBehaviour
         
         private void HandleHarpoonShotThrow()
         {
-            MoveHarpoon(70f);
+            MoveHarpoon(80f);
         }
     
     
@@ -152,29 +152,16 @@ public class PlayerHandler : MonoBehaviour
 
         float reachedHarpoonPositionDistance = 2f;*/
 
-        Vector3 Movement = (Pointe.position - transform.position).normalized * (10f * Time.deltaTime);
+        Vector3 Movement = (Pointe.position - transform.position).normalized * (45f * Time.deltaTime);
         _characterController.Move(Movement);
         _harpoonSize -= Movement.magnitude;
+        Pointe.localPosition = Vector3.forward * _harpoonSize;
         if (_harpoonSize <= 2f)
         {
             StopHarpoon();
         }
     }
-
-    /*void HarpoonLook()
-    {
-        float lookX = Input.GetAxisRaw("Mouse X");
-
-        transform.Rotate(new Vector3(0f, lookX * mouseSensivity, 0f), Space.Self);
-
-        _cameraVerticalAngle = Mathf.Clamp(_cameraVerticalAngle, 0f, 0f);
-        _clampedXRotation = Mathf.Clamp(_clampedXRotation, -30f, 30f);
-
-        _playerCamera.transform.localEulerAngles = new Vector3(_clampedXRotation, _cameraVerticalAngle, 0);
-        
-    }*/
-
-
+    
     void HandleHarpoonBack() // LE HARPON REVIENT SANS RIEN
     {
         MoveHarpoon(-80f);
@@ -216,10 +203,10 @@ public class PlayerHandler : MonoBehaviour
                     enemy.Harpooned();
                     _state = State.HarpoonRetract;
                 }
-                else if (hit.transform.CompareTag("Wall")) // SI LE HARPON A TOUCHÉ UN MUR HARPONNABLE
+                else if (speed > 0 && hit.transform.CompareTag("Wall")) // SI LE HARPON A TOUCHÉ UN MUR HARPONNABLE
                 {
                     _state = State.HarpoonMovingPlayer;
-                    //_state = State.HarpoonRetract;
+                    
                 }
                 else // SI LE HARPON A TOUCHÉ N'IMPORTE QUOI D'AUTRE
                 {
