@@ -504,9 +504,10 @@ GameObject:
   - component: {fileID: 178059901}
   - component: {fileID: 178059905}
   - component: {fileID: 178059904}
+  - component: {fileID: 178059902}
   m_Layer: 0
   m_Name: Sphere
-  m_TagString: Untagged
+  m_TagString: Harpoon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -525,6 +526,19 @@ Transform:
   m_Father: {fileID: 1746359656}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &178059902
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 178059900}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: -0.00000047683716, z: 0}
 --- !u!23 &178059904
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1470,6 +1484,7 @@ GameObject:
   - component: {fileID: 994818679}
   - component: {fileID: 994818682}
   - component: {fileID: 994818683}
+  - component: {fileID: 994818678}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Enemy
@@ -1477,6 +1492,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &994818678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 994818677}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b671899d58e13844bbf4a016a7587e86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Pointe: {fileID: 178059900}
+  hasCollided: 0
 --- !u!23 &994818679
 MeshRenderer:
   m_ObjectHideFlags: 0

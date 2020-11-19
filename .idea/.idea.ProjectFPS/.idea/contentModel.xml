@@ -9,6 +9,7 @@
         <e p="Collaborators" t="Include">
           <e p="Theo" t="Include">
             <e p="Scripts" t="Include">
+              <e p="EnemyTestScript.cs" t="Include" />
               <e p="HarpinScript.cs" t="Include" />
               <e p="HarpoonScript.cs" t="Include" />
               <e p="PlayerCamera.cs" t="Include" />

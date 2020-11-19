@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class PlayerHandler : MonoBehaviour
 {
@@ -10,7 +11,11 @@ public class PlayerHandler : MonoBehaviour
 
     [SerializeField] public float maximumRange;
 
-    private float _clampedXRotation = 30f;
+    
+    
+    [SerializeField] public GameObject harpoonedEnemy;
+
+    //private float _clampedXRotation = 30f;
     
     //Harpoon stuff
     private Vector3 _harpoonPosition;
@@ -165,7 +170,12 @@ public class PlayerHandler : MonoBehaviour
     void HandleHarpoonBack() // LE HARPON REVIENT SANS RIEN
     {
         MoveHarpoon(-80f);
-        if (_harpoonSize <= 1)
+        if (harpoonedEnemy == null && _harpoonSize <= 1f)
+        {
+            StopHarpoon();
+        }
+
+        if (harpoonedEnemy && _harpoonSize <= 2f)
         {
             StopHarpoon();
         }
@@ -180,6 +190,12 @@ public class PlayerHandler : MonoBehaviour
         ResetGravityEffect();
         //harpoonTransform.gameObject.SetActive(false);
         hasHarpooned = false;
+
+        if (harpoonedEnemy)
+        {
+            harpoonedEnemy.GetComponent<EnemyTestScript>().hasCollided = false;
+        }
+
     }
 
     void MoveHarpoon(float speed)
@@ -195,12 +211,28 @@ public class PlayerHandler : MonoBehaviour
                 hasHarpooned = true;
                 Debug.Log("Le harpon a touché "+hit.transform.name);
                 _harpoonSize = (hit.point - harpoonTransform.position).magnitude;
-                IHarpoonable tructouche = hit.transform.GetComponentInParent<IHarpoonable>();
+                /*IHarpoonable tructouche = hit.transform.GetComponentInParent<IHarpoonable>();
+                
 
                 if (tructouche!=null) // SI LE HARPON A TOUCHÉ UN ENNEMI
                 {
-                    enemy = tructouche;
-                    enemy.Harpooned();
+                    //enemy = tructouche;
+                    //enemy.Harpooned();
+                    
+                    harpoonedEnemy = hit.transform.gameObject;
+                    Debug.Log(harpoonedEnemy.name);
+                    harpoonedEnemy.GetComponent<EnemyTestScript>().Harpoon(Pointe);
+                    
+                    _state = State.HarpoonRetract;
+                }*/
+                
+                if (hit.collider.CompareTag("Enemy")) // SI LE HARPON A TOUCHÉ UN ENNEMI
+                {
+
+                    harpoonedEnemy = hit.transform.gameObject;
+                    Debug.Log(harpoonedEnemy.name);
+                    harpoonedEnemy.GetComponent<EnemyTestScript>().hasCollided = true;
+                    
                     _state = State.HarpoonRetract;
                 }
                 else if (speed > 0 && hit.transform.CompareTag("Wall")) // SI LE HARPON A TOUCHÉ UN MUR HARPONNABLE
