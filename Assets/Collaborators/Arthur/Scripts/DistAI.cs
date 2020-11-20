@@ -16,13 +16,12 @@ public class DistAI : MonoBehaviour
     public float fireRate = 0.5f;
     private float nextFire = 0.0f;
     public float DistanceToAttack;
-    public float ToAway;
     
     public int Life;
     public int PlayerDamages;
     
     public bool Grabbed;
-    public bool _attacked;
+    private bool _attacked;
     
     void Start()
     {
@@ -52,13 +51,14 @@ public class DistAI : MonoBehaviour
 
         if (!Grabbed)
         {
-            if (distance < DistanceToAttack )
+            if (distance < DistanceToAttack)
             {
-                navMesh.isStopped = false;
-                Vector3 dirToPlayer = transform.position - _player.transform.position;
-                Vector3 newPos = transform.position + dirToPlayer;
-                navMesh.SetDestination(newPos);
-                //_anim.SetBool("Run", true);
+
+                    navMesh.isStopped = false;
+                    Vector3 dirToPlayer = transform.position - _player.transform.position;
+                    Vector3 newPos = transform.position + dirToPlayer;
+                    navMesh.SetDestination(newPos);
+                    //_anim.SetBool("Run", true);
             }
             else
             {
@@ -102,11 +102,11 @@ public class DistAI : MonoBehaviour
                 //_anim.SetBool("Attack", true);
                 Shoot();
             }
-            else
+            /*else
             {
                 //_anim.SetBool("Attack", false);
                 Run();
-            }
+            }*/
         }
         else
         { 
@@ -116,15 +116,13 @@ public class DistAI : MonoBehaviour
 
     public void Shoot()
     {
-        float distance = Vector3.Distance(transform.position, _player.transform.position);
-
-        if (Time.time > nextFire && distance < ToAway)
+        if (Time.time > nextFire )
         {
             nextFire = Time.time + fireRate;
             GameObject bullet = Instantiate(Projectile, BulletPoint.position, BulletPoint.rotation);
             Rigidbody bulletRb = bullet.GetComponent<Rigidbody>();
             bulletRb.velocity = (_player.transform.position - bullet.transform.position).normalized * Constant;
-            Destroy(bullet, 3f);
+            //_anim.SetBool("Attack", false);
         }
     }
 

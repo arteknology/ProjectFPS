@@ -433,14 +433,12 @@ MonoBehaviour:
   Projectile: {fileID: 7833934131304695165, guid: 0c54861ca8652d54fbe2a0384fec85ce,
     type: 3}
   BulletPoint: {fileID: 2084499612}
-  Constant: 30
+  Constant: 35
   fireRate: 1.5
-  DistanceToAttack: 7
-  ToAway: 40
+  DistanceToAttack: 6
   Life: 15
   PlayerDamages: 3
   Grabbed: 0
-  _attacked: 0
 --- !u!195 &38792512
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -1530,8 +1528,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213c2a4e183cd6741b959db8eaf954b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DistanceToAttack: 2
-  AttackDist: 2.5
+  DistanceToAttack: 3
+  AttackDist: 3.5
   GoBackDist: 10
   Life: 10
   PlayerDamages: 2
@@ -1548,7 +1546,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 2
-  m_Speed: 4
+  m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -2445,6 +2443,36 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1166928990}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1175209358
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1175209359}
+  m_Layer: 0
+  m_Name: bulletPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1175209359
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1175209358}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.99, y: 0.96, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1246293174}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1193859469
 GameObject:
   m_ObjectHideFlags: 0
@@ -2662,7 +2690,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.63, y: 1.411, z: 12.13}
   m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
-  m_Children: []
+  m_Children:
+  - {fileID: 1175209359}
   m_Father: {fileID: 1643582005}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2753,6 +2782,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b62dba7082733b5429f11ca2c06c5f98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DistanceToAttack: 2
+  AttackDist: 2.5
+  ToAway: 10
+  Projectile: {fileID: 7833934131304695165, guid: 0c54861ca8652d54fbe2a0384fec85ce,
+    type: 3}
+  BulletPoint: {fileID: 1175209359}
+  Constant: 35
+  fireRate: 1.5
+  Life: 15
+  PlayerDamages: 3
+  Damages: 10
+  Grabbed: 0
 --- !u!195 &1246293180
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -2763,7 +2804,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 2
-  m_Speed: 2.5
+  m_Speed: 4.5
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120

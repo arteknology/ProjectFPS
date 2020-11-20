@@ -21,9 +21,10 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerControls.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerCamera.cs" />
         <option value="$PROJECT_DIR$/Assets/Collaborators/Arthur/Scripts/CameraBillboard.cs" />
-        <option value="$PROJECT_DIR$/Assets/Collaborators/Arthur/Scripts/CacAI.cs" />
-        <option value="$PROJECT_DIR$/Assets/Collaborators/Arthur/Scripts/DistAI.cs" />
         <option value="$PROJECT_DIR$/Assets/Collaborators/Arthur/Scripts/ProjectileDamage.cs" />
+        <option value="$PROJECT_DIR$/Assets/Collaborators/Arthur/Scripts/DistAI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Collaborators/Arthur/Scripts/CacAI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Collaborators/Arthur/Scripts/MixAI.cs" />
       </list>
     </option>
   </component>
@@ -78,6 +79,8 @@
       <workItem from="1605192793515" duration="5120000" />
       <workItem from="1605218412966" duration="3021000" />
       <workItem from="1605279453219" duration="2804000" />
+      <workItem from="1605727175688" duration="5051000" />
+      <workItem from="1605878583331" duration="1460000" />
     </task>
     <servers />
   </component>

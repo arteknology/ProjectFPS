@@ -131,7 +131,6 @@ public class CacAI : MonoBehaviour
         }
         else
         {
-            Run();
             _attacked = false;
             //_anim.SetBool("attack", false);
         }
