@@ -137,7 +137,7 @@ public class DistAI : MonoBehaviour
 //Triggers
     private void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.CompareTag("Harpon"))
+        if (other.gameObject.CompareTag("Harpoon"))
         {
             Grabbed = false;
         }
@@ -145,7 +145,7 @@ public class DistAI : MonoBehaviour
     
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Harpon"))
+        if (other.gameObject.CompareTag("Harpoon"))
         {
             Grabbed = true;
         }

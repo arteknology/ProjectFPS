@@ -157,12 +157,13 @@ public class CacAI : MonoBehaviour
         else
         {
             //_anim.SetBool("attack", false);
+            _attacked = true;
         }
     }
 //Triggers
     private void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.CompareTag("Harpon"))
+        if (other.gameObject.CompareTag("Harpoon"))
         {
             Grabbed = false;
         }
@@ -170,7 +171,7 @@ public class CacAI : MonoBehaviour
     
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Harpon"))
+        if (other.gameObject.CompareTag("Harpoon"))
         {
             Grabbed = true;
         }
