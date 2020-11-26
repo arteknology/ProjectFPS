@@ -16,7 +16,8 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/PlayerHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/EnemyTestScript.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/HarpinScript.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/ChainsawScript.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/AcidScript.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -34,8 +35,11 @@
         <option value="$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/PlayerHandler1.cs" />
         <option value="$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/HarpinScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/HarpoonScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces.cs" />
         <option value="$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/EnemyTestScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/ChainsawScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/PlayerHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/AcidScript.cs" />
       </list>
     </option>
   </component>
@@ -95,7 +99,9 @@
       <workItem from="1605531571970" duration="7472000" />
       <workItem from="1605544258769" duration="2691000" />
       <workItem from="1605548246510" duration="1791000" />
-      <workItem from="1605791789344" duration="11672000" />
+      <workItem from="1605791789344" duration="12436000" />
+      <workItem from="1605888139166" duration="3091000" />
+      <workItem from="1606137258426" duration="13092000" />
     </task>
     <servers />
   </component>
@@ -120,24 +126,5 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="943" y="315" width="672" height="678" key="search.everywhere.popup/2560.160.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1605796440338" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/PlayerHandler.cs</url>
-          <line>191</line>
-          <properties documentPath="I:\ANNEE 2\PROJETS EN GROUPES\ProjectFPS\Assets\Collaborators\Theo\Scripts\PlayerHandler.cs" initialLine="184">
-            <startOffsets>
-              <option value="5569" />
-            </startOffsets>
-            <endOffsets>
-              <option value="5590" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

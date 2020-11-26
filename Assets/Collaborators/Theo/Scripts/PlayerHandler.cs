@@ -1,17 +1,24 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using TMPro;
+using UnityEditor;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.Serialization;
 
-public class PlayerHandler : MonoBehaviour
+
+public class PlayerHandler : MonoBehaviour, IDamageable
 {
     [SerializeField] private float mouseSensivity = 1f;
     
     [SerializeField] private Transform harpoonTransform;
 
     [SerializeField] public float maximumRange;
-
     
+    public float maxHealth = 100f;
+    public float currentHealth;
+    public TextMeshProUGUI healthDisplay;
     
     [SerializeField] public GameObject harpoonedEnemy;
 
@@ -31,7 +38,10 @@ public class PlayerHandler : MonoBehaviour
     private float _characterVelocityY;
     private Camera _playerCamera;
     
+    //Chainsaw stuff
+    public bool isDetectingEnemy;
 
+    
     //State machine stuff
     private State _state;
     private enum  State 
@@ -39,7 +49,8 @@ public class PlayerHandler : MonoBehaviour
         Normal,
         HarpoonThrown,
         HarpoonMovingPlayer,
-        HarpoonRetract
+        HarpoonRetract,
+        Chainsaw
     }
     
     private void Awake()
@@ -49,6 +60,8 @@ public class PlayerHandler : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         _state = State.Normal;
         //harpoonTransform.gameObject.SetActive(false);
+
+        currentHealth = maxHealth;
     }
 
     private void Update()
@@ -56,11 +69,10 @@ public class PlayerHandler : MonoBehaviour
         switch (_state)
         {
             //default:
-            case State.Normal: 
-                Debug.Log(("Normal"));
+            case State.Normal:
                 HandleCharacterLook();
                 HandleCharacterMovement();
-                if (TestInputDownHarpoonShot()) HandleHarpoonShotStart();
+                    if (TestInputLeftClick() && !isDetectingEnemy) HandleHarpoonShotStart();
                 break;
             case State.HarpoonThrown:
                 //Debug.Log("Harpoon Thrown");
@@ -82,6 +94,8 @@ public class PlayerHandler : MonoBehaviour
                 HandleHarpoonBack();
                 break;
         }
+        
+        healthDisplay.text = currentHealth + "/100";
     }
 
     void HandleCharacterLook()
@@ -260,9 +274,14 @@ public class PlayerHandler : MonoBehaviour
         _oldPointePos = Pointe.position;
     }
     
-    bool TestInputDownHarpoonShot()
+    bool TestInputLeftClick()
     {
         return (Input.GetButtonDown("Fire1"));
     }
-    
+
+
+    public void TakeDamage(int amount)
+    {
+        currentHealth -= amount;
+    }
 }
