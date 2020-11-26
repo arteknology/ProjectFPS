@@ -11,8 +11,8 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EE47BE73-F7EF-409C-A5E5-CE4B121745B7/0c/8ff67625/Component.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerCamera.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../Dev/FPS_Serialisation/Assets/Scripts/Monobehaviours/EnemyAI.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Collaborators/Arthur/Scripts/ProjectileDamage.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -20,6 +20,11 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/HarpoonScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerControls.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerCamera.cs" />
+        <option value="$PROJECT_DIR$/Assets/Collaborators/Arthur/Scripts/CameraBillboard.cs" />
+        <option value="$PROJECT_DIR$/Assets/Collaborators/Arthur/Scripts/ProjectileDamage.cs" />
+        <option value="$PROJECT_DIR$/Assets/Collaborators/Arthur/Scripts/CacAI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Collaborators/Arthur/Scripts/DistAI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Collaborators/Arthur/Scripts/MixAI.cs" />
       </list>
     </option>
   </component>
@@ -70,6 +75,12 @@
       <workItem from="1604668631521" duration="8170000" />
       <workItem from="1604676985104" duration="3011000" />
       <workItem from="1604937792255" duration="1518000" />
+      <workItem from="1604952362980" duration="649000" />
+      <workItem from="1605192793515" duration="5120000" />
+      <workItem from="1605218412966" duration="3021000" />
+      <workItem from="1605279453219" duration="2804000" />
+      <workItem from="1605727175688" duration="5051000" />
+      <workItem from="1605878583331" duration="1607000" />
     </task>
     <servers />
   </component>
@@ -82,6 +93,10 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="92" y="92" width="2376" height="856" key="DiffContextDialog" timestamp="1605199966870">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="92" y="92" width="2376" height="856" key="DiffContextDialog/0.0.2560.1040@0.0.2560.1040" timestamp="1605199966870" />
     <state x="936" y="332" key="run.anything.popup" timestamp="1604669963857">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
