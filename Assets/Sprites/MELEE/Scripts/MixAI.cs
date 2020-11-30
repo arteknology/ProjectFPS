@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class MixAI : MonoBehaviour
+public class MixAI : MonoBehaviour, IDamageable
 {
     private NavMeshAgent navMesh;
     private GameObject _player;
     //private Animator _anim;
+
+    public GameObject Pointe;
     
     public float DistanceToAttack;
     public float AttackDist;
@@ -18,8 +20,9 @@ public class MixAI : MonoBehaviour
     public float Constant;
     public float fireRate = 0.5f;
     private float nextFire = 0.0f;
-    
-    public int Life;
+
+    public int MaxLife = 120;
+    public int CurrentLife;
     public int PlayerDamages;
     public int Damages;
     
@@ -27,6 +30,7 @@ public class MixAI : MonoBehaviour
 
     void Start()
     {
+        CurrentLife = MaxLife;
         Grabbed = false;
         navMesh = GetComponent<NavMeshAgent>();
         _player = GameObject.FindWithTag("Player");
@@ -37,7 +41,7 @@ public class MixAI : MonoBehaviour
     {
         float distance = Vector3.Distance(transform.position, _player.transform.position);
         
-        if (Life > 0)
+        if (CurrentLife > 0)
         {
             if (distance <= ToAway)
             {
@@ -63,7 +67,7 @@ public class MixAI : MonoBehaviour
         {
             if (distance > DistanceToAttack )
             {
-                navMesh.isStopped = false;
+                navMesh.speed = 4.5f;
                 Vector3 dirToPlayer = transform.position - _player.transform.position;
                 Vector3 newPos = transform.position - dirToPlayer;
                 navMesh.SetDestination(newPos);
@@ -72,7 +76,7 @@ public class MixAI : MonoBehaviour
             else
             {
                 //_anim.SetBool("Run", false);
-                navMesh.isStopped = true;
+                navMesh.speed = 0f;
                 CacAttack();
             }
         }
@@ -84,7 +88,7 @@ public class MixAI : MonoBehaviour
 
     private void Stun()
     {
-        navMesh.isStopped = true;
+        navMesh.speed = 0;
         //_anim.SetBool("Run", false);
         //_anim.SetBool("RunBack", false);
         StartCoroutine(WaitForStunToEnd());
@@ -93,7 +97,7 @@ public class MixAI : MonoBehaviour
     //Attack & Die
     private void Die()
     {
-        navMesh.isStopped = true; 
+        navMesh.speed = 0; 
         //_anim.SetTrigger("Die");
         Destroy(this.gameObject, 1f);
         
@@ -118,7 +122,7 @@ public class MixAI : MonoBehaviour
         float distance = Vector3.Distance(transform.position, _player.transform.position);
         
         //_anim.SetBool("Run", false);
-        navMesh.isStopped = true;
+        navMesh.speed = 0;
         
         if (!Grabbed)
         {
@@ -130,6 +134,7 @@ public class MixAI : MonoBehaviour
         }
         else
         { 
+            HarpoonDragged(Pointe.transform);
             Stun();
         }
     }
@@ -147,10 +152,10 @@ public class MixAI : MonoBehaviour
     }
     
     //Damages    
-    private void TakeDamage()
+    public void TakeDamage(int amount)
     {
-        Life -= PlayerDamages;
-        Die();
+        CurrentLife = CurrentLife - amount;
+        Debug.Log("Il me reste " + CurrentLife);
     }
     
     
@@ -184,10 +189,6 @@ public class MixAI : MonoBehaviour
             Grabbed = true;
         }
 
-        if (other.gameObject.CompareTag("Weapon"))
-        {
-            TakeDamage();
-        }
     }
     
     //Routine
@@ -197,5 +198,11 @@ public class MixAI : MonoBehaviour
         // Wait 0.2 seconds
         yield return new WaitForSeconds(2f);
         Grabbed = false;
+    }
+    
+    public void HarpoonDragged(Transform col)
+    {
+        transform.position = col.transform.position;
+
     }
 }

@@ -3,12 +3,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.Serialization;
 
-public class DistAI : MonoBehaviour
+public class DistAI : MonoBehaviour, IDamageable
 {
     private NavMeshAgent navMesh;
     private GameObject _player;
     //private Animator _anim;
+
+    public GameObject Pointe;
 
     public GameObject Projectile;
     public Transform BulletPoint;
@@ -17,7 +20,9 @@ public class DistAI : MonoBehaviour
     private float nextFire = 0.0f;
     public float DistanceToAttack;
     
-    public int Life;
+    public float CurrentLife;
+    public float MaxLife = 80;
+    
     public int PlayerDamages;
     
     public bool Grabbed;
@@ -25,6 +30,7 @@ public class DistAI : MonoBehaviour
     
     void Start()
     {
+        CurrentLife = MaxLife;
         _attacked = false;
         Grabbed = false;
         navMesh = GetComponent<NavMeshAgent>();
@@ -34,7 +40,7 @@ public class DistAI : MonoBehaviour
 
     void Update()
     {
-        if (Life > 0)
+        if (CurrentLife > 0)
         {
             Run();
         }
@@ -53,8 +59,7 @@ public class DistAI : MonoBehaviour
         {
             if (distance < DistanceToAttack)
             {
-
-                    navMesh.isStopped = false;
+                    navMesh.speed = 4.5f;
                     Vector3 dirToPlayer = transform.position - _player.transform.position;
                     Vector3 newPos = transform.position + dirToPlayer;
                     navMesh.SetDestination(newPos);
@@ -62,20 +67,23 @@ public class DistAI : MonoBehaviour
             }
             else
             {
+                
                 //_anim.SetBool("Run", false);
-                navMesh.isStopped = true;
+                navMesh.speed = 0;
                 Attack();
             }
         }
         else
-        { 
+        {
+            navMesh.speed = 0f;
+            HarpoonDragged(Pointe.transform);
             Stun();
         }
     }
     
     private void Stun()
     {
-        navMesh.isStopped = true;
+        navMesh.speed = 0;
         _attacked = false;
         //_anim.SetBool("Run", false);
         //_anim.SetBool("RunBack", false);
@@ -85,7 +93,7 @@ public class DistAI : MonoBehaviour
     //Attack & Die
     private void Die()
     {
-        navMesh.isStopped = true; 
+        navMesh.speed = 0f; 
         //_anim.SetTrigger("Die");
         Destroy(this.gameObject, 1f);
         
@@ -127,10 +135,10 @@ public class DistAI : MonoBehaviour
     }
 
     //Damages    
-    private void TakeDamage()
+    public void TakeDamage(int amount)
     {
-        Life -= PlayerDamages;
-        Die();
+        CurrentLife = CurrentLife - amount;
+        Debug.Log("Il me reste " + CurrentLife);
     }
     
     
@@ -149,11 +157,6 @@ public class DistAI : MonoBehaviour
         {
             Grabbed = true;
         }
-
-        if (other.gameObject.CompareTag("Weapon"))
-        {
-            TakeDamage();
-        }
     }
     
     //Routine
@@ -163,6 +166,12 @@ public class DistAI : MonoBehaviour
         // Wait 0.2 seconds
         yield return new WaitForSeconds(2f);
         Grabbed = false;
+    }
+    
+    public void HarpoonDragged(Transform col)
+    {
+        transform.position = col.transform.position;
+
     }
     
 }

@@ -15,6 +15,8 @@ public class PlayerHandler : MonoBehaviour, IDamageable
     [SerializeField] private Transform harpoonTransform;
 
     [SerializeField] public float maximumRange;
+
+    public Transform releasedEnemy;
     
     public float maxHealth = 100f;
     public float currentHealth;
@@ -50,7 +52,8 @@ public class PlayerHandler : MonoBehaviour, IDamageable
         HarpoonThrown,
         HarpoonMovingPlayer,
         HarpoonRetract,
-        Chainsaw
+        Chainsaw,
+        Die
     }
     
     private void Awake()
@@ -93,9 +96,17 @@ public class PlayerHandler : MonoBehaviour, IDamageable
                 HandleCharacterLook();
                 HandleHarpoonBack();
                 break;
+            case State.Die:
+                Die();
+                break;
         }
         
         healthDisplay.text = currentHealth + "/100";
+
+        if (currentHealth <= 0)
+        {
+            _state = State.Die;
+        }
     }
 
     void HandleCharacterLook()
@@ -188,7 +199,7 @@ public class PlayerHandler : MonoBehaviour, IDamageable
         {
             StopHarpoon();
         }
-
+    
         if (harpoonedEnemy && _harpoonSize <= 2f)
         {
             StopHarpoon();
@@ -207,7 +218,16 @@ public class PlayerHandler : MonoBehaviour, IDamageable
 
         if (harpoonedEnemy)
         {
-            harpoonedEnemy.GetComponent<EnemyTestScript>().hasCollided = false;
+            if (harpoonedEnemy.GetComponent<CacAI>())
+                harpoonedEnemy.GetComponent<CacAI>().Grabbed = false;
+                    
+            if (harpoonedEnemy.GetComponent<DistAIV2>())
+                harpoonedEnemy.GetComponent<DistAIV2>().isGrabbed = false;
+                    
+            if (harpoonedEnemy.GetComponent<EnemyMixAIV3>())
+                harpoonedEnemy.GetComponent<EnemyMixAIV3>().isGrabbed = false;
+
+            harpoonedEnemy.transform.position = releasedEnemy.transform.position;
         }
 
     }
@@ -245,7 +265,14 @@ public class PlayerHandler : MonoBehaviour, IDamageable
 
                     harpoonedEnemy = hit.transform.gameObject;
                     Debug.Log(harpoonedEnemy.name);
-                    harpoonedEnemy.GetComponent<EnemyTestScript>().hasCollided = true;
+                    if (harpoonedEnemy.GetComponent<CacAI>())
+                        harpoonedEnemy.GetComponent<CacAI>().Grabbed = true;
+                    
+                    if (harpoonedEnemy.GetComponent<EnemyMixAIV3>())
+                        harpoonedEnemy.GetComponent<EnemyMixAIV3>().isGrabbed = true;
+                    
+                    if (harpoonedEnemy.GetComponent<MixAI>())
+                        harpoonedEnemy.GetComponent<MixAI>().Grabbed = true;
                     
                     _state = State.HarpoonRetract;
                 }
@@ -283,5 +310,11 @@ public class PlayerHandler : MonoBehaviour, IDamageable
     public void TakeDamage(int amount)
     {
         currentHealth -= amount;
+    }
+
+    public void Die()
+    {
+        currentHealth = 0;
+        Debug.Log("T MOR");
     }
 }

@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class ProjectileDamage : MonoBehaviour
 {
-    public int Damages;
+    public int damages = 10;
     public void DestroyBullet()
     {
         Destroy(this.gameObject);
@@ -15,9 +15,19 @@ public class ProjectileDamage : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            //_player.TakeDamage(Damages);
+            Debug.Log("J'ai touché le joueur");
+            other.GetComponent<PlayerHandler>().TakeDamage(damages);
             DestroyBullet();
         }
-        //TODO: Destroy bullet when collide Walls/Ground/Acid
+
+        if (other.gameObject.CompareTag("Harpoon"))
+        {
+            
+        }   
+        
+        else
+        {
+            DestroyBullet();
+        }
     }
 }

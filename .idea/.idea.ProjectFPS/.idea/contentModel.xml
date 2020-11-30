@@ -10,16 +10,32 @@
           <e p="Theo" t="Include">
             <e p="Scripts" t="Include">
               <e p="AcidScript.cs" t="Include" />
+              <e p="CacAIV2.cs" t="Include" />
               <e p="ChainsawScript.cs" t="Include" />
+              <e p="EnemyMixAIV3.cs" t="Include" />
+              <e p="EnemyMixV2.cs" t="Include" />
               <e p="EnemyTestScript.cs" t="Include" />
               <e p="HarpoonScript.cs" t="Include" />
               <e p="PlayerCamera.cs" t="Include" />
               <e p="PlayerHandler.cs" t="Include" />
+              <e p="SpikeTrapScripts.cs" t="Include" />
             </e>
           </e>
         </e>
         <e p="Scripts" t="Include">
           <e p="Interfaces.cs" t="Include" />
+        </e>
+        <e p="Sprites" t="Include">
+          <e p="MELEE" t="Include">
+            <e p="Scripts" t="Include">
+              <e p="CacAI.cs" t="Include" />
+              <e p="CameraBillboard.cs" t="Include" />
+              <e p="DistAI.cs" t="Include" />
+              <e p="DistAIV2.cs" t="Include" />
+              <e p="MixAI.cs" t="Include" />
+              <e p="ProjectileDamage.cs" t="Include" />
+            </e>
+          </e>
         </e>
         <e p="TextMesh Pro" t="Include">
           <e p="Fonts" t="Include">

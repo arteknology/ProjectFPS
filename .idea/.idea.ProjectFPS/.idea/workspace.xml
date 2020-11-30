@@ -14,10 +14,14 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/EnemyMixV2.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/CacAIV2.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/PlayerHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Sprites/MELEE/Scripts/DistAIV2.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/EnemyTestScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/ChainsawScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/AcidScript.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/EnemyMixAIV3.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -38,8 +42,18 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces.cs" />
         <option value="$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/EnemyTestScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/ChainsawScript.cs" />
-        <option value="$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/PlayerHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Sprites/MELEE/Scripts/MixAI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Sprites/MELEE/Scripts/DistAI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/ProjectileScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/AcidScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/SpikeTrapScripts.cs" />
+        <option value="$PROJECT_DIR$/Assets/Sprites/MELEE/Scripts/DistAIV2.cs" />
+        <option value="$PROJECT_DIR$/Assets/Sprites/MELEE/Scripts/ProjectileDamage.cs" />
+        <option value="$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/EnemyMixV2.cs" />
+        <option value="$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/PlayerHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/EnemyMixAIV3.cs" />
+        <option value="$PROJECT_DIR$/Assets/Sprites/MELEE/Scripts/CacAI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/CacAIV2.cs" />
       </list>
     </option>
   </component>
@@ -102,6 +116,12 @@
       <workItem from="1605791789344" duration="12436000" />
       <workItem from="1605888139166" duration="3091000" />
       <workItem from="1606137258426" duration="13092000" />
+      <workItem from="1606404185284" duration="4816000" />
+      <workItem from="1606465890165" duration="7825000" />
+      <workItem from="1606476788528" duration="1541000" />
+      <workItem from="1606482366575" duration="14803000" />
+      <workItem from="1606666979587" duration="2822000" />
+      <workItem from="1606741553206" duration="508000" />
     </task>
     <servers />
   </component>
@@ -114,10 +134,10 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1114" y="401" key="RiderGenerateDialog" timestamp="1605797358733">
+    <state x="1114" y="401" key="RiderGenerateDialog" timestamp="1606495526701">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1114" y="401" key="RiderGenerateDialog/2560.160.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1605797358733" />
+    <state x="1114" y="401" key="RiderGenerateDialog/2560.160.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1606495526701" />
     <state x="936" y="332" key="run.anything.popup" timestamp="1604669963857">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>

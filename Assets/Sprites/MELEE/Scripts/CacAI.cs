@@ -3,36 +3,46 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.Serialization;
+using UnityEngine.Animations;
 
-public class CacAI : MonoBehaviour
+public class CacAI : MonoBehaviour, IDamageable
 {
     private NavMeshAgent navMesh;
     private GameObject _player;
+
+    public GameObject Pointe;
     //private Animator _anim;
     
     public float DistanceToAttack;
     public float AttackDist;
     public float GoBackDist;
+
+    public int MaxLife = 50;
+    public int CurrentLife;
     
-    public int Life;
     public int PlayerDamages;
     public int Damages;
     
     public bool Grabbed;
     public bool _attacked;
+
+    public Animator animator;
     
     void Start()
     {
+        CurrentLife = MaxLife;
         _attacked = false;
         Grabbed = false;
         navMesh = GetComponent<NavMeshAgent>();
         _player = GameObject.FindWithTag("Player");
         //_anim = GetComponent<Animator>();
+        animator = GetComponent<Animator>();
     }
 
     void Update()
     {
-        if (Life > 0)
+        if (CurrentLife > 0)
         {
             if (!_attacked)
             {
@@ -63,6 +73,7 @@ public class CacAI : MonoBehaviour
                 Vector3 newPos = transform.position - dirToPlayer;
                 navMesh.SetDestination(newPos);
                 //_anim.SetBool("Run", true);
+                animator.SetBool("IsChasing", true);
             }
             else
             {
@@ -89,13 +100,15 @@ public class CacAI : MonoBehaviour
                 Vector3 dirToPlayer = transform.position - _player.transform.position;
                 Vector3 newPos = transform.position + dirToPlayer;
                 navMesh.SetDestination(newPos);
-                //_anim.SetBool("RunBack", true);
+                
             }
             else
             {
                 //_anim.SetBool("RunBack", false);
                 navMesh.isStopped = true;
                 _attacked = false;
+                animator.SetBool("IsFleeing", false);
+                animator.SetBool("IsChasing", true);
             }
         }
         else
@@ -110,6 +123,7 @@ public class CacAI : MonoBehaviour
         _attacked = false;
         //_anim.SetBool("Run", false);
         //_anim.SetBool("RunBack", false);
+        HarpoonDragged(Pointe.transform);
         StartCoroutine(WaitForStunToEnd());
     }
     //Attack & Die
@@ -119,6 +133,7 @@ public class CacAI : MonoBehaviour
         //_anim.SetTrigger("Die");
         Destroy(this.gameObject, 1f);
         
+        animator.SetBool("IsDead", true);
     }
     
     private void Attack()
@@ -128,19 +143,23 @@ public class CacAI : MonoBehaviour
         if (distance <= DistanceToAttack)
         {
             //_anim.SetBool("attack", true);
+            animator.SetBool("IsAttacking", true);
+            animator.SetBool("IsChasing", false);
         }
         else
         {
             _attacked = false;
             //_anim.SetBool("attack", false);
+            animator.SetBool("IsAttacking", false);
+            animator.SetBool("IsFleeing", true);
         }
     }
 
     //Damages    
-    private void TakeDamage()
+    public void TakeDamage(int amount)
     {
-        Life -= PlayerDamages;
-        Die();
+        CurrentLife = CurrentLife - amount;
+        Debug.Log("Il me reste " + CurrentLife);
     }
     
     
@@ -176,10 +195,10 @@ public class CacAI : MonoBehaviour
             Grabbed = true;
         }
 
-        if (other.gameObject.CompareTag("Weapon"))
-        {
-            TakeDamage();
-        }
+        //if (other.gameObject.CompareTag("Weapon"))
+        //{
+            //TakeDamage();
+        //}
     }
     
     //Routine
@@ -189,5 +208,11 @@ public class CacAI : MonoBehaviour
         // Wait 0.2 seconds
         yield return new WaitForSeconds(2f);
         Grabbed = false;
+    }
+    
+    public void HarpoonDragged(Transform col)
+    {
+        transform.position = col.transform.position;
+
     }
 }
