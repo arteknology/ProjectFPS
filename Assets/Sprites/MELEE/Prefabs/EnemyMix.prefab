@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 4650491987791435656}
   - component: {fileID: 4650491987791435660}
   - component: {fileID: 4650491987791435659}
+  - component: {fileID: 3935216037154462097}
   m_Layer: 0
   m_Name: EnemyMix
   m_TagString: Untagged
@@ -145,6 +146,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b62dba7082733b5429f11ca2c06c5f98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Pointe: {fileID: 0}
   DistanceToAttack: 2
   AttackDist: 2.5
   ToAway: 10
@@ -153,10 +155,27 @@ MonoBehaviour:
   BulletPoint: {fileID: 4650491987997195967}
   Constant: 35
   fireRate: 1.5
-  Life: 15
+  MaxLife: 120
+  CurrentLife: 0
   PlayerDamages: 3
   Damages: 10
   Grabbed: 0
+--- !u!54 &3935216037154462097
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4650491987791435653}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 1
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &4650491987997195966
 GameObject:
   m_ObjectHideFlags: 0
