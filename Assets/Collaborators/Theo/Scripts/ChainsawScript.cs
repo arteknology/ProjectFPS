@@ -59,6 +59,6 @@ public class ChainsawScript : MonoBehaviour
         {
             enemy.TakeDamage(10);
         }
-        //Debug.Log("COUPE COUPE COUPE");
+        Debug.Log("COUPE COUPE COUPE");
     }
 }

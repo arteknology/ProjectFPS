@@ -18,6 +18,7 @@
               <e p="HarpoonScript.cs" t="Include" />
               <e p="PlayerCamera.cs" t="Include" />
               <e p="PlayerHandler.cs" t="Include" />
+              <e p="ScieCirculaireScript.cs" t="Include" />
               <e p="SpikeTrapScripts.cs" t="Include" />
             </e>
           </e>
