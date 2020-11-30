@@ -7,7 +7,6 @@ public class SpikeTrapScripts : MonoBehaviour
 {
     public float startDelay, delayBetweenDamage;
     public int damage = 20;
-    public Transform spikeSpawner;
     public GameObject pics;
 
     List<IDamageable> entitiesInside = new List<IDamageable>();

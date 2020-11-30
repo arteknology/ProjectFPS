@@ -5,12 +5,14 @@ using UnityEngine;
 
 public class AcidScript : MonoBehaviour
 {
+    public int damage = 5;
+    public float timeBetweenDamage = 1f;
     public List<IDamageable> EntitiesInside = new List<IDamageable>();
 
 
     private void Start()
     {
-        InvokeRepeating("DamageEntities", 0f, 1f);
+        InvokeRepeating("DamageEntities", 0f, timeBetweenDamage);
     }
 
     private void OnTriggerEnter(Collider other)
@@ -33,7 +35,7 @@ public class AcidScript : MonoBehaviour
         foreach (IDamageable entity in EntitiesInside)
         {
             Debug.Log("Ouille");
-            entity.TakeDamage(5);
+            entity.TakeDamage(damage);
         }
 
         /*if (EntitiesInside.Count<1)
