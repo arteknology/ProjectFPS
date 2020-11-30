@@ -42,6 +42,7 @@ public class PlayerHandler : MonoBehaviour, IDamageable
 
     // Feedback stuff
     public AudioSource damageSound;
+    public AudioClip deathSound;
     
     //Chainsaw stuff
     public bool isDetectingEnemy;
@@ -321,6 +322,8 @@ public class PlayerHandler : MonoBehaviour, IDamageable
         if (_state==State.Dead) return;
         transform.Translate(Vector3.up* -1.25f);
         transform.Rotate(new Vector3(0,0,45f));
+        if (deathSound!=null) damageSound.clip = deathSound;
+        damageSound.Play();
         currentHealth = 0;
         _state= State.Dead;
         Debug.Log("T MOR");

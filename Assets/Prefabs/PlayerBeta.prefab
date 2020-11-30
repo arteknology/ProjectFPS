@@ -618,6 +618,7 @@ MonoBehaviour:
   harpoonedEnemy: {fileID: 0}
   Pointe: {fileID: 6134258091066166248}
   damageSound: {fileID: 613069350140886908}
+  deathSound: {fileID: 8300000, guid: e284e5c8ae4267b45aede17f22e96e41, type: 3}
   isDetectingEnemy: 0
 --- !u!1 &6134258091896084061
 GameObject:
