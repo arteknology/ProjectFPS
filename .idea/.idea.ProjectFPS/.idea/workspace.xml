@@ -51,8 +51,8 @@
         <option value="$PROJECT_DIR$/Assets/Sprites/MELEE/Scripts/ProjectileDamage.cs" />
         <option value="$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/EnemyMixV2.cs" />
         <option value="$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/PlayerHandler.cs" />
-        <option value="$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/EnemyMixAIV3.cs" />
         <option value="$PROJECT_DIR$/Assets/Sprites/MELEE/Scripts/CacAI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/EnemyMixAIV3.cs" />
         <option value="$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/CacAIV2.cs" />
       </list>
     </option>
@@ -121,7 +121,7 @@
       <workItem from="1606476788528" duration="1541000" />
       <workItem from="1606482366575" duration="14803000" />
       <workItem from="1606666979587" duration="2822000" />
-      <workItem from="1606741553206" duration="508000" />
+      <workItem from="1606741553206" duration="3191000" />
     </task>
     <servers />
   </component>
@@ -134,10 +134,10 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1114" y="401" key="RiderGenerateDialog" timestamp="1606495526701">
+    <state x="1114" y="401" key="RiderGenerateDialog" timestamp="1606743175394">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1114" y="401" key="RiderGenerateDialog/2560.160.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1606495526701" />
+    <state x="1114" y="401" key="RiderGenerateDialog/2560.160.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1606743175394" />
     <state x="936" y="332" key="run.anything.popup" timestamp="1604669963857">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
