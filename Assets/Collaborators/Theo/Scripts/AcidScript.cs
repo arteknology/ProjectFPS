@@ -17,14 +17,15 @@ public class AcidScript : MonoBehaviour
     {
         Debug.Log("Je détecte un truc");
         IDamageable entity = other.GetComponentInParent<IDamageable>();
-        EntitiesInside.Add(entity);
+        if (entity!=null && EntitiesInside.Contains(entity)==false) EntitiesInside.Add(entity);
     }
 
     private void OnTriggerExit(Collider other)
     {
         IDamageable entity = other.GetComponentInParent<IDamageable>();
         Debug.Log(entity + "S'en va");
-        EntitiesInside.Remove(entity);
+
+        if (entity!=null && EntitiesInside.Contains(entity)) EntitiesInside.Remove(entity);
     }
 
     void DamageEntities()
@@ -35,10 +36,10 @@ public class AcidScript : MonoBehaviour
             entity.TakeDamage(5);
         }
 
-        if (EntitiesInside == null)
+        /*if (EntitiesInside.Count<1)
         {
             Debug.Log("Y'a personne wesh");
-        }
+        }*/
 
     }
 }
