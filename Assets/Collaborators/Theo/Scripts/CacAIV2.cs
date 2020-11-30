@@ -53,34 +53,64 @@ public class CacAIV2 : MonoBehaviour, IDamageable
         switch (_currentState)
         {
             case State.Idle:
-                if (_playerIsInSight)
+                if (!_playerIsInSight)
                 {
                     _currentState = State.Chasing;
                 }
-                else if (_haveMeleeAttack && _playerIsInMeleeRange)
+                else if (_playerIsInSight)
+                {
+                    _currentState = State.Chasing;
+                }
+                else if (_playerIsInMeleeRange)
                 {
                     _currentState = State.Melee;
                 }
-                else if (_playerIsInSight)
+                else if (_hasAttacked)
                 {
-                    _currentState = State.Walking;
+                    _currentState = State.Flee;
                 }
-                
                 else if (isGrabbed)
                 {
                     _currentState = State.Hooked;
                 }
                 break;
-                break;
+            
             case State.Chasing:
+                ChasePlayer();
+                _animator.SetBool("IsIdle", false);
+                _animator.SetBool("IsChasing", true);
+                _animator.SetBool("IsMelee", false);
+                _animator.SetBool("IsFleeing", false);
                 break;
             case State.Melee:
+                MeleeAttack();
+                _animator.SetBool("IsIdle", false);
+                _animator.SetBool("IsChasing", false);
+                _animator.SetBool("IsMelee", true);
+                _animator.SetBool("IsFleeing", false);
                 return;
             case State.Flee:
+                _animator.SetBool("IsIdle", false);
+                _animator.SetBool("IsChasing", false);
+                _animator.SetBool("IsMelee", false);
+                _animator.SetBool("IsFleeing", true);
+                Flee();
                 return;
             case State.Hooked:
+                Harpooned(pointe.transform);
+                _animator.SetBool("IsIdle", true);
+                _animator.SetBool("IsChasing", false);
+                _animator.SetBool("IsMelee", false);
+                _animator.SetBool("IsFleeing", false);
                 return;
             case State.Dead:
+                Die();
+                _animator.SetBool("IsIdle", false);
+                _animator.SetBool("IsChasing", false);
+                _animator.SetBool("IsMelee", false);
+                _animator.SetBool("IsFleeing", false);
+                _animator.SetBool("IsDead", true);
+                
                 return;
             default:
                 throw new ArgumentOutOfRangeException();
@@ -90,11 +120,6 @@ public class CacAIV2 : MonoBehaviour, IDamageable
         {
             _currentHealth = 0;
             _currentState = State.Dead;
-        }
-
-        if (isGrabbed)
-        {
-            _currentState = State.Hooked;
         }
     }
 
