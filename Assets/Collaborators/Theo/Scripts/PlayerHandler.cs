@@ -39,6 +39,9 @@ public class PlayerHandler : MonoBehaviour, IDamageable
     private float _cameraVerticalAngle;
     private float _characterVelocityY;
     private Camera _playerCamera;
+
+    // Feedback stuff
+    public AudioSource damageSound;
     
     //Chainsaw stuff
     public bool isDetectingEnemy;
@@ -53,7 +56,7 @@ public class PlayerHandler : MonoBehaviour, IDamageable
         HarpoonMovingPlayer,
         HarpoonRetract,
         Chainsaw,
-        Die
+        Dead
     }
     
     private void Awake()
@@ -96,16 +99,15 @@ public class PlayerHandler : MonoBehaviour, IDamageable
                 HandleCharacterLook();
                 HandleHarpoonBack();
                 break;
-            case State.Die:
-                Die();
+            case State.Dead:
                 break;
         }
         
         healthDisplay.text = currentHealth + "/100";
 
-        if (currentHealth <= 0)
+        if (currentHealth <= 0 && _state!= State.Dead)
         {
-            _state = State.Die;
+            Die();
         }
     }
 
@@ -309,12 +311,18 @@ public class PlayerHandler : MonoBehaviour, IDamageable
 
     public void TakeDamage(int amount)
     {
+        if (_state==State.Dead) return;
+        damageSound.Play();
         currentHealth -= amount;
     }
 
     public void Die()
     {
+        if (_state==State.Dead) return;
+        transform.Translate(Vector3.up* -1.25f);
+        transform.Rotate(new Vector3(0,0,45f));
         currentHealth = 0;
+        _state= State.Dead;
         Debug.Log("T MOR");
     }
 }
