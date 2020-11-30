@@ -124,6 +124,7 @@ public class CacAIV2 : MonoBehaviour, IDamageable
 
     private void ChasePlayer()
     {
+        SetAnimation("IsChasing");
         _navMeshAgent.speed = _enemySpeed;
         _navMeshAgent.SetDestination(_player.transform.position);
         if (_playerIsInMeleeRange)
