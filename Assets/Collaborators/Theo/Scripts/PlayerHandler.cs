@@ -63,7 +63,7 @@ public class PlayerHandler : MonoBehaviour, IDamageable
     private void Awake()
     {
         _characterController = GetComponent<CharacterController>();
-        _playerCamera = transform.Find("Camera").GetComponent<Camera>();
+        _playerCamera = GetComponentInChildren<Camera>();
         Cursor.lockState = CursorLockMode.Locked;
         _state = State.Normal;
         //harpoonTransform.gameObject.SetActive(false);
@@ -315,6 +315,7 @@ public class PlayerHandler : MonoBehaviour, IDamageable
         if (_state==State.Dead) return;
         damageSound.Play();
         currentHealth -= amount;
+        ScreenShake.Shake(10f);
     }
 
     public void Die()

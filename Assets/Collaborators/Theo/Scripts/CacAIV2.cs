@@ -30,6 +30,11 @@ public class CacAIV2 : MonoBehaviour, IDamageable
 
     private bool _isAlive;
 
+    Coroutine attack;
+
+
+
+
     private enum State
     {
         Idle,
@@ -116,11 +121,27 @@ public class CacAIV2 : MonoBehaviour, IDamageable
 
     private void MeleeAttack()
     {
-        Debug.Log("PAF");
         SetAnimation("IsMelee");
-        _playerHealth.TakeDamage(10);
-        _currentState = State.Flee;
+        if (attack ==null)
+        {
+            attack = StartCoroutine(Attack());
+        }
+
     }
+
+    IEnumerator Attack()
+    {
+        Debug.Log("PAF");
+        _navMeshAgent.speed = 0;
+        _navMeshAgent.SetDestination(transform.position);
+        yield return new WaitForSeconds(0.2f);
+        _playerHealth.TakeDamage(10);
+        yield return new WaitForSeconds(0.25f);
+        _currentState = State.Flee;
+        attack = null;
+    }
+
+
 
     private void ChasePlayer()
     {
