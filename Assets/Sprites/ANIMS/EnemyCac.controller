@@ -12,7 +12,7 @@ AnimatorStateTransition:
     m_ConditionEvent: IsFleeing
     m_EventTreshold: 0
   - m_ConditionMode: 2
-    m_ConditionEvent: IsInactive
+    m_ConditionEvent: IsIdle
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 2993317848130384694}
@@ -37,10 +37,10 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: IsAttacking
+    m_ConditionEvent: IsMelee
     m_EventTreshold: 0
   - m_ConditionMode: 2
-    m_ConditionEvent: IsInactive
+    m_ConditionEvent: IsIdle
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -5105418295189481382}
@@ -65,10 +65,10 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: IsAttacking
+    m_ConditionEvent: IsMelee
     m_EventTreshold: 0
   - m_ConditionMode: 2
-    m_ConditionEvent: IsChasing
+    m_ConditionEvent: IsFleeing
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -5105418295189481382}
@@ -243,19 +243,19 @@ AnimatorController:
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
-  - m_Name: IsAttacking
-    m_Type: 4
-    m_DefaultFloat: 0
-    m_DefaultInt: 0
-    m_DefaultBool: 0
-    m_Controller: {fileID: 0}
   - m_Name: IsDead
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
-  - m_Name: IsInactive
+  - m_Name: IsIdle
+    m_Type: 4
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 0}
+  - m_Name: IsMelee
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
@@ -286,7 +286,7 @@ AnimatorStateTransition:
     m_ConditionEvent: IsFleeing
     m_EventTreshold: 0
   - m_ConditionMode: 2
-    m_ConditionEvent: IsAttacking
+    m_ConditionEvent: IsMelee
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 2993317848130384694}
@@ -311,7 +311,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: IsAttacking
+    m_ConditionEvent: IsMelee
     m_EventTreshold: 0
   - m_ConditionMode: 2
     m_ConditionEvent: IsChasing
@@ -367,7 +367,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 2
-    m_ConditionEvent: IsAttacking
+    m_ConditionEvent: IsMelee
     m_EventTreshold: 0
   - m_ConditionMode: 1
     m_ConditionEvent: IsChasing
@@ -422,7 +422,10 @@ AnimatorStateTransition:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: 
-  m_Conditions: []
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: IsDead
+    m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 6960485786423892470}
   m_Solo: 0
@@ -463,7 +466,7 @@ AnimatorStateTransition:
     m_ConditionEvent: IsChasing
     m_EventTreshold: 0
   - m_ConditionMode: 2
-    m_ConditionEvent: IsInactive
+    m_ConditionEvent: IsIdle
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -516969033815868249}

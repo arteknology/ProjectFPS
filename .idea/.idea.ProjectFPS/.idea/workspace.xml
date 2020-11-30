@@ -51,8 +51,8 @@
         <option value="$PROJECT_DIR$/Assets/Sprites/MELEE/Scripts/ProjectileDamage.cs" />
         <option value="$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/EnemyMixV2.cs" />
         <option value="$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/PlayerHandler.cs" />
-        <option value="$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/EnemyMixAIV3.cs" />
         <option value="$PROJECT_DIR$/Assets/Sprites/MELEE/Scripts/CacAI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/EnemyMixAIV3.cs" />
         <option value="$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/CacAIV2.cs" />
       </list>
     </option>
@@ -63,6 +63,8 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.34995976" />
+    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.30008045" />
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -78,10 +80,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="23212">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="23212" />
       <option name="selectedOptions">
         <set />
       </option>
@@ -121,7 +123,8 @@
       <workItem from="1606476788528" duration="1541000" />
       <workItem from="1606482366575" duration="14803000" />
       <workItem from="1606666979587" duration="2822000" />
-      <workItem from="1606741553206" duration="508000" />
+      <workItem from="1606741553206" duration="3191000" />
+      <workItem from="1606745044904" duration="2428000" />
     </task>
     <servers />
   </component>
@@ -134,10 +137,10 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1114" y="401" key="RiderGenerateDialog" timestamp="1606495526701">
+    <state x="1114" y="401" key="RiderGenerateDialog" timestamp="1606743175394">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1114" y="401" key="RiderGenerateDialog/2560.160.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1606495526701" />
+    <state x="1114" y="401" key="RiderGenerateDialog/2560.160.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1606743175394" />
     <state x="936" y="332" key="run.anything.popup" timestamp="1604669963857">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>

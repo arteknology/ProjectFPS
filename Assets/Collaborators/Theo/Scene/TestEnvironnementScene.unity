@@ -7000,8 +7000,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76ba00d8e6bad1d4fb8fd377527a9622, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spikes: {fileID: 4745699435444326457, guid: c2728a59d8b6b7447a7441d30ba177d3, type: 3}
+  startDelay: 0
+  delayBetweenDamage: 0
+  damage: 20
   spikeSpawner: {fileID: 214736100}
+  pics: {fileID: 0}
 --- !u!1 &941409032
 GameObject:
   m_ObjectHideFlags: 0
@@ -15378,7 +15381,8 @@ PrefabInstance:
       propertyPath: Pointe
       value: 
       objectReference: {fileID: 178059900}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3094170946894248938, guid: 261191501f39dad4f8f96116abd90e1d, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 261191501f39dad4f8f96116abd90e1d, type: 3}
 --- !u!1 &1829041899 stripped
 GameObject:
@@ -15405,6 +15409,21 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1829041901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1829041899}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9332c6f76eb24ba47b1b0fa409613a72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pointe: {fileID: 178059900}
+  isGrabbed: 0
+  _playerIsInSight: 0
 --- !u!1 &1829562603
 GameObject:
   m_ObjectHideFlags: 0
