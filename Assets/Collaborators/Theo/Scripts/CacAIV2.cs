@@ -46,6 +46,7 @@ public class CacAIV2 : MonoBehaviour, IDamageable
         _animator.SetBool("isIdle", true);
         isGrabbed = false;
         _hasAttacked = false;
+        _navMeshAgent = GetComponent<NavMeshAgent>();
     }
 
     private void Update()
