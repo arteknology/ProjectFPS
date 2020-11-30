@@ -4,8 +4,12 @@ using UnityEngine;
 
 public class CameraBillboard : MonoBehaviour
 {
+    Vector3 target = Vector3.zero;
+
     private void LateUpdate()
     {
-        transform.forward = new Vector3(Camera.main.transform.forward.x, transform.forward.y, Camera.main.transform.forward.z);
+        target = Camera.main.transform.position - transform.position;
+        target.y = 0;
+        transform.rotation = Quaternion.LookRotation(target);
     }
 }

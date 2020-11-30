@@ -29,7 +29,7 @@ public class PlayerHandler : MonoBehaviour, IDamageable
     //Harpoon stuff
     private Vector3 _harpoonPosition;
     private float _harpoonSize;
-    public Transform Pointe;
+    public static Transform Pointe;
     private Vector3 _oldPointePos;
     private IHarpoonable enemy;
     private bool hasHarpooned = false;
@@ -67,7 +67,7 @@ public class PlayerHandler : MonoBehaviour, IDamageable
         Cursor.lockState = CursorLockMode.Locked;
         _state = State.Normal;
         //harpoonTransform.gameObject.SetActive(false);
-
+        Pointe = GameObject.FindGameObjectWithTag("Harpoon").transform;
         currentHealth = maxHealth;
     }
 

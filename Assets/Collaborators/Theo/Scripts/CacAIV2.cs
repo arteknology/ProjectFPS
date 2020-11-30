@@ -15,8 +15,6 @@ public class CacAIV2 : MonoBehaviour, IDamageable
 
     private Animator _animator;
 
-    public GameObject pointe;
-
     private int _maxHealth = 10;
     private int _currentHealth;
 
@@ -42,69 +40,77 @@ public class CacAIV2 : MonoBehaviour, IDamageable
         Dead
     }
 
-    private void Start()
+    void Awake()
     {
-        _isAlive = true;
         _player = GameObject.FindWithTag("Player");
         _playerHealth = _player.GetComponent<IDamageable>();
+        _animator = GetComponentInChildren<Animator>();
+        _navMeshAgent = GetComponent<NavMeshAgent>();
+    }
+
+    private void Start()
+    {
         _currentHealth = _maxHealth;
-        _animator = GetComponent<Animator>();
-        _animator.SetBool("IsIdle", true);
+        _isAlive = true;
         isGrabbed = false;
         _hasAttacked = false;
-        _navMeshAgent = GetComponent<NavMeshAgent>();
         _playerIsInSight = true;
+        _currentState = State.Idle;
     }
 
     private void Update()
     {
+
+        if (_isAlive)
+        {
+            if (isGrabbed)
+            {
+                _currentState = State.Hooked;
+            }
+
+            if (_currentHealth <= 0)
+            {
+                _currentHealth = 0;
+                Die();
+            }
+        }
+
+
+
         switch (_currentState)
         {
             case State.Idle:
-                if (!_playerIsInSight)
-                {
-                    _currentState = State.Idle;
-                }
-                else
+                SetAnimation("IsIdle");
+                if (_playerIsInSight)
                 {
                     _currentState = State.Chasing;
                 }
-                if (_playerIsInMeleeRange)
-                {
-                    _currentState = State.Melee;
-                }
-                if (isGrabbed)
-                {
-                    _currentState = State.Hooked;
-                }
-                break;
+            break;
             
             case State.Chasing:
                 ChasePlayer();
-                break;
+            break;
+
             case State.Melee:
                 MeleeAttack();
                 SetAnimation("IsMelee");
-                return;
+            break;
+
             case State.Flee:
                 SetAnimation("IsFleeing");
                 Flee();
-                return;
+            break;
+
             case State.Hooked:
-                Harpooned(pointe.transform);
+                Harpooned(PlayerHandler.Pointe);
                 SetAnimation("IsIdle");
-                return;
+            break;
+
             case State.Dead:
-                return;
-            default:
-                throw new ArgumentOutOfRangeException();
+            break;
         }
 
-        if (_currentHealth <= 0 && _isAlive)
-        {
-            _currentHealth = 0;
-            Die();
-        }
+
         
     }
 
@@ -119,9 +125,7 @@ public class CacAIV2 : MonoBehaviour, IDamageable
     private void ChasePlayer()
     {
         _navMeshAgent.speed = _enemySpeed;
-        Vector3 dirToPlayer = transform.position - _player.transform.position;
-        Vector3 newPos = transform.position - dirToPlayer;
-        _navMeshAgent.SetDestination(newPos);
+        _navMeshAgent.SetDestination(_player.transform.position);
         if (_playerIsInMeleeRange)
         {
             _currentState = State.Melee;
@@ -137,6 +141,7 @@ public class CacAIV2 : MonoBehaviour, IDamageable
 
         if (_playerIsEnoughFar)
         {
+            Debug.Log("Je retourne au contact");
             _currentState = State.Chasing;
         }
         
