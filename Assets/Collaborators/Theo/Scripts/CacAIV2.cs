@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class CacAIV2 : MonoBehaviour, IDamageable
+public class CacAIV2 : MonoBehaviour, IDamageable, IHarpoonable
 {
     private NavMeshAgent _navMeshAgent;
     private GameObject _player;
@@ -29,6 +29,14 @@ public class CacAIV2 : MonoBehaviour, IDamageable
     public bool _playerIsInSight;
 
     private bool _isAlive;
+
+    Coroutine attack;
+    Coroutine fleeing;
+
+    float unhookedSince = 0;
+
+
+
 
     private enum State
     {
@@ -63,10 +71,7 @@ public class CacAIV2 : MonoBehaviour, IDamageable
 
         if (_isAlive)
         {
-            if (isGrabbed)
-            {
-                _currentState = State.Hooked;
-            }
+            unhookedSince += Time.deltaTime;
 
             if (_currentHealth <= 0)
             {
@@ -102,11 +107,12 @@ public class CacAIV2 : MonoBehaviour, IDamageable
             break;
 
             case State.Hooked:
-                Harpooned(PlayerHandler.Pointe);
+                InHarpoon();
                 SetAnimation("IsIdle");
             break;
 
             case State.Dead:
+                SetAnimation("IsDead");
             break;
         }
 
@@ -116,18 +122,34 @@ public class CacAIV2 : MonoBehaviour, IDamageable
 
     private void MeleeAttack()
     {
-        Debug.Log("PAF");
         SetAnimation("IsMelee");
-        _playerHealth.TakeDamage(10);
-        _currentState = State.Flee;
+        if (attack ==null)
+        {
+            attack = StartCoroutine(Attack());
+        }
+
     }
+
+    IEnumerator Attack()
+    {
+        Debug.Log("PAF");
+        _navMeshAgent.speed = 0;
+        _navMeshAgent.SetDestination(transform.position);
+        yield return new WaitForSeconds(0.2f);
+        _playerHealth.TakeDamage(10);
+        yield return new WaitForSeconds(0.25f);
+        _currentState = State.Flee;
+        attack = null;
+    }
+
+
 
     private void ChasePlayer()
     {
         SetAnimation("IsChasing");
         _navMeshAgent.speed = _enemySpeed;
         _navMeshAgent.SetDestination(_player.transform.position);
-        if (_playerIsInMeleeRange)
+        if (_playerIsInMeleeRange && unhookedSince>2f)
         {
             _currentState = State.Melee;
         }
@@ -140,17 +162,41 @@ public class CacAIV2 : MonoBehaviour, IDamageable
         Vector3 newPos = transform.position + dirToPlayer;
         _navMeshAgent.SetDestination(newPos);
 
-        if (_playerIsEnoughFar)
-        {
-            Debug.Log("Je retourne au contact");
-            _currentState = State.Chasing;
-        }
-        
+        if (fleeing==null) fleeing = StartCoroutine(Fleeing());
     }
 
-    private void Harpooned(Transform col)
+    IEnumerator Fleeing()
     {
-        transform.position = col.transform.position;
+        yield return new WaitForSeconds(2f+ UnityEngine.Random.value*2f);
+        _currentState = State.Idle;
+        Debug.Log("Je retourne au contact");
+        fleeing = null;
+    }
+
+
+
+    public void Harpooned() // LE MOMENT OÙ IL EST HARPONNÉ
+    {
+        if (!_isAlive) return;
+        Debug.Log("Crochet crochet j't'ai accroché");
+        _navMeshAgent.isStopped = true;
+        unhookedSince = 0;
+        _currentState = State.Hooked;
+        isGrabbed = true;
+    }
+
+    void InHarpoon() // CHAQUE UPDATE QUAND IL EST DANS LE HARPON
+    {
+        transform.position = PlayerHandler.Pointe.transform.position;
+    }
+
+    public void Released() // LE MOMENT OÙ IL EST RELÂCHÉ
+    {
+        if (!_isAlive) return;
+        isGrabbed = false;
+        transform.position = PlayerHandler.releasedEnemy.position;
+        _navMeshAgent.isStopped = false;
+        _currentState = State.Idle;
     }
 
     public void Die()
@@ -158,12 +204,18 @@ public class CacAIV2 : MonoBehaviour, IDamageable
         if (_isAlive == false) return;
         _isAlive = false;
         Debug.Log("J'AI MAAAAAAAAAAAAAAAAL");
-        _navMeshAgent.speed = 0;
+        Destroy(_navMeshAgent);
+        foreach (BoxCollider box in GetComponentsInChildren<BoxCollider>())
+        {
+            box.isTrigger = true;
+        }
+        _currentState = State.Dead;
         SetAnimation("IsDead");
     }
 
     public void TakeDamage(int amount)
     {
+        if (!_isAlive) return;
         _currentHealth = _currentHealth - amount;
     }
 

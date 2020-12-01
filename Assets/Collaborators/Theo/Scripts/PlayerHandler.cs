@@ -16,13 +16,12 @@ public class PlayerHandler : MonoBehaviour, IDamageable
 
     [SerializeField] public float maximumRange;
 
-    public Transform releasedEnemy;
+    public static Transform releasedEnemy;
     
     public float maxHealth = 100f;
     public float currentHealth;
     public TextMeshProUGUI healthDisplay;
     
-    [SerializeField] public GameObject harpoonedEnemy;
 
     //private float _clampedXRotation = 30f;
     
@@ -32,6 +31,7 @@ public class PlayerHandler : MonoBehaviour, IDamageable
     public static Transform Pointe;
     private Vector3 _oldPointePos;
     private IHarpoonable enemy;
+    Transform enemyTransform;
     private bool hasHarpooned = false;
     
     //Player stuff
@@ -63,12 +63,14 @@ public class PlayerHandler : MonoBehaviour, IDamageable
     private void Awake()
     {
         _characterController = GetComponent<CharacterController>();
-        _playerCamera = transform.Find("Camera").GetComponent<Camera>();
+        _playerCamera = GetComponentInChildren<Camera>();
         Cursor.lockState = CursorLockMode.Locked;
         _state = State.Normal;
         //harpoonTransform.gameObject.SetActive(false);
         Pointe = GameObject.FindGameObjectWithTag("Harpoon").transform;
         currentHealth = maxHealth;
+        transform.Find("GRAPHICS").gameObject.SetActive(false);
+        releasedEnemy = transform.Find("ReleasedEnemy");
     }
 
     private void Update()
@@ -198,12 +200,8 @@ public class PlayerHandler : MonoBehaviour, IDamageable
     void HandleHarpoonBack() // LE HARPON REVIENT SANS RIEN
     {
         MoveHarpoon(-80f);
-        if (harpoonedEnemy == null && _harpoonSize <= 1f)
-        {
-            StopHarpoon();
-        }
     
-        if (harpoonedEnemy && _harpoonSize <= 2f)
+        if (_harpoonSize <= 2f)
         {
             StopHarpoon();
         }
@@ -211,29 +209,18 @@ public class PlayerHandler : MonoBehaviour, IDamageable
 
     void StopHarpoon()
     {
-        if (enemy!= null) enemy.Released();
-        enemy = null;
+        if (enemy!= null)
+        {
+            Debug.Log("Je relâche l'ennemi");
+            enemy.Released();
+            enemy = null;
+        }
         Pointe.localPosition = Vector3.forward;
         _state = State.Normal;
         ResetGravityEffect();
-        //harpoonTransform.gameObject.SetActive(false);
         hasHarpooned = false;
-
-        if (harpoonedEnemy)
-        {
-            if (harpoonedEnemy.GetComponent<CacAI>())
-                harpoonedEnemy.GetComponent<CacAI>().Grabbed = false;
-                    
-            if (harpoonedEnemy.GetComponent<DistAIV2>())
-                harpoonedEnemy.GetComponent<DistAIV2>().isGrabbed = false;
-                    
-            if (harpoonedEnemy.GetComponent<EnemyMixAIV3>())
-                harpoonedEnemy.GetComponent<EnemyMixAIV3>().isGrabbed = false;
-
-            harpoonedEnemy.transform.position = releasedEnemy.transform.position;
-        }
-
     }
+
 
     void MoveHarpoon(float speed)
     {
@@ -248,35 +235,15 @@ public class PlayerHandler : MonoBehaviour, IDamageable
                 hasHarpooned = true;
                 Debug.Log("Le harpon a touché "+hit.transform.name);
                 _harpoonSize = (hit.point - harpoonTransform.position).magnitude;
-                /*IHarpoonable tructouche = hit.transform.GetComponentInParent<IHarpoonable>();
+                IHarpoonable tructouche = hit.transform.GetComponentInParent<IHarpoonable>();
                 
 
                 if (tructouche!=null) // SI LE HARPON A TOUCHÉ UN ENNEMI
                 {
-                    //enemy = tructouche;
-                    //enemy.Harpooned();
-                    
-                    harpoonedEnemy = hit.transform.gameObject;
-                    Debug.Log(harpoonedEnemy.name);
-                    harpoonedEnemy.GetComponent<EnemyTestScript>().Harpoon(Pointe);
-                    
-                    _state = State.HarpoonRetract;
-                }*/
-                
-                if (hit.collider.CompareTag("Enemy")) // SI LE HARPON A TOUCHÉ UN ENNEMI
-                {
-
-                    harpoonedEnemy = hit.transform.gameObject;
-                    Debug.Log(harpoonedEnemy.name);
-                    if (harpoonedEnemy.GetComponent<CacAI>())
-                        harpoonedEnemy.GetComponent<CacAI>().Grabbed = true;
-                    
-                    if (harpoonedEnemy.GetComponent<EnemyMixAIV3>())
-                        harpoonedEnemy.GetComponent<EnemyMixAIV3>().isGrabbed = true;
-                    
-                    if (harpoonedEnemy.GetComponent<MixAI>())
-                        harpoonedEnemy.GetComponent<MixAI>().Grabbed = true;
-                    
+                    enemy = tructouche;
+                    enemy.Harpooned();
+                    enemyTransform = hit.transform;
+                    Debug.Log(enemyTransform.name);  
                     _state = State.HarpoonRetract;
                 }
                 else if (speed > 0 && hit.transform.CompareTag("Wall")) // SI LE HARPON A TOUCHÉ UN MUR HARPONNABLE
@@ -315,6 +282,7 @@ public class PlayerHandler : MonoBehaviour, IDamageable
         if (_state==State.Dead) return;
         damageSound.Play();
         currentHealth -= amount;
+        ScreenShake.Shake(10f);
     }
 
     public void Die()
