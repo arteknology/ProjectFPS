@@ -85,7 +85,7 @@ public class CacAIV2 : MonoBehaviour, IDamageable
                 {
                     _currentState = State.Chasing;
                 }
-            break;
+                break;
             
             case State.Chasing:
                 ChasePlayer();
