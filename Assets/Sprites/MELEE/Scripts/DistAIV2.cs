@@ -5,126 +5,187 @@ using UnityEditorInternal;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class DistAIV2 : MonoBehaviour, IDamageable
+public class DistAIV2 : MonoBehaviour, IDamageable, IHarpoonable
 {
-   private NavMeshAgent _navMesh;
+   private NavMeshAgent _navMeshAgent;
    private GameObject _player;
-
-   public GameObject pointe;
 
    public GameObject projectile;
    public Transform bulletPoint;
    public float constant;
    public float fireRate;
    private float _nextFire;
-   public float distanceToAttack;
-
-   public float distanceFromPlayer;
    
-   public float currentHealth;
-   public float maxHealth = 80;
-
-   public bool isGrabbed;
-   public bool hasAttacked;
+   private bool _isFarEnough => Vector3.Distance(transform.position, _player.transform.position) >20 ;
    
-   private State _state;
+   private float _currentHealth;
+   private float _maxHealth = 80;
+
+   private State _currentState;
+
+   private float unhookedSince = 0;
+
+   private bool _isAlive = true;
+
+   private bool _playerIsInSight;
 
    private enum State
    {
-      Normal,
+      Idle,
       Attacking,
       Running,
       Hooked,
-      Dying
+      Dead
    }
 
    private void Awake()
    {
-      _state = State.Normal;
+      _currentState = State.Idle;
 
-      currentHealth = maxHealth;
+      _currentHealth = _maxHealth;
 
-      hasAttacked = false;
-      isGrabbed = false;
-      
-      _navMesh = GetComponent<NavMeshAgent>();
+      _navMeshAgent = GetComponent<NavMeshAgent>();
       _player = GameObject.FindWithTag("Player");
+   }
+
+   private void Start()
+   {
+      _currentHealth = _maxHealth;
+      _isAlive = true;
+      _playerIsInSight = true;
+      _currentState = State.Idle;
    }
 
    private void Update()
    {
-      switch (_state)
+      if (_isAlive)
       {
-         case State.Normal:
-            
+         unhookedSince += Time.deltaTime;
+
+         if (_currentHealth <= 0)
+         {
+            _currentHealth = 0;
+            Die();
+         }
+      }
+      
+
+      switch (_currentState)
+      {
+         case State.Idle:
+            SetAnimation("IsIdle");
+            if (_playerIsInSight)
+            {
+               _currentState = State.Attacking;
+            }
+
             break;
+
          case State.Attacking:
             Shoot();
+            SetAnimation("IsMelee");
             break;
+
          case State.Running:
+            SetAnimation("IsFleeing");
             Run();
             break;
+
          case State.Hooked:
-            HarpoonDragged(pointe.transform);
+            InHarpoon();
+            SetAnimation("IsIdle");
             break;
-         case State.Dying:
-            Destroy(gameObject, 1f);
+
+         case State.Dead:
+            SetAnimation("IsDead");
             break;
       }
-
-      distanceFromPlayer = Vector3.Distance(transform.position, _player.transform.position);
       
-      if (distanceFromPlayer >= distanceToAttack)
+      if (_isFarEnough && _currentState != State.Hooked && unhookedSince>2f)
       {
-         _state = State.Attacking;
+         _currentState = State.Attacking;
       }
-      else
+      if (!_isFarEnough && _currentState != State.Hooked && unhookedSince>2f)
       {
-         _state = State.Running;
+         _currentState = State.Running;
       }
-
-      if (isGrabbed) _state = State.Hooked;
-
-      if (currentHealth <= 0) _state = State.Dying;
    }
 
    private void Run()
-   {
-      _navMesh.speed = 4.5f;
-      Vector3 dirToPlayer = transform.position - _player.transform.position;
-      Vector3 newPos = transform.position + dirToPlayer;
-      _navMesh.SetDestination(newPos);
-   }
+      {
+         _navMeshAgent.speed = 4.5f;
+         Vector3 dirToPlayer = transform.position - _player.transform.position;
+         Vector3 newPos = transform.position + dirToPlayer;
+         _navMeshAgent.SetDestination(newPos);
+      }
 
    private void Shoot()
    {
-      if (Time.time > _nextFire)
+      if (unhookedSince > 2f)
       {
-         _navMesh.speed = 0f;
-         _nextFire = Time.time + fireRate;
-         GameObject bullet = Instantiate(projectile, bulletPoint.position, bulletPoint.rotation);
-         Rigidbody bulletRb = bullet.GetComponent<Rigidbody>();
-         bulletRb.velocity = (_player.transform.position - bullet.transform.position).normalized * constant;
+         if (Time.time > _nextFire)
+         {
+            _navMeshAgent.speed = 0f;
+            _nextFire = Time.time + fireRate;
+            GameObject bullet = Instantiate(projectile, bulletPoint.position, bulletPoint.rotation);
+            Rigidbody bulletRb = bullet.GetComponent<Rigidbody>();
+            bulletRb.velocity = (_player.transform.position - bullet.transform.position).normalized * constant;
+         }
+   }
+}
+
+      public void Harpooned() // LE MOMENT OÙ IL EST HARPONNÉ
+      {
+         if (!_isAlive) return;
+         Debug.Log("Crochet crochet j't'ai accroché");
+         _navMeshAgent.isStopped = true;
+         unhookedSince = 0;
+         _currentState = State.Hooked;
       }
-   }
+      
+      void InHarpoon() // CHAQUE UPDATE QUAND IL EST DANS LE HARPON
+      {
+         transform.position = PlayerHandler.Pointe.transform.position;
+      }
 
-   void HarpoonDragged(Transform col)
-   {
-      _navMesh.speed = 0;
-      StartCoroutine(WaitForStunToEnd(2f));
-      transform.position = col.transform.position;
-   }
+      public void Released() // LE MOMENT OÙ IL EST RELÂCHÉ
+      {
+         if (!_isAlive) return;
+         transform.position = PlayerHandler.releasedEnemy.position;
+         _navMeshAgent.isStopped = false;
+         _currentState = State.Idle;
+      }
 
-   IEnumerator WaitForStunToEnd(float time)
-   {
-      yield return new WaitForSeconds(time);
-      isGrabbed = false;
-      _state = State.Running;
-   }
 
-   public void TakeDamage(int amount)
-   {
-      currentHealth = currentHealth - amount;
-      Debug.Log("Il me reste " + currentHealth);
-   }
+      public void TakeDamage(int amount)
+      {
+         _currentHealth = _currentHealth - amount;
+         Debug.Log("Il me reste " + _currentHealth);
+      }
+      
+      public void Die()
+      {
+         if (_isAlive == false) return;
+         _isAlive = false;
+         Debug.Log("J'AI MAAAAAAAAAAAAAAAAL");
+         Destroy(_navMeshAgent);
+         foreach (BoxCollider box in GetComponentsInChildren<BoxCollider>())
+         {
+            box.isTrigger = true;
+         }
+         _currentState = State.Dead;
+         SetAnimation("IsDead");
+      }
+
+      void SetAnimation(string animationSelected)
+      {
+         /*_animator.SetBool("IsIdle", false);
+         _animator.SetBool("IsChasing", false);
+         _animator.SetBool("IsMelee", false);
+         _animator.SetBool("IsFleeing", false);
+         _animator.SetBool("IsDead", false);
+           
+         _animator.SetBool(animationSelected, true);*/
+      }
+
 }

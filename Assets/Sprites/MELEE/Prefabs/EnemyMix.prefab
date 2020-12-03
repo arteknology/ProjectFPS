@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 4650491987791435657}
   - component: {fileID: 4650491987791435656}
   - component: {fileID: 4650491987791435660}
-  - component: {fileID: 4650491987791435659}
   - component: {fileID: 3935216037154462097}
+  - component: {fileID: 7932553063814575274}
   m_Layer: 0
   m_Name: EnemyMix
   m_TagString: Untagged
@@ -86,7 +86,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  m_SpriteSortPoint: 1
 --- !u!114 &4650491987791435657
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -134,32 +134,6 @@ NavMeshAgent:
   m_BaseOffset: 4.0913534
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!114 &4650491987791435659
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4650491987791435653}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b62dba7082733b5429f11ca2c06c5f98, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Pointe: {fileID: 0}
-  DistanceToAttack: 2
-  AttackDist: 2.5
-  ToAway: 10
-  Projectile: {fileID: 7833934131304695165, guid: 0c54861ca8652d54fbe2a0384fec85ce,
-    type: 3}
-  BulletPoint: {fileID: 4650491987997195967}
-  Constant: 35
-  fireRate: 1.5
-  MaxLife: 120
-  CurrentLife: 0
-  PlayerDamages: 3
-  Damages: 10
-  Grabbed: 0
 --- !u!54 &3935216037154462097
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -176,6 +150,25 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &7932553063814575274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4650491987791435653}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0520d8df86512f946982aa28ebcd9f75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 7833934131304695165, guid: 0c54861ca8652d54fbe2a0384fec85ce,
+    type: 3}
+  bulletPoint: {fileID: 4650491987997195967}
+  constant: 15
+  fireRate: 0.5
+  distanceFromPlayer: 0
+  isGrabbed: 0
 --- !u!1 &4650491987997195966
 GameObject:
   m_ObjectHideFlags: 0
@@ -200,7 +193,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4650491987997195966}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.99, y: 0.96, z: 0}
+  m_LocalPosition: {x: -0.38, y: 0.96, z: 0.43}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4650491987791435654}

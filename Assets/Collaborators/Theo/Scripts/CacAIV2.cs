@@ -19,7 +19,6 @@ public class CacAIV2 : MonoBehaviour, IDamageable, IHarpoonable
     private int _currentHealth;
 
     private bool _playerIsInMeleeRange => Vector3.Distance(transform.position, _player.transform.position) < 3;
-    private bool _playerIsEnoughFar => Vector3.Distance(transform.position, _player.transform.position) > 10;
 
     public bool isGrabbed;
     private bool _hasAttacked;
@@ -115,8 +114,7 @@ public class CacAIV2 : MonoBehaviour, IDamageable, IHarpoonable
                 SetAnimation("IsDead");
             break;
         }
-
-
+        
         
     }
 

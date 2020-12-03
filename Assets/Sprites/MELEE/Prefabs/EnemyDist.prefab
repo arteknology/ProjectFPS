@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 2518687143325803042}
   - component: {fileID: 2518687143325803040}
   - component: {fileID: 2518687143325803102}
-  - component: {fileID: 2518687143325803041}
   - component: {fileID: 6059536615031390481}
+  - component: {fileID: 7399876686967903750}
   m_Layer: 0
   m_Name: EnemyDist
   m_TagString: Untagged
@@ -134,29 +134,6 @@ NavMeshAgent:
   m_BaseOffset: 3.8
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!114 &2518687143325803041
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2518687143325803047}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a19f14f18dec094ea30008216288c3e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Pointe: {fileID: 0}
-  Projectile: {fileID: 7833934131304695165, guid: 0c54861ca8652d54fbe2a0384fec85ce,
-    type: 3}
-  BulletPoint: {fileID: 2518687143358250882}
-  Constant: 35
-  fireRate: 1.5
-  DistanceToAttack: 6
-  CurrentLife: 0
-  MaxLife: 80
-  PlayerDamages: 3
-  Grabbed: 0
 --- !u!54 &6059536615031390481
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -173,6 +150,23 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &7399876686967903750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2518687143325803047}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaaf4ec76e2c5de4f9669c16d599d74d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectile: {fileID: 7833934131304695165, guid: 0c54861ca8652d54fbe2a0384fec85ce,
+    type: 3}
+  bulletPoint: {fileID: 2518687143358250882}
+  constant: 35
+  fireRate: 1.5
 --- !u!1 &2518687143358250885
 GameObject:
   m_ObjectHideFlags: 0

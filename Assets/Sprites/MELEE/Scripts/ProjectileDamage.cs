@@ -8,8 +8,7 @@ public class ProjectileDamage : MonoBehaviour
     public int damages = 10;
     public void DestroyBullet()
     {
-        Destroy(this.gameObject);
-
+        Destroy(gameObject);
     }
     private void OnTriggerEnter(Collider other)
     {
@@ -20,11 +19,11 @@ public class ProjectileDamage : MonoBehaviour
             DestroyBullet();
         }
 
-        if (other.gameObject.CompareTag("Harpoon"))
+        if (other.gameObject.CompareTag("Enemy") || other.gameObject.CompareTag("Harpoon"))
         {
             
-        }   
-        
+        }
+
         else
         {
             DestroyBullet();

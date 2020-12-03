@@ -295,7 +295,7 @@ GameObject:
   - component: {fileID: 6134258091066166251}
   m_Layer: 0
   m_Name: Sphere
-  m_TagString: Harpoon
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -689,7 +689,6 @@ MonoBehaviour:
   mouseSensivity: 1
   harpoonTransform: {fileID: 6134258091561788669}
   maximumRange: 50
-  releasedEnemy: {fileID: 3194581952882647504}
   maxHealth: 100
   currentHealth: 0
   healthDisplay: {fileID: 9009296384825690643}

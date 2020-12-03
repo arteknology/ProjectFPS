@@ -5,19 +5,19 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class EnemyMixAIV3 : MonoBehaviour, IDamageable
+public class EnemyMixAIV3 : MonoBehaviour, IDamageable, IHarpoonable
 {
     //NavMeshStuff
-    private NavMeshAgent _navMesh;
+    private NavMeshAgent _navMeshAgent;
     private GameObject _player;
     private float _enemySpeed = 4.5f;
     private float _enemyStoppedSpeed = 0f;
     
-    public GameObject pointe;
+    private Animator _animator;
     
     private int _maxHealth = 150;
     private int _currentHealth;
-    
+    private IDamageable _playerHealth;
     
 
     //Shoot stuff
@@ -30,17 +30,21 @@ public class EnemyMixAIV3 : MonoBehaviour, IDamageable
     //Distance to the player stuff
     private bool _playerIsInSight;
     public float distanceFromPlayer;
-    private bool _playerIsInMeleeRange => Vector3.Distance(transform.position, _player.transform.position) < 2;
-    private bool _playerIsInRangeAttack => Vector3.Distance(transform.position, _player.transform.position) <20;
+    private bool _playerIsInMeleeRange => Vector3.Distance(transform.position, _player.transform.position) < 3;
+    private bool _playerIsOnWalkingDistance => Vector3.Distance(transform.position, _player.transform.position) < 10;
+    private bool _playerIsInRangeAttack => Vector3.Distance(transform.position, _player.transform.position) > 20;
 
-    //Attack stuff
-    private bool _haveRangedAttack;
-    private bool _haveMeleeAttack;
+    private bool _hasAttacked;
 
     public bool isGrabbed;
 
+    private Coroutine attack;
+
     private State _currentState;
 
+    private bool _isAlive;
+    
+    float unhookedSince = 0;
     private enum State
     {
         Idle,
@@ -48,81 +52,121 @@ public class EnemyMixAIV3 : MonoBehaviour, IDamageable
         Melee,
         Distance,
         Hooked,
-        Flee,
         Dead
+    }
+    
+    void Awake()
+    {
+        _player = GameObject.FindWithTag("Player");
+        _playerHealth = _player.GetComponent<IDamageable>();
+        _animator = GetComponentInChildren<Animator>();
+        _navMeshAgent = GetComponent<NavMeshAgent>();
     }
 
     private void Start()
     {
         _currentHealth = _maxHealth;
+        _isAlive = true;
+        isGrabbed = false;
+        _hasAttacked = false;
+        _playerIsInSight = true;
+        _currentState = State.Idle;
     }
 
     private void Update()
     {
+        if (_isAlive)
+        {
+            unhookedSince += Time.deltaTime;
+
+            if (_currentHealth <= 0)
+            {
+                _currentHealth = 0;
+                Die();
+            }
+        }
         switch (_currentState)
         {
             case State.Idle:
-                if (_haveRangedAttack && _playerIsInRangeAttack)
+                SetAnimation("Idle");
+                if (_playerIsInRangeAttack)
                 {
                     _currentState = State.Distance;
                 }
-                else if (_haveMeleeAttack && _playerIsInMeleeRange)
-                {
-                    _currentState = State.Melee;
-                }
-                else if (_playerIsInSight)
+                if (_playerIsOnWalkingDistance)
                 {
                     _currentState = State.Walking;
                 }
-                
-                else if (isGrabbed)
+                if (_playerIsInMeleeRange)
                 {
-                    _currentState = State.Hooked;
+                    _currentState = State.Melee;
                 }
-                break;
-            
-            case State.Walking:
-                ChasePlayer();
                 if (!_playerIsInSight)
                 {
                     _currentState = State.Idle;
                 }
-                else if (_playerIsInRangeAttack)
+                
+                /*if (isGrabbed)
+                {
+                    _currentState = State.Hooked;
+                }*/
+                break;
+            
+            case State.Walking:
+                ChasePlayer();
+                SetAnimation("IsChasing");
+                if (!_playerIsInSight)
+                {
+                    _currentState = State.Idle;
+                }
+                if (_playerIsInRangeAttack && unhookedSince>2f)
                 {
                     _currentState = State.Distance;
+                }
+
+                if (_playerIsInMeleeRange && unhookedSince>2f)
+                {
+                    _currentState = State.Melee;
                 }
                 break;
             
             case State.Melee:
                 MeleeAttack();
-                if (!_playerIsInMeleeRange)
+                SetAnimation("IsMelee");
+                if (_playerIsInRangeAttack)
                 {
-                    _currentState = State.Idle;
+                    _currentState = State.Distance;
+                }
+
+                if (_playerIsOnWalkingDistance)
+                {
+                    _currentState = State.Walking;
+                }
+                
+                if (_playerIsInMeleeRange)
+                {
+                    _currentState = State.Melee;
                 }
                 break;
             
             case State.Distance:
                 DistanceAttack();
-                if (!_playerIsInMeleeRange && _haveMeleeAttack)
+                SetAnimation("IsDistance");
+                if (_playerIsInMeleeRange)
                 {
                     _currentState = State.Melee;
                 }
-                else if (!_playerIsInMeleeRange && !_haveMeleeAttack)
+                if (_playerIsOnWalkingDistance)
                 {
-                    _currentState = State.Flee;
+                    _currentState = State.Melee;
                 }
                 break;
             
             case State.Hooked:
-                IsHarpooned(pointe.transform);
-                if (!isGrabbed)
-                    _currentState = State.Idle;
+                SetAnimation("IsIdle");
+                InHarpoon();
                 break;
-            
-            case State.Flee:
-                Flee();
-                break;
-            
+
             case State.Dead:
                 Die();
                 break;
@@ -142,38 +186,54 @@ public class EnemyMixAIV3 : MonoBehaviour, IDamageable
 
     private void MeleeAttack()
     {
+        SetAnimation("IsMelee");
+        if (unhookedSince > 2f)
+        {
+            if (attack == null)
+            {
+                attack = StartCoroutine(Attack());
+            }
+        }
+    }
+    
+    IEnumerator Attack()
+    {
         Debug.Log("PAF");
+        _navMeshAgent.speed = 0;
+        _navMeshAgent.SetDestination(transform.position);
+        yield return new WaitForSeconds(0.2f);
+        _playerHealth.TakeDamage(10);
+        yield return new WaitForSeconds(0.25f);
+        _currentState = State.Idle;
+        attack = null;
     }
 
     private void DistanceAttack()
     {
-        if (Time.time > _nextFire)
+        if (unhookedSince > 2f)
         {
-            _navMesh.speed = 0f;
-            _nextFire = Time.time + fireRate;
-            GameObject bullet = Instantiate(projectilePrefab, bulletPoint.position, bulletPoint.rotation);
-            Rigidbody bulletRb = bullet.GetComponent<Rigidbody>();
-            bulletRb.velocity = (_player.transform.position - bullet.transform.position).normalized * constant;
-        } 
+            if (Time.time > _nextFire)
+            {
+                _navMeshAgent.speed = 0f;
+                _nextFire = Time.time + fireRate;
+                GameObject bullet = Instantiate(projectilePrefab, bulletPoint.position, bulletPoint.rotation);
+                Rigidbody bulletRb = bullet.GetComponent<Rigidbody>();
+                bulletRb.velocity = (_player.transform.position - bullet.transform.position).normalized * constant;
+            }
+        }
     }
 
     private void ChasePlayer()
     {
-        _navMesh.speed = _enemySpeed;
-        Vector3 dirToPlayer = transform.position - _player.transform.position;
-        Vector3 newPos = transform.position + dirToPlayer;
-        _navMesh.SetDestination(newPos);
+        if (unhookedSince > 2f)
+        {
+            _navMeshAgent.speed = _enemySpeed;
+            Vector3 dirToPlayer = transform.position - _player.transform.position;
+            Vector3 newPos = transform.position - dirToPlayer;
+            _navMeshAgent.SetDestination(newPos);
+        }
     }
-
-    private void Flee()
-    {
-        
-    }
-
-    private void IsHarpooned(Transform col)
-    {
-        transform.position = col.transform.position;
-    }
+    
 
     private void Die()
     {
@@ -184,5 +244,40 @@ public class EnemyMixAIV3 : MonoBehaviour, IDamageable
     public void TakeDamage(int amount)
     {
         _currentHealth = _currentHealth - amount;
+    }
+    
+    public void Harpooned() // LE MOMENT OÙ IL EST HARPONNÉ
+    {
+        if (!_isAlive) return;
+        Debug.Log("Crochet crochet j't'ai accroché");
+        _navMeshAgent.isStopped = true;
+        unhookedSince = 0;
+        _currentState = State.Hooked;
+        isGrabbed = true;
+    }
+    public void Released() // LE MOMENT OÙ IL EST RELÂCHÉ
+    {
+        if (!_isAlive) return;
+        isGrabbed = false;
+        transform.position = PlayerHandler.releasedEnemy.position;
+        _navMeshAgent.isStopped = false;
+        _currentState = State.Idle;
+    }
+    
+    void InHarpoon() // CHAQUE UPDATE QUAND IL EST DANS LE HARPON
+    {
+        transform.position = PlayerHandler.Pointe.transform.position;
+    }
+    
+    void SetAnimation(string animationSelected)
+    {
+        /*_animator.SetBool("IsIdle", false);
+        _animator.SetBool("IsChasing", false);
+        _animator.SetBool("IsMelee", false);
+        _animator.SetBool("IsDistance", false);
+        _animator.SetBool("IsDead", false);
+        
+        _animator.SetBool(animationSelected, true);*/
+        
     }
 }
