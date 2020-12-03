@@ -29,6 +29,8 @@ public class DistAIV2 : MonoBehaviour, IDamageable, IHarpoonable
 
    private bool _playerIsInSight;
 
+   private Animator _animator;
+
    private enum State
    {
       Idle,
@@ -83,7 +85,7 @@ public class DistAIV2 : MonoBehaviour, IDamageable, IHarpoonable
 
          case State.Attacking:
             Shoot();
-            SetAnimation("IsMelee");
+            SetAnimation("IsShooting");
             break;
 
          case State.Running:
@@ -179,13 +181,12 @@ public class DistAIV2 : MonoBehaviour, IDamageable, IHarpoonable
 
       void SetAnimation(string animationSelected)
       {
-         /*_animator.SetBool("IsIdle", false);
-         _animator.SetBool("IsChasing", false);
-         _animator.SetBool("IsMelee", false);
+         _animator.SetBool("IsIdle", false);
          _animator.SetBool("IsFleeing", false);
+         _animator.SetBool("IsShooting", false);
          _animator.SetBool("IsDead", false);
            
-         _animator.SetBool(animationSelected, true);*/
+         _animator.SetBool(animationSelected, true);
       }
 
 }

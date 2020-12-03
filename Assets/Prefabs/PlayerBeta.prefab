@@ -295,7 +295,7 @@ GameObject:
   - component: {fileID: 6134258091066166251}
   m_Layer: 0
   m_Name: Sphere
-  m_TagString: Untagged
+  m_TagString: Harpoon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

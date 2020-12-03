@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 2518687143325803102}
   - component: {fileID: 6059536615031390481}
   - component: {fileID: 7399876686967903750}
+  - component: {fileID: 6115142449268720777}
   m_Layer: 0
   m_Name: EnemyDist
   m_TagString: Untagged
@@ -167,6 +168,25 @@ MonoBehaviour:
   bulletPoint: {fileID: 2518687143358250882}
   constant: 35
   fireRate: 1.5
+--- !u!95 &6115142449268720777
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2518687143325803047}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f923e6cf4caa51b49b0cbfd9c11acb55, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2518687143358250885
 GameObject:
   m_ObjectHideFlags: 0

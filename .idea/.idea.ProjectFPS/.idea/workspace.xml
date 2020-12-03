@@ -4,7 +4,49 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="15b3da8d-2a0f-492a-bae2-ef78b00fc478" name="Default Changelist" comment="" />
+    <list default="true" id="15b3da8d-2a0f-492a-bae2-ef78b00fc478" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ProjectFPS/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ProjectFPS/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ProjectFPS/.idea/projectSettingsUpdater.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ProjectFPS/.idea/projectSettingsUpdater.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ProjectFPS/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ProjectFPS/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Collaborators/Theo/Scene/TestEnvironnementScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Collaborators/Theo/Scene/TestEnvironnementScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/New Material 1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/New Material 1.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/New Material 1.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/New Material 1.mat.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/New Material 2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/New Material 2.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/New Material 2.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/New Material 2.mat.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/PlayerBeta.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/PlayerBeta.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/ANIMS/MELEE/ATTACK/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/ANIMS/MELEE/ATTACK/1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/ANIMS/MELEE/ATTACK/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/ANIMS/MELEE/ATTACK/2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/ANIMS/MELEE/ATTACK/3.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/ANIMS/MELEE/ATTACK/3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/ANIMS/MELEE/BACK RUN.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/ANIMS/MELEE/BACK RUN/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/ANIMS/MELEE/BACK RUN/1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/ANIMS/MELEE/BACK RUN/2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/ANIMS/MELEE/BACK RUN/2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/ANIMS/MELEE/BACK RUN/3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/ANIMS/MELEE/BACK RUN/3.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/ANIMS/MELEE/DEATH.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/ANIMS/MELEE/DEATH.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/ANIMS/MELEE/DEATH/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/ANIMS/MELEE/DEATH/1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/ANIMS/MELEE/DEATH/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/ANIMS/MELEE/DEATH/2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/ANIMS/MELEE/DEATH/3.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/ANIMS/MELEE/DEATH/3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/ANIMS/MELEE/EnemyCac.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/ANIMS/MELEE/EnemyCac.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/ANIMS/MELEE/IDLE/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/ANIMS/MELEE/IDLE/1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/ANIMS/MELEE/IDLE/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/ANIMS/MELEE/IDLE/2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/ANIMS/MELEE/MELEE ATTACK.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/ANIMS/MELEE/MELEE ATTACK.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/ANIMS/MELEE/MELEE BACKRUN.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/ANIMS/MELEE/MELEE BACKRUN.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/ANIMS/MELEE/MELEE IDLE.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/ANIMS/MELEE/MELEE IDLE.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/ANIMS/MELEE/MELEE RUN.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/ANIMS/MELEE/MELEE RUN.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/ANIMS/MELEE/RUN/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/ANIMS/MELEE/RUN/1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/ANIMS/MELEE/RUN/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/ANIMS/MELEE/RUN/2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/ANIMS/MELEE/RUN/3.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/ANIMS/MELEE/RUN/3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/MELEE/Prefabs/EnemyCac.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/MELEE/Prefabs/EnemyCac.prefab" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,13 +57,13 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/EnemyMixV2.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/CacAIV2.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/EnemyMixAIV3.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/PlayerHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/ChainsawScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Sprites/MELEE/Scripts/DistAIV2.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/EnemyTestScript.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/ChainsawScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/AcidScript.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/EnemyMixAIV3.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/CacAIV2.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -47,13 +89,13 @@
         <option value="$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/AcidScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/SpikeTrapScripts.cs" />
         <option value="$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/EnemyMixV2.cs" />
-        <option value="$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/PlayerHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Sprites/MELEE/Scripts/CacAI.cs" />
         <option value="$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/ChainsawScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Sprites/MELEE/Scripts/ProjectileDamage.cs" />
         <option value="$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/CacAIV2.cs" />
         <option value="$PROJECT_DIR$/Assets/Sprites/MELEE/Scripts/DistAIV2.cs" />
         <option value="$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/EnemyMixAIV3.cs" />
+        <option value="$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/PlayerHandler.cs" />
       </list>
     </option>
   </component>
@@ -66,9 +108,23 @@
     <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.34995976" />
     <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.30008045" />
     <property name="Discover.Launch.Via.Unity" value="true" />
+    <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
+    <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
@@ -90,7 +146,10 @@
       <method v="2" />
     </configuration>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="15b3da8d-2a0f-492a-bae2-ef78b00fc478" name="Default Changelist" comment="" />
@@ -128,15 +187,28 @@
       <workItem from="1606754445299" duration="449000" />
       <workItem from="1606852699856" duration="4202000" />
       <workItem from="1606924109437" duration="7287000" />
+      <workItem from="1607009754639" duration="1276000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
+    <option name="version" value="1" />
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
+    <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -216,5 +288,15 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="943" y="315" width="672" height="678" key="search.everywhere.popup/2560.160.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1605796440338" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" suspend="NONE" type="DotNet Exception Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
