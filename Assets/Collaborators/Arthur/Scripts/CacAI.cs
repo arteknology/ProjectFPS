@@ -20,7 +20,9 @@ public class CacAI : MonoBehaviour
     
     public bool Grabbed;
     public bool _attacked;
-    
+
+    public DoorScript Door;
+    public bool Dead = false;
     void Start()
     {
         _attacked = false;
@@ -44,6 +46,11 @@ public class CacAI : MonoBehaviour
             }
         }
         else
+        {
+            Die();
+        }
+
+        if (Dead)
         {
             Die();
         }
@@ -115,6 +122,7 @@ public class CacAI : MonoBehaviour
     //Attack & Die
     private void Die()
     {
+        Door.RemoveEnemy(this.gameObject);
         navMesh.isStopped = true; 
         //_anim.SetTrigger("Die");
         Destroy(this.gameObject, 1f);
