@@ -12,6 +12,7 @@
               <e p="CacAI.cs" t="Include" />
               <e p="CameraBillboard.cs" t="Include" />
               <e p="DistAI.cs" t="Include" />
+              <e p="DoorScript.cs" t="Include" />
               <e p="MixAI.cs" t="Include" />
               <e p="ProjectileDamage.cs" t="Include" />
             </e>

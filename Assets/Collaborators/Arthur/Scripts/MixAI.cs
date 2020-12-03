@@ -24,6 +24,8 @@ public class MixAI : MonoBehaviour
     public int Damages;
     
     public bool Grabbed;
+    public DoorScript Door;
+    public bool Dead = false;
 
     void Start()
     {
@@ -49,6 +51,11 @@ public class MixAI : MonoBehaviour
             }
         }
         else
+        {
+            Die();
+        }
+
+        if (Dead)
         {
             Die();
         }
@@ -93,6 +100,7 @@ public class MixAI : MonoBehaviour
     //Attack & Die
     private void Die()
     {
+        Door.RemoveEnemy(this.gameObject);
         navMesh.isStopped = true; 
         //_anim.SetTrigger("Die");
         Destroy(this.gameObject, 1f);

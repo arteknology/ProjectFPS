@@ -22,6 +22,9 @@ public class DistAI : MonoBehaviour
     
     public bool Grabbed;
     private bool _attacked;
+
+    public DoorScript Door;
+    public bool Dead = false;
     
     void Start()
     {
@@ -85,6 +88,7 @@ public class DistAI : MonoBehaviour
     //Attack & Die
     private void Die()
     {
+        Door.RemoveEnemy(this.gameObject);
         navMesh.isStopped = true; 
         //_anim.SetTrigger("Die");
         Destroy(this.gameObject, 1f);
@@ -111,6 +115,11 @@ public class DistAI : MonoBehaviour
         else
         { 
             Stun();
+        }
+
+        if (Dead)
+        {
+            Die();
         }
     }
 

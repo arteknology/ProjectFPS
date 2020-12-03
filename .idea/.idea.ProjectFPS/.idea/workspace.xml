@@ -23,8 +23,9 @@
         <option value="$PROJECT_DIR$/Assets/Collaborators/Arthur/Scripts/CameraBillboard.cs" />
         <option value="$PROJECT_DIR$/Assets/Collaborators/Arthur/Scripts/ProjectileDamage.cs" />
         <option value="$PROJECT_DIR$/Assets/Collaborators/Arthur/Scripts/CacAI.cs" />
-        <option value="$PROJECT_DIR$/Assets/Collaborators/Arthur/Scripts/DistAI.cs" />
         <option value="$PROJECT_DIR$/Assets/Collaborators/Arthur/Scripts/MixAI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Collaborators/Arthur/Scripts/DistAI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Collaborators/Arthur/Scripts/DoorScript.cs" />
       </list>
     </option>
   </component>
@@ -81,6 +82,7 @@
       <workItem from="1605279453219" duration="2804000" />
       <workItem from="1605727175688" duration="5051000" />
       <workItem from="1605878583331" duration="1607000" />
+      <workItem from="1607002719425" duration="3338000" />
     </task>
     <servers />
   </component>
