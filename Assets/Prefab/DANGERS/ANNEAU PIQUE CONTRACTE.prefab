@@ -18,7 +18,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &117951724694575278
 Transform:
@@ -108,10 +108,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.7392845
-  m_Height: 0.18434143
+  m_Radius: 0.5
+  m_Height: 3
   m_Direction: 1
-  m_Center: {x: -0.01513046, y: 0.84, z: 0.0000014305115}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &4193254394900713629
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -119,21 +119,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 117951724694575278}
     m_Modifications:
-    - target: {fileID: 117951724694575278, guid: 0c26a4fe8c4953442b59e537e9665f6d,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 117951724694575278, guid: 0c26a4fe8c4953442b59e537e9665f6d,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 117951724694575278, guid: 0c26a4fe8c4953442b59e537e9665f6d,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.06
-      objectReference: {fileID: 0}
     - target: {fileID: 117951724694575278, guid: 0c26a4fe8c4953442b59e537e9665f6d,
         type: 3}
       propertyPath: m_LocalRotation.x
@@ -178,6 +163,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PIC SEUL
+      objectReference: {fileID: 0}
+    - target: {fileID: 4373226393058684473, guid: 0c26a4fe8c4953442b59e537e9665f6d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0c26a4fe8c4953442b59e537e9665f6d, type: 3}
