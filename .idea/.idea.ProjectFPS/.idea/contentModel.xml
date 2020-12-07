@@ -29,6 +29,7 @@
           <e p="DoorScript.cs" t="Include" />
           <e p="HealthBarScript.cs" t="Include" />
           <e p="Interfaces.cs" t="Include" />
+          <e p="PrefabReplacement.cs" t="Include" />
           <e p="SceneManagerScript.cs" t="Include" />
         </e>
         <e p="Sprites" t="Include">
@@ -37,7 +38,6 @@
               <e p="CacAI.cs" t="Include" />
               <e p="CameraBillboard.cs" t="Include" />
               <e p="DistAI.cs" t="Include" />
-              <e p="DoorScript.cs" t="Include" />
               <e p="MixAI.cs" t="Include" />
               <e p="ProjectileDamage.cs" t="Include" />
             </e>
