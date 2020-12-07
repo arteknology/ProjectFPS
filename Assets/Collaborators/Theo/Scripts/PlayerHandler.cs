@@ -39,6 +39,8 @@ public class PlayerHandler : MonoBehaviour, IDamageable
     Transform enemyTransform;
     private bool hasHarpooned = false;
     
+    private Vector3 _pointeStartPos;
+    
     //Player stuff
     private CharacterController _characterController;
     private float _cameraVerticalAngle;
@@ -77,6 +79,7 @@ public class PlayerHandler : MonoBehaviour, IDamageable
         transform.Find("GRAPHICS").gameObject.SetActive(false);
         releasedEnemy = transform.Find("ReleasedEnemy");
         //HealthBar.SetMaxHealth(maxHealth);
+        _pointeStartPos = Pointe.transform.localPosition;
         
     }
 
@@ -222,7 +225,7 @@ public class PlayerHandler : MonoBehaviour, IDamageable
             enemy.Released();
             enemy = null;
         }
-        Pointe.localPosition = Vector3.forward;
+        Pointe.localPosition = _pointeStartPos;
         _state = State.Normal;
         ResetGravityEffect();
         hasHarpooned = false;
