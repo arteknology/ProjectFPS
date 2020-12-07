@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\theo.artous\.Rider2019.1\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\theo.artous\.Rider2019.1\system\resharper-host\Local\Transient\ReSharperHost\v191\SolutionCaches\_ProjectFPS.1628411284.00" t="ExcludeRecursive" />
-    <e p="F:\ANNEE 2\PROJETS EN GROUPES\ProjectFPS" t="IncludeRecursive">
+    <e p="C:\Users\arthur.hauton\.Rider2018.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\arthur.hauton\.Rider2018.3\system\resharper-host\Local\Transient\ReSharperHost\v183\SolutionCaches\_ProjectFPS.173310788.00" t="ExcludeRecursive" />
+    <e p="C:\Users\arthur.hauton\ProjectFPS" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="ChiottesScript.cs" t="Include" />
@@ -75,10 +75,13 @@
           </e>
         </e>
       </e>
+      <e p="Library" t="ExcludeRecursive" />
       <e p="obj" t="ExcludeRecursive" />
       <e p="Packages" t="ExcludeRecursive" />
       <e p="ProjectFPS.sln" t="IncludeFlat" />
-      <e p="Temp\bin" t="ExcludeRecursive" />
+      <e p="Temp" t="ExcludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+      </e>
     </e>
   </component>
 </project>

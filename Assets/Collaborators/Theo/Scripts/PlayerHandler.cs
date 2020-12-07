@@ -22,7 +22,7 @@ public class PlayerHandler : MonoBehaviour, IDamageable
 
     public float maxHealth = 100f;
     public float currentHealth;
-    public TextMeshProUGUI healthDisplay;
+    //public TextMeshProUGUI healthDisplay;
     public HealthBarScript HealthBar;
     
     
@@ -76,7 +76,7 @@ public class PlayerHandler : MonoBehaviour, IDamageable
         currentHealth = maxHealth;
         transform.Find("GRAPHICS").gameObject.SetActive(false);
         releasedEnemy = transform.Find("ReleasedEnemy");
-        //HealthBar.SetMaxHealth(maxHealth);
+        HealthBar.SetMaxHealth(maxHealth);
         
     }
 
@@ -113,8 +113,8 @@ public class PlayerHandler : MonoBehaviour, IDamageable
                 break;
         }
         
-        healthDisplay.text = currentHealth + "";
-        //HealthBar.SetHealth(currentHealth);
+        //healthDisplay.text = currentHealth + "";
+        HealthBar.SetHealth(currentHealth);
         if (currentHealth <= 0 && _state!= State.Dead)
         {
             Die();
