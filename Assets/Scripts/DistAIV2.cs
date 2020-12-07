@@ -173,7 +173,7 @@ public class DistAIV2 : MonoBehaviour, IDamageable, IHarpoonable
          if (_isAlive == false) return;
          _isAlive = false;
          Debug.Log("J'AI MAAAAAAAAAAAAAAAAL");
-         Destroy(_navMeshAgent);
+         _navMeshAgent.isStopped = true;
          foreach (BoxCollider box in GetComponentsInChildren<BoxCollider>())
          {
             box.isTrigger = true;
