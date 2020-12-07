@@ -16,6 +16,8 @@ public class DistAIV2 : MonoBehaviour, IDamageable, IHarpoonable
    public float fireRate;
    private float _nextFire;
    
+   
+   public DoorScript Door;
    private bool _isFarEnough => Vector3.Distance(transform.position, _player.transform.position) >20 ;
    
    private float _currentHealth;
@@ -48,6 +50,7 @@ public class DistAIV2 : MonoBehaviour, IDamageable, IHarpoonable
 
       _navMeshAgent = GetComponent<NavMeshAgent>();
       _player = GameObject.FindWithTag("Player");
+      _animator = GetComponentInChildren<Animator>();
    }
 
    private void Start()
@@ -128,10 +131,10 @@ public class DistAIV2 : MonoBehaviour, IDamageable, IHarpoonable
          if (Time.time > _nextFire)
          {
             _navMeshAgent.speed = 0f;
-            _nextFire = Time.time + fireRate;
             GameObject bullet = Instantiate(projectile, bulletPoint.position, bulletPoint.rotation);
             Rigidbody bulletRb = bullet.GetComponent<Rigidbody>();
             bulletRb.velocity = (_player.transform.position - bullet.transform.position).normalized * constant;
+            _nextFire = Time.time + fireRate;
          }
    }
 }
@@ -177,6 +180,7 @@ public class DistAIV2 : MonoBehaviour, IDamageable, IHarpoonable
          }
          _currentState = State.Dead;
          SetAnimation("IsDead");
+         Door.GetComponent<DoorScript>().RemoveEnemy(this.gameObject);
       }
 
       void SetAnimation(string animationSelected)

@@ -7040,9 +7040,11 @@ GameObject:
   m_Component:
   - component: {fileID: 2409269991778781211}
   - component: {fileID: 1353760432849036842}
+  - component: {fileID: 4517155429532242079}
+  - component: {fileID: 3914054011832598382}
   m_Layer: 0
   m_Name: Fontaine_Ronde_Grande
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7075,6 +7077,34 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.9999997, y: 7.776202, z: 0.9999997}
   m_Center: {x: 0, y: 0.05963563, z: 0}
+--- !u!136 &4517155429532242079
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3036731159381529249}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 7.07
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: -3.58, z: 0}
+--- !u!114 &3914054011832598382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3036731159381529249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddf3a64ef18960143a767d4eb1c2ad0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 5
+  timeBetweenDamage: 1
 --- !u!1 &3050809881248526799
 GameObject:
   m_ObjectHideFlags: 0
@@ -20780,7 +20810,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -3941583355024626588, guid: 396ef1efe4fdc494ebddda9dbe1c0226, type: 3}
+  - {fileID: 2100000, guid: 0d86760cc89af3f4186ddda3885433cd, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

@@ -26,6 +26,7 @@ public class ProjectileDamage : MonoBehaviour
 
         else
         {
+            Debug.Log("BOOM");
             DestroyBullet();
         }
     }

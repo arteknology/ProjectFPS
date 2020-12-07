@@ -15,7 +15,7 @@ public class EnemyMixAIV3 : MonoBehaviour, IDamageable, IHarpoonable
     
     private Animator _animator;
     
-    private int _maxHealth = 150;
+    private int _maxHealth = 130;
     private int _currentHealth;
     private IDamageable _playerHealth;
     
@@ -43,6 +43,8 @@ public class EnemyMixAIV3 : MonoBehaviour, IDamageable, IHarpoonable
     private State _currentState;
 
     private bool _isAlive;
+    
+    public DoorScript Door;
     
     float unhookedSince = 0;
     private enum State
@@ -151,7 +153,7 @@ public class EnemyMixAIV3 : MonoBehaviour, IDamageable, IHarpoonable
             
             case State.Distance:
                 DistanceAttack();
-                SetAnimation("IsDistance");
+                
                 if (_playerIsInMeleeRange)
                 {
                     _currentState = State.Melee;
@@ -214,6 +216,7 @@ public class EnemyMixAIV3 : MonoBehaviour, IDamageable, IHarpoonable
         {
             if (Time.time > _nextFire)
             {
+                SetAnimation("IsDistance");
                 _navMeshAgent.speed = 0f;
                 _nextFire = Time.time + fireRate;
                 GameObject bullet = Instantiate(projectilePrefab, bulletPoint.position, bulletPoint.rotation);
@@ -236,14 +239,21 @@ public class EnemyMixAIV3 : MonoBehaviour, IDamageable, IHarpoonable
     
 
     private void Die()
-    {
-        Debug.Log("AAAAAAAAAAAAAAAAH");
-        Destroy(gameObject);
+    {if (_isAlive == false) return;
+        _isAlive = false;
+        Destroy(_navMeshAgent);
+        foreach (BoxCollider box in GetComponentsInChildren<BoxCollider>())
+        {
+            box.isTrigger = true;
+        }
+        SetAnimation("IsDead");
+        Door.GetComponent<DoorScript>().RemoveEnemy(this.gameObject);
     }
 
     public void TakeDamage(int amount)
     {
         _currentHealth = _currentHealth - amount;
+        Debug.Log(_currentHealth);
     }
     
     public void Harpooned() // LE MOMENT OÙ IL EST HARPONNÉ
@@ -271,13 +281,13 @@ public class EnemyMixAIV3 : MonoBehaviour, IDamageable, IHarpoonable
     
     void SetAnimation(string animationSelected)
     {
-        /*_animator.SetBool("IsIdle", false);
+        _animator.SetBool("IsIdle", false);
         _animator.SetBool("IsChasing", false);
         _animator.SetBool("IsMelee", false);
         _animator.SetBool("IsDistance", false);
         _animator.SetBool("IsDead", false);
         
-        _animator.SetBool(animationSelected, true);*/
+        _animator.SetBool(animationSelected, true);
         
     }
 }

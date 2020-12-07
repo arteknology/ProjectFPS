@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 7833934131304695166}
   - component: {fileID: 7833934131304695167}
   - component: {fileID: 7833934131304695164}
+  - component: {fileID: 8677864226666379156}
   - component: {fileID: 7833934131304695136}
   - component: {fileID: 7833934131304695137}
-  - component: {fileID: 8677864226666379156}
   m_Layer: 0
   m_Name: Projectile
   m_TagString: Untagged
@@ -97,6 +97,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 846521fddcffa3a4aae5b488a919f050, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &8677864226666379156
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7833934131304695165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c74fabb4aec551419b536e9e23330b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damages: 10
 --- !u!54 &7833934131304695136
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -126,16 +139,3 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.14157024, y: 0.1425681, z: 0.025805354}
   m_Center: {x: -0.00013717721, y: 0.00034230726, z: 0.000801437}
---- !u!114 &8677864226666379156
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7833934131304695165}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c74fabb4aec551419b536e9e23330b1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Damages: 2

@@ -5,7 +5,9 @@ using TMPro;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 using UnityEngine.Serialization;
+using UnityEngine.UI;
 
 
 public class PlayerHandler : MonoBehaviour, IDamageable
@@ -17,10 +19,13 @@ public class PlayerHandler : MonoBehaviour, IDamageable
     [SerializeField] public float maximumRange;
 
     public static Transform releasedEnemy;
-    
+
     public float maxHealth = 100f;
     public float currentHealth;
     public TextMeshProUGUI healthDisplay;
+    public HealthBarScript HealthBar;
+    
+    
     
 
     //private float _clampedXRotation = 30f;
@@ -59,7 +64,7 @@ public class PlayerHandler : MonoBehaviour, IDamageable
         Chainsaw,
         Dead
     }
-    
+
     private void Awake()
     {
         _characterController = GetComponent<CharacterController>();
@@ -71,6 +76,8 @@ public class PlayerHandler : MonoBehaviour, IDamageable
         currentHealth = maxHealth;
         transform.Find("GRAPHICS").gameObject.SetActive(false);
         releasedEnemy = transform.Find("ReleasedEnemy");
+        //HealthBar.SetMaxHealth(maxHealth);
+        
     }
 
     private void Update()
@@ -106,8 +113,8 @@ public class PlayerHandler : MonoBehaviour, IDamageable
                 break;
         }
         
-        healthDisplay.text = currentHealth + "/100";
-
+        healthDisplay.text = currentHealth + "";
+        //HealthBar.SetHealth(currentHealth);
         if (currentHealth <= 0 && _state!= State.Dead)
         {
             Die();
@@ -295,5 +302,12 @@ public class PlayerHandler : MonoBehaviour, IDamageable
         currentHealth = 0;
         _state= State.Dead;
         Debug.Log("T MOR");
+        Invoke("SceneReload", 2f);
     }
+
+    void SceneReload()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex -1);
+    }
+    
 }

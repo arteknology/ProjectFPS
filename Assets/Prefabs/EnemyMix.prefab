@@ -15,9 +15,10 @@ GameObject:
   - component: {fileID: 4650491987791435660}
   - component: {fileID: 3935216037154462097}
   - component: {fileID: 7932553063814575274}
+  - component: {fileID: 5255463218745637719}
   m_Layer: 0
   m_Name: EnemyMix
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -162,13 +163,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0520d8df86512f946982aa28ebcd9f75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectilePrefab: {fileID: 7833934131304695165, guid: 0c54861ca8652d54fbe2a0384fec85ce,
+  projectilePrefab: {fileID: 5482116638035236717, guid: b860d6f6d9f72014dba64082f55fc3dd,
     type: 3}
   bulletPoint: {fileID: 4650491987997195967}
   constant: 15
-  fireRate: 0.5
+  fireRate: 2
   distanceFromPlayer: 0
   isGrabbed: 0
+  Door: {fileID: 0}
+--- !u!95 &5255463218745637719
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4650491987791435653}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0f97e5223c184c54a82a28baade1bd7a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &4650491987997195966
 GameObject:
   m_ObjectHideFlags: 0

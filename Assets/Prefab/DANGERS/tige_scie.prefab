@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 2830791554777177598}
   - component: {fileID: 3515016985831999400}
   - component: {fileID: 2570925059561813604}
-  - component: {fileID: 9112019904350758286}
   m_Layer: 0
   m_Name: scie1
   m_TagString: Untagged
@@ -80,19 +79,66 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &9112019904350758286
-BoxCollider:
+--- !u!1 &1013279522559784637
+GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 580953977688117255}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3186633732475032338}
+  - component: {fileID: 1898467662596293905}
+  - component: {fileID: 5739815253931547151}
+  m_Layer: 0
+  m_Name: COLLIDERS
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3186633732475032338
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1013279522559784637}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.08, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 6686358190614903327}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!136 &1898467662596293905
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1013279522559784637}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 6.5492887, y: 0.12883663, z: 6.5566096}
-  m_Center: {x: -0.04558158, y: -0.017240146, z: -0.14076114}
+  m_Radius: 3.2
+  m_Height: 11.7
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &5739815253931547151
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1013279522559784637}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b13a5d10343f6644b9a02d826102a9b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 7
+  timeBetweenDamage: 0.5
 --- !u!1 &1896064798555465524
 GameObject:
   m_ObjectHideFlags: 0
@@ -104,7 +150,6 @@ GameObject:
   - component: {fileID: 6876355993936267991}
   - component: {fileID: 8711835675168422005}
   - component: {fileID: 4978062325706741659}
-  - component: {fileID: 721564330478956895}
   m_Layer: 0
   m_Name: scie2
   m_TagString: Untagged
@@ -173,19 +218,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &721564330478956895
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1896064798555465524}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 6.5492883, y: 0.12705135, z: 6.5566096}
-  m_Center: {x: 0, y: 0.00000016391277, z: 0}
 --- !u!1 &3680751520786168910
 GameObject:
   m_ObjectHideFlags: 0
@@ -197,7 +229,6 @@ GameObject:
   - component: {fileID: 2018594284835496865}
   - component: {fileID: 372084575840234596}
   - component: {fileID: 9107569669594978910}
-  - component: {fileID: 6577021593678442487}
   m_Layer: 0
   m_Name: scie_3
   m_TagString: Untagged
@@ -266,19 +297,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &6577021593678442487
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3680751520786168910}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 6.5492883, y: 0.12883663, z: 6.556609}
-  m_Center: {x: -0.045582056, y: -0.017240651, z: -0.14076102}
 --- !u!1 &3750804892512178333
 GameObject:
   m_ObjectHideFlags: 0
@@ -290,7 +308,6 @@ GameObject:
   - component: {fileID: 8727120636236838575}
   - component: {fileID: 8608483429043821535}
   - component: {fileID: 7021034361238509854}
-  - component: {fileID: 8231985735890398256}
   m_Layer: 0
   m_Name: scie_4
   m_TagString: Untagged
@@ -359,19 +376,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &8231985735890398256
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3750804892512178333}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 6.5492883, y: 0.12705135, z: 6.5566096}
-  m_Center: {x: -0.045582056, y: 0.017279854, z: 0.14076328}
 --- !u!1 &5972823544045891037
 GameObject:
   m_ObjectHideFlags: 0
@@ -497,6 +501,7 @@ Transform:
   - {fileID: 2018594284835496865}
   - {fileID: 8727120636236838575}
   - {fileID: 1893495384212359463}
+  - {fileID: 3186633732475032338}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

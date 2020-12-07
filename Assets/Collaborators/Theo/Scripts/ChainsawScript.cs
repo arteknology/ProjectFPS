@@ -5,21 +5,37 @@ using UnityEngine;
 
 public class ChainsawScript : MonoBehaviour
 {
-    public PlayerHandler player; 
+    public PlayerHandler player;
+
+    //public Animator animator;
         
     private List<IDamageable> EnemiesInside = new List<IDamageable>();
-    
+
+    private void Awake()
+    {
+        //animator = GetComponentInChildren<Animator>();
+        SetAnimation("IsIdle");
+    }
+
     private void Update()
     {
         if (EnemiesInside.Count < 1)
         {
-            CancelInvoke("Chainsaw");}
+            CancelInvoke("Chainsaw");
+            SetAnimation("IsIdle");
+        }
         
         if (Input.GetButtonDown("Fire1") && EnemiesInside.Count >0)
         {
+            SetAnimation("IsChainsaw");
             InvokeRepeating("Chainsaw", 0f, 0.5f);
         }
-        if (Input.GetButtonUp("Fire1")) CancelInvoke("Chainsaw");
+        if (Input.GetButtonUp("Fire1"))
+        {
+            CancelInvoke("Chainsaw");
+            SetAnimation("IsIdle");
+            
+        }
     }
 
     private void OnTriggerEnter(Collider collider)
@@ -60,5 +76,13 @@ public class ChainsawScript : MonoBehaviour
             enemy.TakeDamage(10);
         }
         Debug.Log("COUPE COUPE COUPE");
+    }
+    
+    void SetAnimation(string animationSelected)
+    {
+        //animator.SetBool("IsIdle", false);
+        //animator.SetBool("IsChainsaw", false);
+
+        //animator.SetBool(animationSelected, true);
     }
 }

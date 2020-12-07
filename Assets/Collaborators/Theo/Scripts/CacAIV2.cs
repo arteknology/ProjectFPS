@@ -15,7 +15,7 @@ public class CacAIV2 : MonoBehaviour, IDamageable, IHarpoonable
 
     private Animator _animator;
 
-    private int _maxHealth = 10;
+    private int _maxHealth = 50;
     private int _currentHealth;
 
     private bool _playerIsInMeleeRange => Vector3.Distance(transform.position, _player.transform.position) < 3;
@@ -34,7 +34,7 @@ public class CacAIV2 : MonoBehaviour, IDamageable, IHarpoonable
 
     float unhookedSince = 0;
 
-
+    public DoorScript Door;
 
 
     private enum State
@@ -209,6 +209,7 @@ public class CacAIV2 : MonoBehaviour, IDamageable, IHarpoonable
         }
         _currentState = State.Dead;
         SetAnimation("IsDead");
+        Door.GetComponent<DoorScript>().RemoveEnemy(this.gameObject);
     }
 
     public void TakeDamage(int amount)
@@ -227,4 +228,6 @@ public class CacAIV2 : MonoBehaviour, IDamageable, IHarpoonable
         
         _animator.SetBool(animationSelected, true);
     }
+    
+    
 }
