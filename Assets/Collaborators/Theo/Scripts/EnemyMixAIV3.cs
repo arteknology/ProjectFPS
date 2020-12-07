@@ -241,7 +241,7 @@ public class EnemyMixAIV3 : MonoBehaviour, IDamageable, IHarpoonable
     private void Die()
     {if (_isAlive == false) return;
         _isAlive = false;
-        Destroy(_navMeshAgent);
+        _navMeshAgent.isStopped = true;
         foreach (BoxCollider box in GetComponentsInChildren<BoxCollider>())
         {
             box.isTrigger = true;
