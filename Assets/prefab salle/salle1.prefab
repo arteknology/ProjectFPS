@@ -78686,10 +78686,10 @@ GameObject:
   - component: {fileID: 6766892074355803148}
   m_Layer: 0
   m_Name: structure
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1576426437284003055
 Transform:
