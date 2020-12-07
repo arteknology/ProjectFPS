@@ -51,21 +51,109 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/CacAIV2.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="304">
+              <caret line="208" column="9" lean-forward="true" selection-start-line="208" selection-start-column="9" selection-end-line="208" selection-end-column="9" />
+              <folding>
+                <marker date="1607347693036" expanded="true" signature="6:114" ph="..." />
+                <marker date="1607347693036" expanded="true" signature="179:5577" ph="{...}" />
+                <marker date="1607347693036" expanded="true" signature="909:1010" ph="{...}" />
+                <marker date="1607347693036" expanded="true" signature="1028:1263" ph="{...}" />
+                <marker date="1607347693036" expanded="true" signature="1289:1489" ph="{...}" />
+                <marker date="1607347693036" expanded="true" signature="1516:2572" ph="{...}" />
+                <marker date="1607347693036" expanded="true" signature="1545:1735" ph="{...}" />
+                <marker date="1607347693036" expanded="true" signature="1638:1725" ph="{...}" />
+                <marker date="1607347693036" expanded="true" signature="1769:2548" ph="{...}" />
+                <marker date="1607347693036" expanded="true" signature="1886:1973" ph="{...}" />
+                <marker date="1607347693036" expanded="true" signature="2604:2744" ph="{...}" />
+                <marker date="1607347693036" expanded="true" signature="2670:2737" ph="{...}" />
+                <marker date="1607347693036" expanded="true" signature="2770:3091" ph="{...}" />
+                <marker date="1607347693036" expanded="true" signature="3125:3397" ph="{...}" />
+                <marker date="1607347693036" expanded="true" signature="3330:3391" ph="{...}" />
+                <marker date="1607347693036" expanded="true" signature="3422:3730" ph="{...}" />
+                <marker date="1607347693036" expanded="true" signature="3757:3948" ph="{...}" />
+                <marker date="1607347693036" expanded="true" signature="4011:4239" ph="{...}" />
+                <marker date="1607347693036" expanded="true" signature="4306:4388" ph="{...}" />
+                <marker date="1607347693036" expanded="true" signature="4447:4661" ph="{...}" />
+                <marker date="1607347693036" expanded="true" signature="4684:5083" ph="{...}" />
+                <marker date="1607347693036" expanded="true" signature="4917:4971" ph="{...}" />
+                <marker date="1607347693036" expanded="true" signature="5123:5216" ph="{...}" />
+                <marker date="1607347693036" expanded="true" signature="5265:5565" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/EnemyMixAIV3.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="439">
+              <caret line="172" column="22" lean-forward="true" selection-start-line="172" selection-start-column="22" selection-end-line="172" selection-end-column="22" />
+              <folding>
+                <marker date="1607347693042" expanded="false" signature="6:127" ph="..." />
+                <marker date="1607347693042" expanded="true" signature="197:8098" ph="{...}" />
+                <marker date="1607347693042" expanded="true" signature="1405:1510" ph="{...}" />
+                <marker date="1607347693042" expanded="true" signature="1532:1767" ph="{...}" />
+                <marker date="1607347693042" expanded="true" signature="1793:1993" ph="{...}" />
+                <marker date="1607347693042" expanded="true" signature="2020:4978" ph="{...}" />
+                <marker date="1607347693042" expanded="true" signature="2048:2238" ph="{...}" />
+                <marker date="1607347693042" expanded="true" signature="2141:2228" ph="{...}" />
+                <marker date="1607347693042" expanded="true" signature="2269:4837" ph="{...}" />
+                <marker date="1607347693042" expanded="true" signature="2390:2478" ph="{...}" />
+                <marker date="1607347693042" expanded="true" signature="2526:2613" ph="{...}" />
+                <marker date="1607347693042" expanded="true" signature="2656:2741" ph="{...}" />
+                <marker date="1607347693042" expanded="true" signature="2780:2864" ph="{...}" />
+                <marker date="1607347693042" expanded="true" signature="2898:3002" ph="/* if (isGrabbed) ... */" />
+                <marker date="1607347693042" expanded="true" signature="3183:3267" ph="{...}" />
+                <marker date="1607347693042" expanded="true" signature="3331:3419" ph="{...}" />
+                <marker date="1607347693042" expanded="true" signature="3483:3568" ph="{...}" />
+                <marker date="1607347693042" expanded="true" signature="3750:3838" ph="{...}" />
+                <marker date="1607347693042" expanded="true" signature="3887:3974" ph="{...}" />
+                <marker date="1607347693042" expanded="true" signature="4034:4119" ph="{...}" />
+                <marker date="1607347693042" expanded="true" signature="4282:4367" ph="{...}" />
+                <marker date="1607347693042" expanded="true" signature="4415:4500" ph="{...}" />
+                <marker date="1607347693042" expanded="true" signature="4871:4963" ph="{...}" />
+                <marker date="1607347693042" expanded="true" signature="5011:5219" ph="{...}" />
+                <marker date="1607347693042" expanded="true" signature="5082:5213" ph="{...}" />
+                <marker date="1607347693042" expanded="true" signature="5124:5203" ph="{...}" />
+                <marker date="1607347693042" expanded="true" signature="5249:5570" ph="{...}" />
+                <marker date="1607347693042" expanded="true" signature="5605:6170" ph="{...}" />
+                <marker date="1607347693042" expanded="true" signature="5643:6164" ph="{...}" />
+                <marker date="1607347693042" expanded="true" signature="5692:6154" ph="{...}" />
+                <marker date="1607347693042" expanded="true" signature="6202:6509" ph="{...}" />
+                <marker date="1607347693042" expanded="true" signature="6240:6503" ph="{...}" />
+                <marker date="1607347693042" expanded="true" signature="6538:6878" ph="{...}" />
+                <marker date="1607347693042" expanded="true" signature="6716:6770" ph="{...}" />
+                <marker date="1607347693042" expanded="true" signature="6918:7015" ph="{...}" />
+                <marker date="1607347693042" expanded="true" signature="7080:7308" ph="{...}" />
+                <marker date="1607347693042" expanded="true" signature="7366:7580" ph="{...}" />
+                <marker date="1607347693042" expanded="true" signature="7651:7733" ph="{...}" />
+                <marker date="1607347693042" expanded="true" signature="7786:8096" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SceneManagerScript.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/EnemyMixV2.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/CacAIV2.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/EnemyMixAIV3.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/EnemyTestScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/DoorScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ChiottesScript.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SceneManagerScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/PlayerHandler.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/EnemyTestScript.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/AcidScript.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/CacAIV2.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/ChainsawScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/HealthBarScript.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/AcidScript.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/EnemyMixAIV3.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -97,12 +185,12 @@
         <option value="$PROJECT_DIR$/Assets/Sprites/MELEE/Scripts/ProjectileDamage.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/HealthBarScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/ChainsawScript.cs" />
-        <option value="$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/CacAIV2.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DistAIV2.cs" />
-        <option value="$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/EnemyMixAIV3.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SceneManagerScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/PlayerHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/ChiottesScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/EnemyMixAIV3.cs" />
+        <option value="$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/CacAIV2.cs" />
       </list>
     </option>
   </component>
@@ -113,6 +201,12 @@
     <option name="height" value="810" />
   </component>
   <component name="ProjectId" id="1jN6zWY3AnK7BUjwhFdzlyBzYHL" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -126,6 +220,18 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
@@ -143,7 +249,7 @@
       <method v="2" />
     </configuration>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -190,6 +296,40 @@
     </task>
     <servers />
   </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="87000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1096" extended-state="7" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Favorites" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.25" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="NuGet" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Unity" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Unit Tests" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Performance Profiler" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Errors In Solution" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Unit Tests Coverage" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
@@ -200,12 +340,32 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
@@ -297,5 +457,88 @@
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/EnemyMixAIV3.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="439">
+          <caret line="172" column="22" lean-forward="true" selection-start-line="172" selection-start-column="22" selection-end-line="172" selection-end-column="22" />
+          <folding>
+            <marker date="1607347693042" expanded="false" signature="6:127" ph="..." />
+            <marker date="1607347693042" expanded="true" signature="197:8098" ph="{...}" />
+            <marker date="1607347693042" expanded="true" signature="1405:1510" ph="{...}" />
+            <marker date="1607347693042" expanded="true" signature="1532:1767" ph="{...}" />
+            <marker date="1607347693042" expanded="true" signature="1793:1993" ph="{...}" />
+            <marker date="1607347693042" expanded="true" signature="2020:4978" ph="{...}" />
+            <marker date="1607347693042" expanded="true" signature="2048:2238" ph="{...}" />
+            <marker date="1607347693042" expanded="true" signature="2141:2228" ph="{...}" />
+            <marker date="1607347693042" expanded="true" signature="2269:4837" ph="{...}" />
+            <marker date="1607347693042" expanded="true" signature="2390:2478" ph="{...}" />
+            <marker date="1607347693042" expanded="true" signature="2526:2613" ph="{...}" />
+            <marker date="1607347693042" expanded="true" signature="2656:2741" ph="{...}" />
+            <marker date="1607347693042" expanded="true" signature="2780:2864" ph="{...}" />
+            <marker date="1607347693042" expanded="true" signature="2898:3002" ph="/* if (isGrabbed) ... */" />
+            <marker date="1607347693042" expanded="true" signature="3183:3267" ph="{...}" />
+            <marker date="1607347693042" expanded="true" signature="3331:3419" ph="{...}" />
+            <marker date="1607347693042" expanded="true" signature="3483:3568" ph="{...}" />
+            <marker date="1607347693042" expanded="true" signature="3750:3838" ph="{...}" />
+            <marker date="1607347693042" expanded="true" signature="3887:3974" ph="{...}" />
+            <marker date="1607347693042" expanded="true" signature="4034:4119" ph="{...}" />
+            <marker date="1607347693042" expanded="true" signature="4282:4367" ph="{...}" />
+            <marker date="1607347693042" expanded="true" signature="4415:4500" ph="{...}" />
+            <marker date="1607347693042" expanded="true" signature="4871:4963" ph="{...}" />
+            <marker date="1607347693042" expanded="true" signature="5011:5219" ph="{...}" />
+            <marker date="1607347693042" expanded="true" signature="5082:5213" ph="{...}" />
+            <marker date="1607347693042" expanded="true" signature="5124:5203" ph="{...}" />
+            <marker date="1607347693042" expanded="true" signature="5249:5570" ph="{...}" />
+            <marker date="1607347693042" expanded="true" signature="5605:6170" ph="{...}" />
+            <marker date="1607347693042" expanded="true" signature="5643:6164" ph="{...}" />
+            <marker date="1607347693042" expanded="true" signature="5692:6154" ph="{...}" />
+            <marker date="1607347693042" expanded="true" signature="6202:6509" ph="{...}" />
+            <marker date="1607347693042" expanded="true" signature="6240:6503" ph="{...}" />
+            <marker date="1607347693042" expanded="true" signature="6538:6878" ph="{...}" />
+            <marker date="1607347693042" expanded="true" signature="6716:6770" ph="{...}" />
+            <marker date="1607347693042" expanded="true" signature="6918:7015" ph="{...}" />
+            <marker date="1607347693042" expanded="true" signature="7080:7308" ph="{...}" />
+            <marker date="1607347693042" expanded="true" signature="7366:7580" ph="{...}" />
+            <marker date="1607347693042" expanded="true" signature="7651:7733" ph="{...}" />
+            <marker date="1607347693042" expanded="true" signature="7786:8096" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/CacAIV2.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="208" column="9" lean-forward="true" selection-start-line="208" selection-start-column="9" selection-end-line="208" selection-end-column="9" />
+          <folding>
+            <marker date="1607347693036" expanded="true" signature="6:114" ph="..." />
+            <marker date="1607347693036" expanded="true" signature="179:5577" ph="{...}" />
+            <marker date="1607347693036" expanded="true" signature="909:1010" ph="{...}" />
+            <marker date="1607347693036" expanded="true" signature="1028:1263" ph="{...}" />
+            <marker date="1607347693036" expanded="true" signature="1289:1489" ph="{...}" />
+            <marker date="1607347693036" expanded="true" signature="1516:2572" ph="{...}" />
+            <marker date="1607347693036" expanded="true" signature="1545:1735" ph="{...}" />
+            <marker date="1607347693036" expanded="true" signature="1638:1725" ph="{...}" />
+            <marker date="1607347693036" expanded="true" signature="1769:2548" ph="{...}" />
+            <marker date="1607347693036" expanded="true" signature="1886:1973" ph="{...}" />
+            <marker date="1607347693036" expanded="true" signature="2604:2744" ph="{...}" />
+            <marker date="1607347693036" expanded="true" signature="2670:2737" ph="{...}" />
+            <marker date="1607347693036" expanded="true" signature="2770:3091" ph="{...}" />
+            <marker date="1607347693036" expanded="true" signature="3125:3397" ph="{...}" />
+            <marker date="1607347693036" expanded="true" signature="3330:3391" ph="{...}" />
+            <marker date="1607347693036" expanded="true" signature="3422:3730" ph="{...}" />
+            <marker date="1607347693036" expanded="true" signature="3757:3948" ph="{...}" />
+            <marker date="1607347693036" expanded="true" signature="4011:4239" ph="{...}" />
+            <marker date="1607347693036" expanded="true" signature="4306:4388" ph="{...}" />
+            <marker date="1607347693036" expanded="true" signature="4447:4661" ph="{...}" />
+            <marker date="1607347693036" expanded="true" signature="4684:5083" ph="{...}" />
+            <marker date="1607347693036" expanded="true" signature="4917:4971" ph="{...}" />
+            <marker date="1607347693036" expanded="true" signature="5123:5216" ph="{...}" />
+            <marker date="1607347693036" expanded="true" signature="5265:5565" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>
