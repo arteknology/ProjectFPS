@@ -1,7 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="15b3da8d-2a0f-492a-bae2-ef78b00fc478" name="Default Changelist" comment="" />
+    <list default="true" id="15b3da8d-2a0f-492a-bae2-ef78b00fc478" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ProjectFPS/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ProjectFPS/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ProjectFPS/.idea/projectSettingsUpdater.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ProjectFPS/.idea/projectSettingsUpdater.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ProjectFPS/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ProjectFPS/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Collaborators/Theo/Scene/TestEnvironnementScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Collaborators/Theo/Scene/TestEnvironnementScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/New Material 1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/New Material 1.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/New Material 1.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/New Material 1.mat.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/New Material 2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/New Material 2.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/New Material 2.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/New Material 2.mat.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/PlayerBeta.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/PlayerBeta.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/ANIMS/MELEE/ATTACK/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/ANIMS/MELEE/ATTACK/1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/ANIMS/MELEE/ATTACK/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/ANIMS/MELEE/ATTACK/2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/ANIMS/MELEE/ATTACK/3.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/ANIMS/MELEE/ATTACK/3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/ANIMS/MELEE/BACK RUN.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/ANIMS/MELEE/BACK RUN/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/ANIMS/MELEE/BACK RUN/1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/ANIMS/MELEE/BACK RUN/2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/ANIMS/MELEE/BACK RUN/2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/ANIMS/MELEE/BACK RUN/3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/ANIMS/MELEE/BACK RUN/3.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/ANIMS/MELEE/DEATH.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/ANIMS/MELEE/DEATH.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/ANIMS/MELEE/DEATH/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/ANIMS/MELEE/DEATH/1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/ANIMS/MELEE/DEATH/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/ANIMS/MELEE/DEATH/2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/ANIMS/MELEE/DEATH/3.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/ANIMS/MELEE/DEATH/3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/ANIMS/MELEE/EnemyCac.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/ANIMS/MELEE/EnemyCac.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/ANIMS/MELEE/IDLE/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/ANIMS/MELEE/IDLE/1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/ANIMS/MELEE/IDLE/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/ANIMS/MELEE/IDLE/2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/ANIMS/MELEE/MELEE ATTACK.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/ANIMS/MELEE/MELEE ATTACK.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/ANIMS/MELEE/MELEE BACKRUN.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/ANIMS/MELEE/MELEE BACKRUN.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/ANIMS/MELEE/MELEE IDLE.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/ANIMS/MELEE/MELEE IDLE.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/ANIMS/MELEE/MELEE RUN.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/ANIMS/MELEE/MELEE RUN.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/ANIMS/MELEE/RUN/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/ANIMS/MELEE/RUN/1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/ANIMS/MELEE/RUN/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/ANIMS/MELEE/RUN/2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/ANIMS/MELEE/RUN/3.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/ANIMS/MELEE/RUN/3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/MELEE/Prefabs/EnemyCac.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/MELEE/Prefabs/EnemyCac.prefab" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -11,8 +55,17 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/../../../Dev/FPS_Serialisation/Assets/Scripts/Monobehaviours/EnemyAI.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Collaborators/Arthur/Scripts/ProjectileDamage.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SceneManagerScript.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/EnemyMixV2.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/CacAIV2.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/DoorScript.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/ChiottesScript.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/PlayerHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/EnemyTestScript.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/ChainsawScript.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/HealthBarScript.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/AcidScript.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/EnemyMixAIV3.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -20,14 +73,44 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/HarpoonScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerControls.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerCamera.cs" />
-        <option value="$PROJECT_DIR$/Assets/Collaborators/Arthur/Scripts/CameraBillboard.cs" />
-        <option value="$PROJECT_DIR$/Assets/Collaborators/Arthur/Scripts/ProjectileDamage.cs" />
-        <option value="$PROJECT_DIR$/Assets/Collaborators/Arthur/Scripts/CacAI.cs" />
-        <option value="$PROJECT_DIR$/Assets/Collaborators/Arthur/Scripts/MixAI.cs" />
-        <option value="$PROJECT_DIR$/Assets/Collaborators/Arthur/Scripts/DistAI.cs" />
-        <option value="$PROJECT_DIR$/Assets/Collaborators/Arthur/Scripts/DoorScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Collaborators/Théo/Scripts/PlayerControls.cs" />
+        <option value="$PROJECT_DIR$/Assets/Collaborators/Théo/Scripts/CharacterHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Collaborators/Théo/Scripts/CharacterController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/PlayerControls.cs" />
+        <option value="$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/test.cs" />
+        <option value="$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/CharacterController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/HarpoonMerged.cs" />
+        <option value="$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/PlayerHandler1.cs" />
+        <option value="$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/HarpinScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/HarpoonScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces.cs" />
+        <option value="$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/EnemyTestScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Sprites/MELEE/Scripts/MixAI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Sprites/MELEE/Scripts/DistAI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/ProjectileScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/AcidScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/SpikeTrapScripts.cs" />
+        <option value="$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/EnemyMixV2.cs" />
+        <option value="$PROJECT_DIR$/Assets/Sprites/MELEE/Scripts/CacAI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Sprites/MELEE/Scripts/DistAIV2.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DoorScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Sprites/MELEE/Scripts/ProjectileDamage.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/HealthBarScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/ChainsawScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/CacAIV2.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DistAIV2.cs" />
+        <option value="$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/EnemyMixAIV3.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SceneManagerScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/PlayerHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/ChiottesScript.cs" />
       </list>
     </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="240" />
+    <option name="y" value="135" />
+    <option name="width" value="1440" />
+    <option name="height" value="810" />
   </component>
   <component name="ProjectId" id="1jN6zWY3AnK7BUjwhFdzlyBzYHL" />
   <component name="ProjectViewState">
@@ -35,7 +118,11 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.34995976" />
+    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.30008045" />
     <property name="Discover.Launch.Via.Unity" value="true" />
+    <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
+    <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -45,22 +132,21 @@
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
-      <option name="selectedOptions">
-        <set />
-      </option>
+      <option name="userSelectedPid" value="false" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" pid="2620">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
-      <option name="selectedOptions">
-        <set />
-      </option>
+      <option name="pid" value="2620" />
+      <option name="userSelectedPid" value="false" />
       <method v="2" />
     </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="15b3da8d-2a0f-492a-bae2-ef78b00fc478" name="Default Changelist" comment="" />
@@ -75,14 +161,32 @@
       <workItem from="1604331675966" duration="1276000" />
       <workItem from="1604668631521" duration="8170000" />
       <workItem from="1604676985104" duration="3011000" />
-      <workItem from="1604937792255" duration="1518000" />
-      <workItem from="1604952362980" duration="649000" />
-      <workItem from="1605192793515" duration="5120000" />
-      <workItem from="1605218412966" duration="3021000" />
-      <workItem from="1605279453219" duration="2804000" />
-      <workItem from="1605727175688" duration="5051000" />
-      <workItem from="1605878583331" duration="1607000" />
-      <workItem from="1607002719425" duration="3338000" />
+      <workItem from="1604937792255" duration="2119000" />
+      <workItem from="1605194167457" duration="4075000" />
+      <workItem from="1605254890554" duration="679000" />
+      <workItem from="1605255732118" duration="2311000" />
+      <workItem from="1605258279447" duration="8131000" />
+      <workItem from="1605272523947" duration="2422000" />
+      <workItem from="1605274971971" duration="3610000" />
+      <workItem from="1605531571970" duration="7472000" />
+      <workItem from="1605544258769" duration="2691000" />
+      <workItem from="1605548246510" duration="1791000" />
+      <workItem from="1605791789344" duration="12436000" />
+      <workItem from="1605888139166" duration="3091000" />
+      <workItem from="1606137258426" duration="13092000" />
+      <workItem from="1606404185284" duration="4816000" />
+      <workItem from="1606465890165" duration="7825000" />
+      <workItem from="1606476788528" duration="1541000" />
+      <workItem from="1606482366575" duration="14803000" />
+      <workItem from="1606666979587" duration="2822000" />
+      <workItem from="1606741553206" duration="3191000" />
+      <workItem from="1606745044904" duration="6449000" />
+      <workItem from="1606754445299" duration="449000" />
+      <workItem from="1606852699856" duration="4202000" />
+      <workItem from="1606924109437" duration="7287000" />
+      <workItem from="1607009754639" duration="1276000" />
+      <workItem from="1607017955718" duration="2994000" />
+      <workItem from="1607024347158" duration="12042000" />
     </task>
     <servers />
   </component>
@@ -91,17 +195,107 @@
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="92" y="92" width="2376" height="856" key="DiffContextDialog" timestamp="1605199966870">
-      <screen x="0" y="0" width="2560" height="1040" />
+    <state width="2517" height="519" key="GridCell.Tab.0.bottom" timestamp="1607045820444">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="92" y="92" width="2376" height="856" key="DiffContextDialog/0.0.2560.1040@0.0.2560.1040" timestamp="1605199966870" />
+    <state width="2517" height="519" key="GridCell.Tab.0.bottom/2560.160.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1607045820444" />
+    <state width="2517" height="519" key="GridCell.Tab.0.center" timestamp="1607045820444">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="519" key="GridCell.Tab.0.center/2560.160.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1607045820444" />
+    <state width="2517" height="519" key="GridCell.Tab.0.left" timestamp="1607045820444">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="519" key="GridCell.Tab.0.left/2560.160.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1607045820444" />
+    <state width="2517" height="519" key="GridCell.Tab.0.right" timestamp="1607045820444">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="519" key="GridCell.Tab.0.right/2560.160.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1607045820444" />
+    <state width="2517" height="519" key="GridCell.Tab.1.bottom" timestamp="1607045820444">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="519" key="GridCell.Tab.1.bottom/2560.160.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1607045820444" />
+    <state width="2517" height="519" key="GridCell.Tab.1.center" timestamp="1607045820444">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="519" key="GridCell.Tab.1.center/2560.160.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1607045820444" />
+    <state width="2517" height="519" key="GridCell.Tab.1.left" timestamp="1607045820444">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="519" key="GridCell.Tab.1.left/2560.160.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1607045820444" />
+    <state width="2517" height="519" key="GridCell.Tab.1.right" timestamp="1607045820444">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="519" key="GridCell.Tab.1.right/2560.160.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1607045820444" />
+    <state width="2517" height="519" key="GridCell.Tab.2.bottom" timestamp="1607045820444">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="519" key="GridCell.Tab.2.bottom/2560.160.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1607045820444" />
+    <state width="2517" height="519" key="GridCell.Tab.2.center" timestamp="1607045820444">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="519" key="GridCell.Tab.2.center/2560.160.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1607045820444" />
+    <state width="2517" height="519" key="GridCell.Tab.2.left" timestamp="1607045820444">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="519" key="GridCell.Tab.2.left/2560.160.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1607045820444" />
+    <state width="2517" height="519" key="GridCell.Tab.2.right" timestamp="1607045820444">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="519" key="GridCell.Tab.2.right/2560.160.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1607045820444" />
+    <state width="2517" height="519" key="GridCell.Tab.3.bottom" timestamp="1607045820444">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="519" key="GridCell.Tab.3.bottom/2560.160.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1607045820444" />
+    <state width="2517" height="519" key="GridCell.Tab.3.center" timestamp="1607045820444">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="519" key="GridCell.Tab.3.center/2560.160.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1607045820444" />
+    <state width="2517" height="519" key="GridCell.Tab.3.left" timestamp="1607045820444">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="519" key="GridCell.Tab.3.left/2560.160.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1607045820444" />
+    <state width="2517" height="519" key="GridCell.Tab.3.right" timestamp="1607045820444">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="519" key="GridCell.Tab.3.right/2560.160.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1607045820444" />
+    <state x="1114" y="401" key="RiderGenerateDialog" timestamp="1606855192460">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1114" y="401" key="RiderGenerateDialog/2560.160.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1606855192460" />
     <state x="936" y="332" key="run.anything.popup" timestamp="1604669963857">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="936" y="332" key="run.anything.popup/2560.160.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1604669963857" />
+    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup" timestamp="1605796440338">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup/2560.160.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1605796440338" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" suspend="NONE" type="DotNet Exception Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

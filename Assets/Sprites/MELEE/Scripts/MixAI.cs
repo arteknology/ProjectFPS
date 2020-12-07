@@ -1,0 +1,208 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.AI;
+
+public class MixAI : MonoBehaviour, IDamageable
+{
+    private NavMeshAgent navMesh;
+    private GameObject _player;
+    //private Animator _anim;
+
+    public GameObject Pointe;
+    
+    public float DistanceToAttack;
+    public float AttackDist;
+    public float ToAway;
+    
+    public GameObject Projectile;
+    public Transform BulletPoint;
+    public float Constant;
+    public float fireRate = 0.5f;
+    private float nextFire = 0.0f;
+
+    public int MaxLife = 120;
+    public int CurrentLife;
+    public int PlayerDamages;
+    public int Damages;
+    
+    public bool Grabbed;
+
+    void Start()
+    {
+        CurrentLife = MaxLife;
+        Grabbed = false;
+        navMesh = GetComponent<NavMeshAgent>();
+        _player = GameObject.FindWithTag("Player");
+        //_anim = GetComponent<Animator>();
+    }
+
+    void Update()
+    {
+        float distance = Vector3.Distance(transform.position, _player.transform.position);
+        
+        if (CurrentLife > 0)
+        {
+            if (distance <= ToAway)
+            {
+                Run();
+            }
+            else
+            {
+                DistAttack();
+            }
+        }
+        else
+        {
+            Die();
+        }
+    }
+
+    //Movements
+    private void Run()
+    {
+        float distance = Vector3.Distance(transform.position, _player.transform.position);
+
+        if (!Grabbed)
+        {
+            if (distance > DistanceToAttack )
+            {
+                navMesh.speed = 4.5f;
+                Vector3 dirToPlayer = transform.position - _player.transform.position;
+                Vector3 newPos = transform.position - dirToPlayer;
+                navMesh.SetDestination(newPos);
+                //_anim.SetBool("Run", true);
+            }
+            else
+            {
+                //_anim.SetBool("Run", false);
+                navMesh.speed = 0f;
+                CacAttack();
+            }
+        }
+        else
+        { 
+            Stun();
+        }
+    }
+
+    private void Stun()
+    {
+        navMesh.speed = 0;
+        //_anim.SetBool("Run", false);
+        //_anim.SetBool("RunBack", false);
+        StartCoroutine(WaitForStunToEnd());
+    }
+    
+    //Attack & Die
+    private void Die()
+    {
+        navMesh.speed = 0; 
+        //_anim.SetTrigger("Die");
+        Destroy(this.gameObject, 1f);
+        
+    }
+    
+    private void CacAttack()
+    {
+        float distance = Vector3.Distance(transform.position, _player.transform.position);
+
+        if (distance <= DistanceToAttack)
+        {
+            //_anim.SetBool("attack", true);
+        }
+        else
+        {
+            //_anim.SetBool("attack", false);
+        }
+    }
+
+    private void DistAttack()
+    {
+        float distance = Vector3.Distance(transform.position, _player.transform.position);
+        
+        //_anim.SetBool("Run", false);
+        navMesh.speed = 0;
+        
+        if (!Grabbed)
+        {
+            if (distance > ToAway)
+            {
+                //_anim.SetBool("Attack", true);
+                Shoot();
+            }
+        }
+        else
+        { 
+            HarpoonDragged(Pointe.transform);
+            Stun();
+        }
+    }
+    
+    public void Shoot()
+    {
+        if (Time.time > nextFire )
+        {
+            nextFire = Time.time + fireRate;
+            GameObject bullet = Instantiate(Projectile, BulletPoint.position, BulletPoint.rotation);
+            Rigidbody bulletRb = bullet.GetComponent<Rigidbody>();
+            bulletRb.velocity = (_player.transform.position - bullet.transform.position).normalized * Constant;
+            //_anim.SetBool("Attack", false);
+        }
+    }
+    
+    //Damages    
+    public void TakeDamage(int amount)
+    {
+        CurrentLife = CurrentLife - amount;
+        Debug.Log("Il me reste " + CurrentLife);
+    }
+    
+    
+    public void DamagePlayer()
+    {
+        float distance = Vector3.Distance(transform.position, _player.transform.position);
+
+        if (distance <= AttackDist )
+        {
+            //_playerHandler.TakeDamage(Damages);
+            //_anim.SetBool("attack", false);
+        }
+        else
+        {
+            //_anim.SetBool("attack", false);
+        }
+    }
+//Triggers
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.CompareTag("Harpoon"))
+        {
+            Grabbed = false;
+        }
+    }
+    
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Harpoon"))
+        {
+            Grabbed = true;
+        }
+
+    }
+    
+    //Routine
+    IEnumerator WaitForStunToEnd() {
+        // Wait a frame
+        yield return null;
+        // Wait 0.2 seconds
+        yield return new WaitForSeconds(2f);
+        Grabbed = false;
+    }
+    
+    public void HarpoonDragged(Transform col)
+    {
+        transform.position = col.transform.position;
+
+    }
+}

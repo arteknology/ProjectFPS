@@ -176,11 +176,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tagsToCheck:
   - Enemy
-  - Wall
-  speed: 20
-  returnSpeed: 30
-  range: 20
-  stopRange: 2
   caster: {fileID: 0}
   collidedWith: {fileID: 0}
 --- !u!54 &-3828095226360842499
