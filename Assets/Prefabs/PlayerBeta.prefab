@@ -808,7 +808,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6134258091206097755}
   - component: {fileID: 6134258091206097754}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: PostProcess
   m_TagString: Untagged
   m_Icon: {fileID: 0}
