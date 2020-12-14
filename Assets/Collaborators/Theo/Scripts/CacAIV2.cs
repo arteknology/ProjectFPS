@@ -173,7 +173,7 @@ public class CacAIV2 : MonoBehaviour, IDamageable, IHarpoonable
     {
         yield return new WaitForSeconds(2f+ UnityEngine.Random.value*2f);
         _currentState = State.Idle;
-        Debug.Log("Je retourne au contact");
+        //Debug.Log("Je retourne au contact");
         fleeing = null;
     }
 
@@ -219,7 +219,7 @@ public class CacAIV2 : MonoBehaviour, IDamageable, IHarpoonable
     {
         if (_isAlive == false) return;
         _isAlive = false;
-        Debug.Log("J'AI MAAAAAAAAAAAAAAAAL");
+        //Debug.Log("J'AI MAAAAAAAAAAAAAAAAL");
         _navMeshAgent.isStopped = true;
         foreach (BoxCollider box in GetComponentsInChildren<BoxCollider>())
         {
