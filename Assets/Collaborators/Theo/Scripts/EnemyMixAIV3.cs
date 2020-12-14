@@ -47,6 +47,8 @@ public class EnemyMixAIV3 : MonoBehaviour, IDamageable, IHarpoonable
     public DoorScript Door;
     
     float unhookedSince = 0;
+
+    public ParticleSystem blood, deathGeyser;
     private enum State
     {
         Idle,
@@ -91,7 +93,7 @@ public class EnemyMixAIV3 : MonoBehaviour, IDamageable, IHarpoonable
         switch (_currentState)
         {
             case State.Idle:
-                SetAnimation("Idle");
+                SetAnimation("IsIdle");
                 if (_playerIsInRangeAttack)
                 {
                     _currentState = State.Distance;
@@ -153,7 +155,7 @@ public class EnemyMixAIV3 : MonoBehaviour, IDamageable, IHarpoonable
                 break;
             
             case State.Distance:
-                DistanceAttack();
+                WaitToShoot();
                 
                 if (_playerIsInMeleeRange)
                 {
@@ -182,12 +184,6 @@ public class EnemyMixAIV3 : MonoBehaviour, IDamageable, IHarpoonable
                 throw  new ArgumentOutOfRangeException();
         }
 
-        if (_currentHealth <= 0)
-        {
-            _currentHealth = 0;
-            _currentState = State.Dead;
-        }
-        
     }
 
 
@@ -208,28 +204,54 @@ public class EnemyMixAIV3 : MonoBehaviour, IDamageable, IHarpoonable
         Debug.Log("PAF");
         _navMeshAgent.speed = 0;
         _navMeshAgent.SetDestination(transform.position);
-        yield return new WaitForSeconds(0.2f);
+        yield return new WaitForSeconds(1f);
         _playerHealth.TakeDamage(10);
         yield return new WaitForSeconds(0.25f);
         _currentState = State.Idle;
         attack = null;
     }
-
-    private void DistanceAttack()
+    
+    
+    private void WaitToShoot()
     {
+        if (ShootProjectileRoutine==null) SetAnimation("IsIdle");
+        
         if (unhookedSince > 2f)
         {
-            if (Time.time > _nextFire)
+            if (Time.time > _nextFire && ShootProjectileRoutine==null)
             {
-                SetAnimation("IsDistance");
-                _navMeshAgent.speed = 0f;
-                _nextFire = Time.time + fireRate;
-                GameObject bullet = Instantiate(projectilePrefab, bulletPoint.position, bulletPoint.rotation);
-                Rigidbody bulletRb = bullet.GetComponent<Rigidbody>();
-                bulletRb.velocity = (_player.transform.position - bullet.transform.position).normalized * constant;
+                Shoot();
             }
         }
     }
+
+    void Shoot()
+    {
+        _navMeshAgent.speed = 0f;
+        SetAnimation("IsDistance");
+        if (ShootProjectileRoutine!=null) StopCoroutine(ShootProjectileRoutine);
+        ShootProjectileRoutine = StartCoroutine(ShootProjectile());
+        _nextFire = Time.time + fireRate * UnityEngine.Random.Range(0.8f,1.2f);
+    }
+    
+    private Coroutine ShootProjectileRoutine;
+   
+    IEnumerator ShootProjectile()
+    {
+        if (_isAlive)
+        {
+            Debug.Log("je commence mon shoot");
+            yield return new WaitForSeconds(0.5f);
+            Debug.Log("je lance le projectile");
+            GameObject bullet = Instantiate(projectilePrefab, bulletPoint.position, bulletPoint.rotation);
+            Rigidbody bulletRb = bullet.GetComponent<Rigidbody>();
+            bulletRb.velocity = (_player.transform.position - bullet.transform.position).normalized * constant;
+            yield return new WaitForSeconds(1f);
+            Debug.Log("j'ai terminé mon attaque");
+            ShootProjectileRoutine = null;
+        }
+    }
+    
 
     private void ChasePlayer()
     {
@@ -244,7 +266,8 @@ public class EnemyMixAIV3 : MonoBehaviour, IDamageable, IHarpoonable
     
 
     private void Die()
-    {if (_isAlive == false) return;
+    { 
+        if (_isAlive == false) return;
         _isAlive = false;
         _navMeshAgent.isStopped = true;
         foreach (BoxCollider box in GetComponentsInChildren<BoxCollider>())
@@ -252,12 +275,14 @@ public class EnemyMixAIV3 : MonoBehaviour, IDamageable, IHarpoonable
             box.isTrigger = true;
         }
         _animator.SetTrigger("Die");
+        deathGeyser.Play();
         Door.GetComponent<DoorScript>().RemoveEnemy(this.gameObject);
     }
 
     public void TakeDamage(int amount)
     {
         _currentHealth = _currentHealth - amount;
+        blood.Play();
         Debug.Log(_currentHealth);
     }
     

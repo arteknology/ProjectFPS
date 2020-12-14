@@ -24,8 +24,8 @@ public class PlayerHandler : MonoBehaviour, IDamageable
     public float currentHealth;
     public TextMeshProUGUI healthDisplay;
     public HealthBarScript HealthBar;
-    
-    
+
+    private bool godMod;
     
 
     //private float _clampedXRotation = 30f;
@@ -87,6 +87,9 @@ public class PlayerHandler : MonoBehaviour, IDamageable
 
     private void Update()
     {
+        if (Input.GetKeyDown(KeyCode.P)) godMod = !godMod;
+        
+        
         switch (_state)
         {
             //default:
@@ -292,7 +295,7 @@ public class PlayerHandler : MonoBehaviour, IDamageable
 
     public void TakeDamage(int amount)
     {
-        if (_state==State.Dead) return;
+        if (_state==State.Dead || godMod) return;
         damageSound.Play();
         currentHealth -= amount;
         ScreenShake.Shake(10f);

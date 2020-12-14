@@ -19,9 +19,9 @@ TagManager:
   - POST-PROCESS
   - PLAYER
   - HARPOON
-  - 
-  - 
-  - 
+  - WALL
+  - ENEMIES
+  - ENEMYPROJECTILES
   - 
   - 
   - 

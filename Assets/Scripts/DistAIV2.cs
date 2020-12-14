@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEditorInternal;
 using UnityEngine;
 using UnityEngine.AI;
+using Random = System.Random;
 
 public class DistAIV2 : MonoBehaviour, IDamageable, IHarpoonable
 {
@@ -15,8 +16,7 @@ public class DistAIV2 : MonoBehaviour, IDamageable, IHarpoonable
    public float constant;
    public float fireRate;
    private float _nextFire;
-   
-   
+
    public DoorScript Door;
    private bool _isFarEnough => Vector3.Distance(transform.position, _player.transform.position) >20 ;
    
@@ -32,6 +32,8 @@ public class DistAIV2 : MonoBehaviour, IDamageable, IHarpoonable
    private bool _playerIsInSight;
 
    private Animator _animator;
+
+   public ParticleSystem blood, deathGeyser;
 
    private enum State
    {
@@ -84,12 +86,10 @@ public class DistAIV2 : MonoBehaviour, IDamageable, IHarpoonable
             {
                _currentState = State.Attacking;
             }
-
             break;
 
          case State.Attacking:
-            Shoot();
-            SetAnimation("IsShooting");
+            WaitToShoot();
             break;
 
          case State.Running:
@@ -126,22 +126,60 @@ public class DistAIV2 : MonoBehaviour, IDamageable, IHarpoonable
          Vector3 dirToPlayer = transform.position - _player.transform.position;
          Vector3 newPos = transform.position + dirToPlayer;
          _navMeshAgent.SetDestination(newPos);
+         
+         if (_isFarEnough)
+         {
+            _currentState = State.Attacking;
+         }
       }
 
-   private void Shoot()
+   private void WaitToShoot()
    {
+      if (ShootProjectileRoutine==null) SetAnimation("IsIdle");
+      
+      if (!_isFarEnough)
+      {
+         _currentState = State.Running;
+         return;
+      }
+      
+      
       if (unhookedSince > 2f)
       {
-         if (Time.time > _nextFire)
+         if (Time.time > _nextFire && ShootProjectileRoutine==null)
          {
-            _navMeshAgent.speed = 0f;
-            GameObject bullet = Instantiate(projectile, bulletPoint.position, bulletPoint.rotation);
-            Rigidbody bulletRb = bullet.GetComponent<Rigidbody>();
-            bulletRb.velocity = (_player.transform.position - bullet.transform.position).normalized * constant;
-            _nextFire = Time.time + fireRate;
+            Shoot();
          }
+      }
    }
-}
+
+   void Shoot()
+   {
+      _navMeshAgent.speed = 0f;
+      SetAnimation("IsShooting");
+      if (ShootProjectileRoutine!=null) StopCoroutine(ShootProjectileRoutine);
+      ShootProjectileRoutine = StartCoroutine(ShootProjectile());
+      _nextFire = Time.time + fireRate * UnityEngine.Random.Range(0.8f,1.2f);
+   }
+   
+
+   private Coroutine ShootProjectileRoutine;
+   
+   IEnumerator ShootProjectile()
+   {
+      if (_isAlive)
+      {
+         Debug.Log("je commence mon shoot");
+         yield return new WaitForSeconds(1f);
+         Debug.Log("je lance le projectile");
+         GameObject bullet = Instantiate(projectile, bulletPoint.position, bulletPoint.rotation);
+         Rigidbody bulletRb = bullet.GetComponent<Rigidbody>();
+         bulletRb.velocity = (_player.transform.position - bullet.transform.position).normalized * constant;
+         yield return new WaitForSeconds(0.5f);
+         Debug.Log("j'ai terminé mon attaque");
+         ShootProjectileRoutine = null;
+      }
+   }
 
       public void Harpooned() // LE MOMENT OÙ IL EST HARPONNÉ
       {
@@ -163,10 +201,11 @@ public class DistAIV2 : MonoBehaviour, IDamageable, IHarpoonable
          transform.position = PlayerHandler.releasedEnemy.position;
          _navMeshAgent.isStopped = false;
          _currentState = State.Stunned;
-         StopAllCoroutines();
-         StartCoroutine(WaitToEndStun());
-         
+         if (WaitToEndStunRoutine!=null) StopCoroutine(WaitToEndStunRoutine);
+         WaitToEndStunRoutine = StartCoroutine(WaitToEndStun());
       }
+
+      private Coroutine WaitToEndStunRoutine;
       
       IEnumerator WaitToEndStun()
       {
@@ -176,12 +215,14 @@ public class DistAIV2 : MonoBehaviour, IDamageable, IHarpoonable
          }
          _navMeshAgent.isStopped = false;
          _currentState = State.Idle;
+         WaitToEndStunRoutine = null;
       }
 
 
       public void TakeDamage(int amount)
       {
          _currentHealth = _currentHealth - amount;
+         blood.Play();
          Debug.Log("Il me reste " + _currentHealth);
       }
       
@@ -196,6 +237,7 @@ public class DistAIV2 : MonoBehaviour, IDamageable, IHarpoonable
             box.isTrigger = true;
          }
          _currentState = State.Dead;
+         deathGeyser.Play();
          _animator.SetTrigger("Die");
          Door.GetComponent<DoorScript>().RemoveEnemy(this.gameObject);
       }
