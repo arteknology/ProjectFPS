@@ -227,7 +227,7 @@ public class CacAIV2 : MonoBehaviour, IDamageable, IHarpoonable
         }
         _currentState = State.Dead;
         _animator.SetTrigger("Die");
-        Door.RemoveEnemy(this.gameObject);
+        Door.RemoveEnemy();
         deathGeyser.Play();
     }
 

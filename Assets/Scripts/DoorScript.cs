@@ -6,45 +6,43 @@ using UnityEngine;
 public class DoorScript : MonoBehaviour
 {
     public GameObject Enemies;
-    public List<GameObject> EnemyList = new List<GameObject>();
-    private Transform _transform;
+    public int enemiesAlive;
     public Animator _anim;
     public BoxCollider DoorCollider;
-    // Start is called before the first frame update
-    void Start()
+
+
+
+    void Awake()
     {
-        _transform = Enemies.transform;
         Enemies.SetActive(false);
-        foreach (Transform child in _transform)
+        enemiesAlive = 0;
+        foreach (Transform child in Enemies.transform)
         {
-            if (child.gameObject.CompareTag("Enemy"))
-            {
-                EnemyList.Add(child.gameObject);
-            }
+            if (child.gameObject.CompareTag("Enemy")) enemiesAlive+=1;
         }
     }
 
+
+
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Player"))
+        if (Enemies.activeSelf==false && other.gameObject.CompareTag("Player"))
         {
-            Debug.Log("J'ai touché le joueur");
             Enemies.SetActive(true);
         }
     }
 
-    public void RemoveEnemy(GameObject enemy)
+    public void RemoveEnemy()
     {
-        EnemyList.Remove(enemy);
+        enemiesAlive -= 1;
+        if (enemiesAlive<1 && DoorCollider.enabled == false) OpenDoor();
     }
 
-    // Update is called once per frame
-    void Update()
+
+    void OpenDoor()
     {
-        if (EnemyList.Count == 0)
-        {
-            DoorCollider.enabled = false;
-            _anim.SetBool("IsOpen", true);
-        }
+        DoorCollider.enabled = false;
+        _anim.SetBool("IsOpen", true);
     }
+
 }

@@ -239,7 +239,7 @@ public class DistAIV2 : MonoBehaviour, IDamageable, IHarpoonable
          _currentState = State.Dead;
          deathGeyser.Play();
          _animator.SetTrigger("Die");
-         Door.GetComponent<DoorScript>().RemoveEnemy(this.gameObject);
+         Door.RemoveEnemy();
       }
 
       void SetAnimation(string animationSelected)

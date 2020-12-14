@@ -276,7 +276,7 @@ public class EnemyMixAIV3 : MonoBehaviour, IDamageable, IHarpoonable
         }
         _animator.SetTrigger("Die");
         deathGeyser.Play();
-        Door.GetComponent<DoorScript>().RemoveEnemy(this.gameObject);
+        Door.RemoveEnemy();
     }
 
     public void TakeDamage(int amount)
