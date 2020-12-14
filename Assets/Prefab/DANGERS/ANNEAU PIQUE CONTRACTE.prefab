@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 117951724694575278}
   - component: {fileID: 3547839274392581188}
   - component: {fileID: 908182839518520646}
-  - component: {fileID: 7772778055191171590}
-  - component: {fileID: 7381504065216260925}
   m_Layer: 0
   m_Name: ANNEAU PIQUE CONTRACTE
   m_TagString: Untagged
@@ -30,8 +28,7 @@ Transform:
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -0.058232512}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 4292602041403410483}
+  m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -82,104 +79,3 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!114 &7772778055191171590
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4373226393058684473}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 76ba00d8e6bad1d4fb8fd377527a9622, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startDelay: 1
-  delayBetweenDamage: 1
-  damage: 5
-  pics: {fileID: 468863215301246628}
---- !u!136 &7381504065216260925
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4373226393058684473}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 3
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!1001 &4193254394900713629
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 117951724694575278}
-    m_Modifications:
-    - target: {fileID: 117951724694575278, guid: 0c26a4fe8c4953442b59e537e9665f6d,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 117951724694575278, guid: 0c26a4fe8c4953442b59e537e9665f6d,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 117951724694575278, guid: 0c26a4fe8c4953442b59e537e9665f6d,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 117951724694575278, guid: 0c26a4fe8c4953442b59e537e9665f6d,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 117951724694575278, guid: 0c26a4fe8c4953442b59e537e9665f6d,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 117951724694575278, guid: 0c26a4fe8c4953442b59e537e9665f6d,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 117951724694575278, guid: 0c26a4fe8c4953442b59e537e9665f6d,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 117951724694575278, guid: 0c26a4fe8c4953442b59e537e9665f6d,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4373226393058684473, guid: 0c26a4fe8c4953442b59e537e9665f6d,
-        type: 3}
-      propertyPath: m_Name
-      value: PIC SEUL
-      objectReference: {fileID: 0}
-    - target: {fileID: 4373226393058684473, guid: 0c26a4fe8c4953442b59e537e9665f6d,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 0c26a4fe8c4953442b59e537e9665f6d, type: 3}
---- !u!1 &468863215301246628 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4373226393058684473, guid: 0c26a4fe8c4953442b59e537e9665f6d,
-    type: 3}
-  m_PrefabInstance: {fileID: 4193254394900713629}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &4292602041403410483 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 117951724694575278, guid: 0c26a4fe8c4953442b59e537e9665f6d,
-    type: 3}
-  m_PrefabInstance: {fileID: 4193254394900713629}
-  m_PrefabAsset: {fileID: 0}

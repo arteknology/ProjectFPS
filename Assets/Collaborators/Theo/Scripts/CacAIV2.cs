@@ -136,7 +136,7 @@ public class CacAIV2 : MonoBehaviour, IDamageable, IHarpoonable
 
     IEnumerator Attack()
     {
-        Debug.Log("PAF");
+        //Debug.Log("PAF");
         _navMeshAgent.speed = 0;
         _navMeshAgent.SetDestination(transform.position);
         yield return new WaitForSeconds(0.2f);
@@ -227,7 +227,7 @@ public class CacAIV2 : MonoBehaviour, IDamageable, IHarpoonable
         }
         _currentState = State.Dead;
         _animator.SetTrigger("Die");
-        Door.RemoveEnemy(this.gameObject);
+        Door.RemoveEnemy();
         deathGeyser.Play();
     }
 
