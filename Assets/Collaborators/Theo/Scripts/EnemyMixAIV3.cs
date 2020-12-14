@@ -54,6 +54,7 @@ public class EnemyMixAIV3 : MonoBehaviour, IDamageable, IHarpoonable
         Melee,
         Distance,
         Hooked,
+        Stunned,
         Dead
     }
     
@@ -168,6 +169,10 @@ public class EnemyMixAIV3 : MonoBehaviour, IDamageable, IHarpoonable
                 SetAnimation("IsIdle");
                 InHarpoon();
                 break;
+            
+            case State.Stunned:
+                SetAnimation("IsIdle");
+                break;
 
             case State.Dead:
                 Die();
@@ -270,6 +275,18 @@ public class EnemyMixAIV3 : MonoBehaviour, IDamageable, IHarpoonable
         if (!_isAlive) return;
         isGrabbed = false;
         transform.position = PlayerHandler.releasedEnemy.position;
+        _navMeshAgent.isStopped = false;
+        _currentState = State.Stunned;
+        StopAllCoroutines();
+        StartCoroutine(WaitToEndStun());
+    }
+    
+    IEnumerator WaitToEndStun()
+    {
+        while (unhookedSince < 2f)
+        {
+            yield return null;
+        }
         _navMeshAgent.isStopped = false;
         _currentState = State.Idle;
     }

@@ -34,6 +34,8 @@ public class CacAIV2 : MonoBehaviour, IDamageable, IHarpoonable
 
     float unhookedSince = 0;
 
+    public ParticleSystem blood, deathGeyser;
+
     public DoorScript Door;
 
 
@@ -44,6 +46,7 @@ public class CacAIV2 : MonoBehaviour, IDamageable, IHarpoonable
         Melee,
         Flee,
         Hooked,
+        Stunned,
         Dead
     }
 
@@ -109,6 +112,9 @@ public class CacAIV2 : MonoBehaviour, IDamageable, IHarpoonable
                 InHarpoon();
                 SetAnimation("IsIdle");
             break;
+            case State.Stunned:
+                SetAnimation("IsIdle");
+                break;
 
             case State.Dead:
                 SetAnimation("IsDead");
@@ -193,6 +199,18 @@ public class CacAIV2 : MonoBehaviour, IDamageable, IHarpoonable
         if (!_isAlive) return;
         isGrabbed = false;
         transform.position = PlayerHandler.releasedEnemy.position;
+
+        _currentState = State.Stunned;
+        StopAllCoroutines();
+        StartCoroutine(WaitToEndStun());
+    }
+
+    IEnumerator WaitToEndStun()
+    {
+        while (unhookedSince < 2f)
+        {
+            yield return null;
+        }
         _navMeshAgent.isStopped = false;
         _currentState = State.Idle;
     }
@@ -209,13 +227,15 @@ public class CacAIV2 : MonoBehaviour, IDamageable, IHarpoonable
         }
         _currentState = State.Dead;
         _animator.SetTrigger("Die");
-        Door.GetComponent<DoorScript>().RemoveEnemy(this.gameObject);
+        Door.RemoveEnemy(this.gameObject);
+        deathGeyser.Play();
     }
 
     public void TakeDamage(int amount)
     {
         if (!_isAlive) return;
         _currentHealth = _currentHealth - amount;
+        blood.Play();
     }
 
     void SetAnimation(string animationSelected)

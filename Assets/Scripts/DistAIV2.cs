@@ -39,6 +39,7 @@ public class DistAIV2 : MonoBehaviour, IDamageable, IHarpoonable
       Attacking,
       Running,
       Hooked,
+      Stunned,
       Dead
    }
 
@@ -100,6 +101,9 @@ public class DistAIV2 : MonoBehaviour, IDamageable, IHarpoonable
             InHarpoon();
             SetAnimation("IsIdle");
             break;
+         case State.Stunned:
+            SetAnimation("IsIdle");
+            break;
 
          case State.Dead:
             SetAnimation("IsDead");
@@ -157,6 +161,19 @@ public class DistAIV2 : MonoBehaviour, IDamageable, IHarpoonable
       {
          if (!_isAlive) return;
          transform.position = PlayerHandler.releasedEnemy.position;
+         _navMeshAgent.isStopped = false;
+         _currentState = State.Stunned;
+         StopAllCoroutines();
+         StartCoroutine(WaitToEndStun());
+         
+      }
+      
+      IEnumerator WaitToEndStun()
+      {
+         while (unhookedSince < 2f)
+         {
+            yield return null;
+         }
          _navMeshAgent.isStopped = false;
          _currentState = State.Idle;
       }

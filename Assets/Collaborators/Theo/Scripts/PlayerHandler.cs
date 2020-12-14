@@ -51,6 +51,8 @@ public class PlayerHandler : MonoBehaviour, IDamageable
     // Feedback stuff
     public AudioSource damageSound;
     public AudioClip deathSound;
+    public ParticleSystem hookParticles;
+    
     
     //Chainsaw stuff
     public bool isDetectingEnemy;
@@ -247,7 +249,8 @@ public class PlayerHandler : MonoBehaviour, IDamageable
                 _harpoonSize = (hit.point - harpoonTransform.position).magnitude;
                 IHarpoonable tructouche = hit.transform.GetComponentInParent<IHarpoonable>();
                 
-
+                hookParticles.Play();
+                
                 if (tructouche!=null) // SI LE HARPON A TOUCHÉ UN ENNEMI
                 {
                     enemy = tructouche;
