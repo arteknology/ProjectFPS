@@ -38,7 +38,8 @@ public class PlayerHandler : MonoBehaviour, IDamageable
     private IHarpoonable enemy;
     Transform enemyTransform;
     private bool hasHarpooned = false;
-    
+
+
     private Vector3 _pointeStartPos;
     
     //Player stuff
@@ -66,7 +67,6 @@ public class PlayerHandler : MonoBehaviour, IDamageable
         Chainsaw,
         Dead
     }
-
     private void Awake()
     {
         _characterController = GetComponent<CharacterController>();
@@ -80,7 +80,7 @@ public class PlayerHandler : MonoBehaviour, IDamageable
         releasedEnemy = transform.Find("ReleasedEnemy");
         //HealthBar.SetMaxHealth(maxHealth);
         _pointeStartPos = Pointe.transform.localPosition;
-        
+
     }
 
     private void Update()

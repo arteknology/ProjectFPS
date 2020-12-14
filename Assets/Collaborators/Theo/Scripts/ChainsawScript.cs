@@ -7,14 +7,14 @@ public class ChainsawScript : MonoBehaviour
 {
     public PlayerHandler player;
 
-    private Animator _animator;
+    public Animator _animator;
         
     private List<IDamageable> EnemiesInside = new List<IDamageable>();
 
     private void Awake()
     {
-        _animator = GetComponentInChildren<Animator>();
-        SetAnimation("IsIdle");
+        //_animator = GetComponentInChildren<Animator>();
+        //SetAnimation("IsIdle");
     }
 
     private void Update()
@@ -22,7 +22,7 @@ public class ChainsawScript : MonoBehaviour
         if (EnemiesInside.Count < 1)
         {
             CancelInvoke("Chainsaw");
-            SetAnimation("IsIdle");
+            //SetAnimation("IsIdle");
         }
         
         if (Input.GetButtonDown("Fire1") && EnemiesInside.Count >0)
@@ -33,7 +33,7 @@ public class ChainsawScript : MonoBehaviour
         if (Input.GetButtonUp("Fire1"))
         {
             CancelInvoke("Chainsaw");
-            SetAnimation("IsIdle");
+            //SetAnimation("IsIdle");
             
         }
     }
@@ -78,11 +78,11 @@ public class ChainsawScript : MonoBehaviour
         Debug.Log("COUPE COUPE COUPE");
     }
     
-    void SetAnimation(string animationSelected)
+    /*void SetAnimation(string animationSelected)
     {
-        //animator.SetBool("IsIdle", false);
-        //animator.SetBool("IsChainsaw", false);
-
-        //animator.SetBool(animationSelected, true);
-    }
+        _animator.SetBool("IsIdle", false);
+        _animator.SetBool("IsChainsaw", false);
+        
+        _animator.SetBool(animationSelected, true);
+    }*/
 }
