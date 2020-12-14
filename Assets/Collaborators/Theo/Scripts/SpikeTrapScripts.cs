@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -9,14 +9,13 @@ public class SpikeTrapScripts : MonoBehaviour
     public int damage = 20;
     public GameObject pics;
     bool activated;
-
     List<IDamageable> entitiesInside = new List<IDamageable>();
 
     Coroutine picroutine;
 
     void Start()
     {
-        pics.SetActive(false);
+        RentrerPics();
     }
 
 
@@ -46,6 +45,8 @@ public class SpikeTrapScripts : MonoBehaviour
     void RentrerPics()
     {
         pics.SetActive(false);
+        StopAllCoroutines();
+        picroutine = null;
     }
 
 
