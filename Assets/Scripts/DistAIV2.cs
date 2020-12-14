@@ -179,7 +179,7 @@ public class DistAIV2 : MonoBehaviour, IDamageable, IHarpoonable
             box.isTrigger = true;
          }
          _currentState = State.Dead;
-         SetAnimation("IsDead");
+         _animator.SetTrigger("Die");
          Door.GetComponent<DoorScript>().RemoveEnemy(this.gameObject);
       }
 

@@ -7,13 +7,13 @@ public class ChainsawScript : MonoBehaviour
 {
     public PlayerHandler player;
 
-    //public Animator animator;
+    private Animator _animator;
         
     private List<IDamageable> EnemiesInside = new List<IDamageable>();
 
     private void Awake()
     {
-        //animator = GetComponentInChildren<Animator>();
+        _animator = GetComponentInChildren<Animator>();
         SetAnimation("IsIdle");
     }
 
@@ -27,7 +27,7 @@ public class ChainsawScript : MonoBehaviour
         
         if (Input.GetButtonDown("Fire1") && EnemiesInside.Count >0)
         {
-            SetAnimation("IsChainsaw");
+            _animator.SetTrigger("ATTACK");
             InvokeRepeating("Chainsaw", 0f, 0.5f);
         }
         if (Input.GetButtonUp("Fire1"))

@@ -22,7 +22,7 @@ public class PlayerHandler : MonoBehaviour, IDamageable
 
     public float maxHealth = 100f;
     public float currentHealth;
-    //public TextMeshProUGUI healthDisplay;
+    public TextMeshProUGUI healthDisplay;
     public HealthBarScript HealthBar;
     
     
@@ -38,6 +38,8 @@ public class PlayerHandler : MonoBehaviour, IDamageable
     private IHarpoonable enemy;
     Transform enemyTransform;
     private bool hasHarpooned = false;
+    
+    private Vector3 _pointeStartPos;
     
     //Player stuff
     private CharacterController _characterController;
@@ -76,7 +78,8 @@ public class PlayerHandler : MonoBehaviour, IDamageable
         currentHealth = maxHealth;
         transform.Find("GRAPHICS").gameObject.SetActive(false);
         releasedEnemy = transform.Find("ReleasedEnemy");
-        HealthBar.SetMaxHealth(maxHealth);
+        //HealthBar.SetMaxHealth(maxHealth);
+        _pointeStartPos = Pointe.transform.localPosition;
         
     }
 
@@ -113,8 +116,8 @@ public class PlayerHandler : MonoBehaviour, IDamageable
                 break;
         }
         
-        //healthDisplay.text = currentHealth + "";
-        HealthBar.SetHealth(currentHealth);
+        healthDisplay.text = currentHealth + "";
+        //HealthBar.SetHealth(currentHealth);
         if (currentHealth <= 0 && _state!= State.Dead)
         {
             Die();
@@ -222,7 +225,7 @@ public class PlayerHandler : MonoBehaviour, IDamageable
             enemy.Released();
             enemy = null;
         }
-        Pointe.localPosition = Vector3.forward;
+        Pointe.localPosition = _pointeStartPos;
         _state = State.Normal;
         ResetGravityEffect();
         hasHarpooned = false;

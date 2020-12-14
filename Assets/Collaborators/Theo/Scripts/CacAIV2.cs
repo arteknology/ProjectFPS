@@ -208,6 +208,7 @@ public class CacAIV2 : MonoBehaviour, IDamageable, IHarpoonable
             box.isTrigger = true;
         }
         _currentState = State.Dead;
+        _animator.SetTrigger("Die");
         Door.GetComponent<DoorScript>().RemoveEnemy(this.gameObject);
     }
 

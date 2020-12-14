@@ -246,7 +246,7 @@ public class EnemyMixAIV3 : MonoBehaviour, IDamageable, IHarpoonable
         {
             box.isTrigger = true;
         }
-        SetAnimation("IsDead");
+        _animator.SetTrigger("Die");
         Door.GetComponent<DoorScript>().RemoveEnemy(this.gameObject);
     }
 
