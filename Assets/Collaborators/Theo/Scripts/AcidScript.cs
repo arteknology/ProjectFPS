@@ -17,7 +17,7 @@ public class AcidScript : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Je détecte un truc");
+        //Debug.Log("Je détecte un truc");
         IDamageable entity = other.GetComponentInParent<IDamageable>();
         if (entity!=null && EntitiesInside.Contains(entity)==false) EntitiesInside.Add(entity);
     }

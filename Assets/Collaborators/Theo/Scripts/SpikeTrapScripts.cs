@@ -22,9 +22,9 @@ public class SpikeTrapScripts : MonoBehaviour
 
     IEnumerator StartPics()
     {
-        Debug.Log("ATTENTION LES PICS VONT SORTIR");
+        //Debug.Log("ATTENTION LES PICS VONT SORTIR");
         yield return new WaitForSeconds(startDelay);
-        Debug.Log("ON BALANCE LES PICS");
+        //Debug.Log("ON BALANCE LES PICS");
         pics.SetActive(true);
         float chrono = 0;
         while (entitiesInside.Count >0)
