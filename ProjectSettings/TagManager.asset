@@ -17,8 +17,8 @@ TagManager:
   - 
   - 
   - POST-PROCESS
-  - 
-  - 
+  - PLAYER
+  - HARPOON
   - 
   - 
   - 
@@ -41,6 +41,18 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: BG
+    uniqueID: 84929433
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: HARPOON
+    uniqueID: 3106404891
+    locked: 0
+  - name: FX
+    uniqueID: 167840691
+    locked: 0
+  - name: UI
+    uniqueID: 891911191
     locked: 0
