@@ -58,7 +58,7 @@ public class SpikeTrapScripts : MonoBehaviour
         if (entity!=null && !entitiesInside.Contains(entity))
         {
             entitiesInside.Add(entity);
-            entity.TakeDamage(damage);
+            if (pics.activeSelf) entity.TakeDamage(damage);
             if (picroutine==null) picroutine = StartCoroutine(StartPics());
         }
     }
