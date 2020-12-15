@@ -157,7 +157,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 474fb5f12f3737e4fa3bb107d7fd8f80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isRightToLeft: 1
 --- !u!1 &1013279522559784637
 GameObject:
   m_ObjectHideFlags: 0
@@ -218,7 +217,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 7
   timeBetweenDamage: 0.5
-  scies: {fileID: 3186633732475032338}
+  scies: {fileID: 0}
 --- !u!1 &1186637709147429298
 GameObject:
   m_ObjectHideFlags: 0
@@ -326,7 +325,7 @@ ParticleSystem:
       m_RotationOrder: 4
   moveWithTransform: 1
   moveWithCustomTransform: {fileID: 0}
-  scalingMode: 2
+  scalingMode: 1
   randomSeed: 0
   InitialModule:
     serializedVersion: 3
@@ -1084,8 +1083,8 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 7
-      minScalar: 2
+      scalar: 5
+      minScalar: 0
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -5160,7 +5159,7 @@ ParticleSystem:
       m_RotationOrder: 4
   moveWithTransform: 1
   moveWithCustomTransform: {fileID: 0}
-  scalingMode: 2
+  scalingMode: 1
   randomSeed: 0
   InitialModule:
     serializedVersion: 3
@@ -5918,8 +5917,8 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 7
-      minScalar: 2
+      scalar: 5
+      minScalar: 0
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -10074,7 +10073,7 @@ ParticleSystem:
       m_RotationOrder: 4
   moveWithTransform: 1
   moveWithCustomTransform: {fileID: 0}
-  scalingMode: 2
+  scalingMode: 1
   randomSeed: 0
   InitialModule:
     serializedVersion: 3
@@ -10832,8 +10831,8 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 7
-      minScalar: 2
+      scalar: 5
+      minScalar: 0
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -14828,7 +14827,7 @@ ParticleSystem:
       m_RotationOrder: 4
   moveWithTransform: 1
   moveWithCustomTransform: {fileID: 0}
-  scalingMode: 2
+  scalingMode: 1
   randomSeed: 0
   InitialModule:
     serializedVersion: 3
@@ -15586,8 +15585,8 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 7
-      minScalar: 2
+      scalar: 5
+      minScalar: 0
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -19611,15 +19610,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6317045742170860909}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
+  m_LocalPosition: {x: 0, y: -0.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 6876355993936267991}
   - {fileID: 8727120636236838575}
   m_Father: {fileID: 1202625759335838209}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
 --- !u!114 &5468586269842425428
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19632,4 +19631,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 474fb5f12f3737e4fa3bb107d7fd8f80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isRightToLeft: 0

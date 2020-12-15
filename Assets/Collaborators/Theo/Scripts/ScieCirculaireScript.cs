@@ -13,7 +13,7 @@ public class ScieCirculaireScript : MonoBehaviour
 
     void Update()
     {
-        scies.Rotate(Vector3.up * Time.deltaTime * 180f);
+        //scies.Rotate(Vector3.up * Time.deltaTime * 180f);
     }
 
 
