@@ -4764,8 +4764,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2531056785031234349}
   - component: {fileID: 1103370313990514651}
-  - component: {fileID: 4035397081366932529}
-  - component: {fileID: 3031633109192396710}
+  - component: {fileID: 1066129951031904627}
   m_Layer: 0
   m_Name: PROJECTIL LOURD
   m_TagString: Untagged
@@ -4805,7 +4804,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &4035397081366932529
+--- !u!114 &1066129951031904627
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4818,18 +4817,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damages: 20
---- !u!114 &3031633109192396710
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5482116638035236717}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 846521fddcffa3a4aae5b488a919f050, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &7201708584277406507
 GameObject:
   m_ObjectHideFlags: 0
@@ -4840,6 +4827,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3279440241980400016}
   - component: {fileID: 771735703207387791}
+  - component: {fileID: 2491281638662332829}
   m_Layer: 0
   m_Name: GRAPHICS
   m_TagString: Untagged
@@ -4912,6 +4900,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2491281638662332829
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7201708584277406507}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 846521fddcffa3a4aae5b488a919f050, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7233266402841617535
 GameObject:
   m_ObjectHideFlags: 0
@@ -4922,7 +4922,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9850405546554866}
   - component: {fileID: 7767867929319301632}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: COLLIDER
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4951,7 +4951,7 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7233266402841617535}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5

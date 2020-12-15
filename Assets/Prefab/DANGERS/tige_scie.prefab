@@ -218,6 +218,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 7
   timeBetweenDamage: 0.5
+  scies: {fileID: 3186633732475032338}
 --- !u!1 &1186637709147429298
 GameObject:
   m_ObjectHideFlags: 0
@@ -325,7 +326,7 @@ ParticleSystem:
       m_RotationOrder: 4
   moveWithTransform: 1
   moveWithCustomTransform: {fileID: 0}
-  scalingMode: 1
+  scalingMode: 2
   randomSeed: 0
   InitialModule:
     serializedVersion: 3
@@ -1083,8 +1084,8 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 5
-      minScalar: 0
+      scalar: 7
+      minScalar: 2
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -5159,7 +5160,7 @@ ParticleSystem:
       m_RotationOrder: 4
   moveWithTransform: 1
   moveWithCustomTransform: {fileID: 0}
-  scalingMode: 1
+  scalingMode: 2
   randomSeed: 0
   InitialModule:
     serializedVersion: 3
@@ -5917,8 +5918,8 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 5
-      minScalar: 0
+      scalar: 7
+      minScalar: 2
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -10073,7 +10074,7 @@ ParticleSystem:
       m_RotationOrder: 4
   moveWithTransform: 1
   moveWithCustomTransform: {fileID: 0}
-  scalingMode: 1
+  scalingMode: 2
   randomSeed: 0
   InitialModule:
     serializedVersion: 3
@@ -10831,8 +10832,8 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 5
-      minScalar: 0
+      scalar: 7
+      minScalar: 2
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -14827,7 +14828,7 @@ ParticleSystem:
       m_RotationOrder: 4
   moveWithTransform: 1
   moveWithCustomTransform: {fileID: 0}
-  scalingMode: 1
+  scalingMode: 2
   randomSeed: 0
   InitialModule:
     serializedVersion: 3
@@ -15585,8 +15586,8 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 5
-      minScalar: 0
+      scalar: 7
+      minScalar: 2
       maxCurve:
         serializedVersion: 2
         m_Curve:
