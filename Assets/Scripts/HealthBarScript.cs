@@ -1,7 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.ProBuilder;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 public class HealthBarScript : MonoBehaviour
@@ -18,5 +15,4 @@ public class HealthBarScript : MonoBehaviour
     {
         slider.value = health;
     }
-
 }

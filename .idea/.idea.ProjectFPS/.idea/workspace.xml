@@ -7,50 +7,17 @@
     <list default="true" id="15b3da8d-2a0f-492a-bae2-ef78b00fc478" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ProjectFPS/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ProjectFPS/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ProjectFPS/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ProjectFPS/.idea/indexLayout.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ProjectFPS/.idea/projectSettingsUpdater.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ProjectFPS/.idea/projectSettingsUpdater.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ProjectFPS/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ProjectFPS/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/ChainsawScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/ChainsawScript.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Plugins.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Plugins/Editor.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Plugins/Editor/JetBrains.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/DANGERS/tige_scie.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/DANGERS/tige_scie.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/PlayerBeta.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/PlayerBeta.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GAME.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GAME.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GAME/LightingData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GAME/LightingData.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GAME/Lightmap-0_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GAME/Lightmap-0_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GAME/Lightmap-0_comp_dir.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GAME/Lightmap-0_comp_dir.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GAME/Lightmap-0_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GAME/Lightmap-0_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GAME/Lightmap-0_comp_light.exr.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GAME/Lightmap-0_comp_light.exr.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GAME/Lightmap-0_comp_shadowmask.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GAME/Lightmap-0_comp_shadowmask.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GAME/Lightmap-0_comp_shadowmask.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GAME/Lightmap-0_comp_shadowmask.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GAME/OcclusionCullingData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GAME/OcclusionCullingData.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GAME/OcclusionCullingData.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GAME/OcclusionCullingData.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GAME/ReflectionProbe-0.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GAME/ReflectionProbe-0.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GAME/ReflectionProbe-0.exr.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GAME/ReflectionProbe-0.exr.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GAME/ReflectionProbe-1.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GAME/ReflectionProbe-1.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GAME/ReflectionProbe-1.exr.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GAME/ReflectionProbe-1.exr.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GAME/ReflectionProbe-10.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GAME/ReflectionProbe-10.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GAME/ReflectionProbe-10.exr.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GAME/ReflectionProbe-10.exr.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GAME/ReflectionProbe-2.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GAME/ReflectionProbe-2.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GAME/ReflectionProbe-2.exr.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GAME/ReflectionProbe-2.exr.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GAME/ReflectionProbe-3.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GAME/ReflectionProbe-3.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GAME/ReflectionProbe-3.exr.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GAME/ReflectionProbe-3.exr.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GAME/ReflectionProbe-4.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GAME/ReflectionProbe-4.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GAME/ReflectionProbe-4.exr.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GAME/ReflectionProbe-4.exr.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GAME/ReflectionProbe-5.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GAME/ReflectionProbe-5.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GAME/ReflectionProbe-5.exr.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GAME/ReflectionProbe-5.exr.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GAME/ReflectionProbe-6.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GAME/ReflectionProbe-6.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GAME/ReflectionProbe-6.exr.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GAME/ReflectionProbe-6.exr.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GAME/ReflectionProbe-7.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GAME/ReflectionProbe-7.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GAME/ReflectionProbe-7.exr.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GAME/ReflectionProbe-7.exr.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GAME/ReflectionProbe-8.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GAME/ReflectionProbe-8.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GAME/ReflectionProbe-8.exr.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GAME/ReflectionProbe-8.exr.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GAME/ReflectionProbe-9.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GAME/ReflectionProbe-9.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GAME/ReflectionProbe-9.exr.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GAME/ReflectionProbe-9.exr.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScieCirculaireRotation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScieCirculaireRotation.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/ANIMS/CHAINSAW/Chainsaw ATTACk.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/ANIMS/CHAINSAW/Chainsaw ATTACk.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/PlayerHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/PlayerHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DistAIV2.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DistAIV2.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DoorScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DoorScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HealthBarScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HealthBarScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interfaces.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interfaces.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PrefabReplacement.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PrefabReplacement.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SceneManagerScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SceneManagerScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -58,28 +25,22 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>oldpoint</find>
-      <find>isstopped</find>
-      <find>door</find>
-      <find>firer</find>
-    </findStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/ChainScript.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/CacAIV2.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/EnemyMixAIV3.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/ChainsawScript.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Sprites/MELEE/Scripts/ProjectileDamage.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/DistAIV2.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/DoorScript.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/TextMesh Pro/Shaders/TMP_SDF.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/EnemyMixAIV3.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/PlayerHandler.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/ScreenShake.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Sprites/MELEE/Scripts/DistAI.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/ChainsawScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ScieCirculaireRotation.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/ScreenShake.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Sprites/MELEE/Scripts/ProjectileDamage.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/ChainScript.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/DistAIV2.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/CacAIV2.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -113,16 +74,20 @@
         <option value="$PROJECT_DIR$/Assets/ChiottesScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/ChainScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/CacAIV2.cs" />
-        <option value="$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/PlayerHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Sprites/MELEE/Scripts/ProjectileDamage.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/DistAIV2.cs" />
         <option value="$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/EnemyMixAIV3.cs" />
         <option value="$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/ChainsawScript.cs" />
         <option value="$PROJECT_DIR$/Assets/ScieCirculaireRotation.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PrefabReplacement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DistAIV2.cs" />
+        <option value="$PROJECT_DIR$/Assets/Collaborators/Theo/Scripts/PlayerHandler.cs" />
       </list>
     </option>
   </component>
   <component name="ProjectId" id="1jN6zWY3AnK7BUjwhFdzlyBzYHL" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -218,6 +183,8 @@
       <workItem from="1608036674869" duration="413000" />
       <workItem from="1608050015035" duration="604000" />
       <workItem from="1608108121761" duration="3808000" />
+      <workItem from="1608114669753" duration="505000" />
+      <workItem from="1608115670969" duration="666000" />
     </task>
     <servers />
   </component>

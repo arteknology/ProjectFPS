@@ -1,11 +1,10 @@
-﻿public interface IHarpoonable 
+﻿public interface IHarpoonable
 {
     void Harpooned();
     void Released();
-
 }
 
-public interface IDamageable 
+public interface IDamageable
 {
     void TakeDamage(int amount);
 }
