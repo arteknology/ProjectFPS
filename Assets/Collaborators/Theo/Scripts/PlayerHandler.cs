@@ -73,7 +73,7 @@ public class PlayerHandler : MonoBehaviour, IDamageable
         currentHealth = maxHealth;
         transform.Find("GRAPHICS").gameObject.SetActive(false);
         releasedEnemy = transform.Find("ReleasedEnemy");
-        //HealthBar.SetMaxHealth(maxHealth);
+        HealthBar.SetMaxHealth(maxHealth);
         _pointeStartPos = Pointe.transform.localPosition;
 
     }
@@ -115,7 +115,7 @@ public class PlayerHandler : MonoBehaviour, IDamageable
         }
         
         healthDisplay.text = currentHealth + "";
-        //HealthBar.SetHealth(currentHealth);
+        HealthBar.SetHealth(currentHealth);
         if (currentHealth <= 0 && _state!= State.Dead)
         {
             Die();
