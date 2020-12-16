@@ -2737,6 +2737,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Porte
       objectReference: {fileID: 0}
+    - target: {fileID: 3558760380392688652, guid: 6db6abdb6e14fec43b870e4e7fceefbd,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.42
+      objectReference: {fileID: 0}
     - target: {fileID: 3558760380392688655, guid: 6db6abdb6e14fec43b870e4e7fceefbd,
         type: 3}
       propertyPath: Enemies
