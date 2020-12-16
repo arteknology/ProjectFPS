@@ -34,6 +34,8 @@ public class CacAIV2 : MonoBehaviour, IDamageable, IHarpoonable
 
     float unhookedSince = 0;
 
+    public ParticleSystem blood, deathGeyser;
+
     public DoorScript Door;
 
 
@@ -44,6 +46,7 @@ public class CacAIV2 : MonoBehaviour, IDamageable, IHarpoonable
         Melee,
         Flee,
         Hooked,
+        Stunned,
         Dead
     }
 
@@ -109,6 +112,9 @@ public class CacAIV2 : MonoBehaviour, IDamageable, IHarpoonable
                 InHarpoon();
                 SetAnimation("IsIdle");
             break;
+            case State.Stunned:
+                SetAnimation("IsIdle");
+                break;
 
             case State.Dead:
                 SetAnimation("IsDead");
@@ -130,7 +136,7 @@ public class CacAIV2 : MonoBehaviour, IDamageable, IHarpoonable
 
     IEnumerator Attack()
     {
-        Debug.Log("PAF");
+        //Debug.Log("PAF");
         _navMeshAgent.speed = 0;
         _navMeshAgent.SetDestination(transform.position);
         yield return new WaitForSeconds(0.2f);
@@ -167,7 +173,7 @@ public class CacAIV2 : MonoBehaviour, IDamageable, IHarpoonable
     {
         yield return new WaitForSeconds(2f+ UnityEngine.Random.value*2f);
         _currentState = State.Idle;
-        Debug.Log("Je retourne au contact");
+        //Debug.Log("Je retourne au contact");
         fleeing = null;
     }
 
@@ -193,6 +199,18 @@ public class CacAIV2 : MonoBehaviour, IDamageable, IHarpoonable
         if (!_isAlive) return;
         isGrabbed = false;
         transform.position = PlayerHandler.releasedEnemy.position;
+
+        _currentState = State.Stunned;
+        StopAllCoroutines();
+        StartCoroutine(WaitToEndStun());
+    }
+
+    IEnumerator WaitToEndStun()
+    {
+        while (unhookedSince < 2f)
+        {
+            yield return null;
+        }
         _navMeshAgent.isStopped = false;
         _currentState = State.Idle;
     }
@@ -201,21 +219,23 @@ public class CacAIV2 : MonoBehaviour, IDamageable, IHarpoonable
     {
         if (_isAlive == false) return;
         _isAlive = false;
-        Debug.Log("J'AI MAAAAAAAAAAAAAAAAL");
+        //Debug.Log("J'AI MAAAAAAAAAAAAAAAAL");
         _navMeshAgent.isStopped = true;
         foreach (BoxCollider box in GetComponentsInChildren<BoxCollider>())
         {
             box.isTrigger = true;
         }
         _currentState = State.Dead;
-        SetAnimation("IsDead");
-        Door.GetComponent<DoorScript>().RemoveEnemy(this.gameObject);
+        _animator.SetTrigger("Die");
+        Door.RemoveEnemy();
+        deathGeyser.Play();
     }
 
     public void TakeDamage(int amount)
     {
         if (!_isAlive) return;
         _currentHealth = _currentHealth - amount;
+        blood.Play();
     }
 
     void SetAnimation(string animationSelected)

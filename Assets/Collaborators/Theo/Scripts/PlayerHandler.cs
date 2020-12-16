@@ -1,13 +1,6 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using TMPro;
-using UnityEditor;
+﻿using TMPro;
 using UnityEngine;
-using UnityEngine.Events;
 using UnityEngine.SceneManagement;
-using UnityEngine.Serialization;
-using UnityEngine.UI;
 
 
 public class PlayerHandler : MonoBehaviour, IDamageable
@@ -22,10 +15,10 @@ public class PlayerHandler : MonoBehaviour, IDamageable
 
     public float maxHealth = 100f;
     public float currentHealth;
-    //public TextMeshProUGUI healthDisplay;
+    public TextMeshProUGUI healthDisplay;
     public HealthBarScript HealthBar;
-    
-    
+
+    private bool godMod;
     
 
     //private float _clampedXRotation = 30f;
@@ -38,6 +31,9 @@ public class PlayerHandler : MonoBehaviour, IDamageable
     private IHarpoonable enemy;
     Transform enemyTransform;
     private bool hasHarpooned = false;
+
+
+    private Vector3 _pointeStartPos;
     
     //Player stuff
     private CharacterController _characterController;
@@ -48,6 +44,8 @@ public class PlayerHandler : MonoBehaviour, IDamageable
     // Feedback stuff
     public AudioSource damageSound;
     public AudioClip deathSound;
+    public ParticleSystem hookParticles;
+    
     
     //Chainsaw stuff
     public bool isDetectingEnemy;
@@ -64,7 +62,6 @@ public class PlayerHandler : MonoBehaviour, IDamageable
         Chainsaw,
         Dead
     }
-
     private void Awake()
     {
         _characterController = GetComponent<CharacterController>();
@@ -76,12 +73,16 @@ public class PlayerHandler : MonoBehaviour, IDamageable
         currentHealth = maxHealth;
         transform.Find("GRAPHICS").gameObject.SetActive(false);
         releasedEnemy = transform.Find("ReleasedEnemy");
-        HealthBar.SetMaxHealth(maxHealth);
-        
+        //HealthBar.SetMaxHealth(maxHealth);
+        _pointeStartPos = Pointe.transform.localPosition;
+
     }
 
     private void Update()
     {
+        if (Input.GetKeyDown(KeyCode.P)) godMod = !godMod;
+        
+        
         switch (_state)
         {
             //default:
@@ -113,8 +114,8 @@ public class PlayerHandler : MonoBehaviour, IDamageable
                 break;
         }
         
-        //healthDisplay.text = currentHealth + "";
-        HealthBar.SetHealth(currentHealth);
+        healthDisplay.text = currentHealth + "";
+        //HealthBar.SetHealth(currentHealth);
         if (currentHealth <= 0 && _state!= State.Dead)
         {
             Die();
@@ -222,7 +223,7 @@ public class PlayerHandler : MonoBehaviour, IDamageable
             enemy.Released();
             enemy = null;
         }
-        Pointe.localPosition = Vector3.forward;
+        Pointe.localPosition = _pointeStartPos;
         _state = State.Normal;
         ResetGravityEffect();
         hasHarpooned = false;
@@ -244,7 +245,8 @@ public class PlayerHandler : MonoBehaviour, IDamageable
                 _harpoonSize = (hit.point - harpoonTransform.position).magnitude;
                 IHarpoonable tructouche = hit.transform.GetComponentInParent<IHarpoonable>();
                 
-
+                hookParticles.Play();
+                
                 if (tructouche!=null) // SI LE HARPON A TOUCHÉ UN ENNEMI
                 {
                     enemy = tructouche;
@@ -286,7 +288,7 @@ public class PlayerHandler : MonoBehaviour, IDamageable
 
     public void TakeDamage(int amount)
     {
-        if (_state==State.Dead) return;
+        if (_state==State.Dead || godMod) return;
         damageSound.Play();
         currentHealth -= amount;
         ScreenShake.Shake(10f);

@@ -7,14 +7,14 @@ public class ChainsawScript : MonoBehaviour
 {
     public PlayerHandler player;
 
-    //public Animator animator;
+    public Animator _animator;
         
     private List<IDamageable> EnemiesInside = new List<IDamageable>();
 
     private void Awake()
     {
-        //animator = GetComponentInChildren<Animator>();
-        SetAnimation("IsIdle");
+        //_animator = GetComponentInChildren<Animator>();
+        //SetAnimation("IsIdle");
     }
 
     private void Update()
@@ -22,18 +22,18 @@ public class ChainsawScript : MonoBehaviour
         if (EnemiesInside.Count < 1)
         {
             CancelInvoke("Chainsaw");
-            SetAnimation("IsIdle");
+            //SetAnimation("IsIdle");
         }
         
         if (Input.GetButtonDown("Fire1") && EnemiesInside.Count >0)
         {
-            SetAnimation("IsChainsaw");
-            InvokeRepeating("Chainsaw", 0f, 0.5f);
+            _animator.SetTrigger("ATTACK");
+            StartCoroutine(WaitForDamage());
         }
         if (Input.GetButtonUp("Fire1"))
         {
             CancelInvoke("Chainsaw");
-            SetAnimation("IsIdle");
+            //SetAnimation("IsIdle");
             
         }
     }
@@ -69,6 +69,13 @@ public class ChainsawScript : MonoBehaviour
         }
     }
 
+    public IEnumerator WaitForDamage()
+    {
+        yield return new WaitForSeconds(0.2f);
+        InvokeRepeating("Chainsaw", 0f, 0.5f);
+
+    }
+
     public void Chainsaw()
     {
         foreach (IDamageable enemy in EnemiesInside)
@@ -76,13 +83,14 @@ public class ChainsawScript : MonoBehaviour
             enemy.TakeDamage(10);
         }
         Debug.Log("COUPE COUPE COUPE");
+        ScreenShake.Shake(2f);
     }
     
-    void SetAnimation(string animationSelected)
+    /*void SetAnimation(string animationSelected)
     {
-        //animator.SetBool("IsIdle", false);
-        //animator.SetBool("IsChainsaw", false);
-
-        //animator.SetBool(animationSelected, true);
-    }
+        _animator.SetBool("IsIdle", false);
+        _animator.SetBool("IsChainsaw", false);
+        
+        _animator.SetBool(animationSelected, true);
+    }*/
 }

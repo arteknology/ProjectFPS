@@ -12,21 +12,21 @@ public class ProjectileDamage : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Player"))
+        PlayerHandler player = other.GetComponentInParent<PlayerHandler>();
+
+        if (player != null)
         {
-            Debug.Log("J'ai touché le joueur");
-            other.GetComponent<PlayerHandler>().TakeDamage(damages);
+            player.TakeDamage(damages);
             DestroyBullet();
         }
+        
 
         if (other.gameObject.CompareTag("Enemy") || other.gameObject.CompareTag("Harpoon"))
         {
             
         }
-
         else
         {
-            Debug.Log("BOOM");
             DestroyBullet();
         }
     }
