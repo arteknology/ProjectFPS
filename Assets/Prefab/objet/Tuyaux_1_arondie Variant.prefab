@@ -1,5 +1,19 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!136 &1183422822215961779
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5060660336638717055}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 1.191782
+  m_Height: 11.893294
+  m_Direction: 1
+  m_Center: {x: 0.013006687, y: 5.960076, z: -0.049747944}
 --- !u!1001 &5402764923301220654
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -72,5 +86,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tuyaux_1_arondie Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3382371b0f6827247848b73aea8cfe0c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3382371b0f6827247848b73aea8cfe0c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3382371b0f6827247848b73aea8cfe0c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3382371b0f6827247848b73aea8cfe0c, type: 3}
+--- !u!1 &5060660336638717055 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 3382371b0f6827247848b73aea8cfe0c,
+    type: 3}
+  m_PrefabInstance: {fileID: 5402764923301220654}
+  m_PrefabAsset: {fileID: 0}

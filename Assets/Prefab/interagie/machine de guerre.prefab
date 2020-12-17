@@ -9,12 +9,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 743386690336913999}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: 'pique '
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &743386690336913999
 Transform:
@@ -51,12 +51,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4552018670794161621}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: GameObject (2)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &4552018670794161621
 Transform:
@@ -135,12 +135,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4552018671317218228}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: GameObject
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &4552018671317218228
 Transform:
@@ -219,12 +219,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4552018671777585005}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: GameObject (3)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &4552018671777585005
 Transform:
@@ -303,12 +303,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4552018671995923938}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: GameObject (1)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &4552018671995923938
 Transform:
@@ -387,12 +387,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4552018672481862268}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: machine de guerre
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &4552018672481862268
 Transform:
@@ -431,12 +431,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1695528295079774782}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: tuyaux
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1695528295079774782
 Transform:
@@ -545,6 +545,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pique_En_Fer (48)
       objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08b0f77ce6a80504bbcb539c52dc88d3, type: 3}
 --- !u!4 &5530109346168364113 stripped
@@ -630,6 +640,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pique_En_Fer (36)
       objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08b0f77ce6a80504bbcb539c52dc88d3, type: 3}
 --- !u!4 &5530109346167929587 stripped
@@ -649,6 +669,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pique_En_Fer (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4473881526279515489, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
         type: 3}
@@ -734,6 +764,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pique_En_Fer (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4473881526279515489, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
         type: 3}
@@ -885,6 +925,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pique_En_Fer (49)
       objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08b0f77ce6a80504bbcb539c52dc88d3, type: 3}
 --- !u!4 &5530109346148433192 stripped
@@ -904,6 +954,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pique_En_Fer (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4473881526279515489, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
         type: 3}
@@ -990,6 +1050,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pique_En_Fer (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 4473881526279515489, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1075,6 +1145,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pique_En_Fer (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 4473881526279515489, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1159,6 +1239,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pique_En_Fer (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4473881526279515489, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
         type: 3}
@@ -1300,6 +1390,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pique_En_Fer (46)
       objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08b0f77ce6a80504bbcb539c52dc88d3, type: 3}
 --- !u!4 &5530109346122680425 stripped
@@ -1319,6 +1419,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pique_En_Fer (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4473881526279515489, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
         type: 3}
@@ -1470,6 +1580,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pique_En_Fer (32)
       objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08b0f77ce6a80504bbcb539c52dc88d3, type: 3}
 --- !u!4 &5530109346120692675 stripped
@@ -1554,6 +1674,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pique_En_Fer (46)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08b0f77ce6a80504bbcb539c52dc88d3, type: 3}
@@ -1640,6 +1770,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pique_En_Fer (53)
       objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08b0f77ce6a80504bbcb539c52dc88d3, type: 3}
 --- !u!4 &5530109346195795345 stripped
@@ -1659,6 +1799,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Tuyaux_Bout_Decaler Variant (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 203727396881454817, guid: 514ae061154c9c24f96d4c70dcfed7c9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 691329276432223323, guid: 514ae061154c9c24f96d4c70dcfed7c9,
         type: 3}
@@ -1729,6 +1874,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 1.4384145
+      objectReference: {fileID: 0}
+    - target: {fileID: 3171615966463358796, guid: 514ae061154c9c24f96d4c70dcfed7c9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 7054190266049591637, guid: 514ae061154c9c24f96d4c70dcfed7c9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 514ae061154c9c24f96d4c70dcfed7c9, type: 3}
@@ -1814,6 +1969,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pique_En_Fer (36)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08b0f77ce6a80504bbcb539c52dc88d3, type: 3}
@@ -1975,6 +2140,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pique_En_Fer (39)
       objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08b0f77ce6a80504bbcb539c52dc88d3, type: 3}
 --- !u!4 &5530109346000091020 stripped
@@ -2060,6 +2235,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pique_En_Fer (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08b0f77ce6a80504bbcb539c52dc88d3, type: 3}
 --- !u!4 &5530109345996774177 stripped
@@ -2079,6 +2264,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pique_En_Fer (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4473881526279515489, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
         type: 3}
@@ -2220,6 +2415,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pique_En_Fer (41)
       objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08b0f77ce6a80504bbcb539c52dc88d3, type: 3}
 --- !u!4 &5530109345980836362 stripped
@@ -2239,6 +2444,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pique_En_Fer (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4473881526279515489, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
         type: 3}
@@ -2325,6 +2540,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pique_En_Fer (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 4473881526279515489, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2410,6 +2635,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pique_En_Fer (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 4473881526279515489, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2494,6 +2729,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pique_En_Fer (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4473881526279515489, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
         type: 3}
@@ -2640,6 +2885,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pique_En_Fer (27)
       objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08b0f77ce6a80504bbcb539c52dc88d3, type: 3}
 --- !u!4 &5530109346077616820 stripped
@@ -2659,6 +2914,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pique_En_Fer (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4473881526279515489, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
         type: 3}
@@ -2810,6 +3075,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pique_En_Fer (31)
       objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08b0f77ce6a80504bbcb539c52dc88d3, type: 3}
 --- !u!4 &5530109346065940810 stripped
@@ -2895,6 +3170,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pique_En_Fer (32)
       objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08b0f77ce6a80504bbcb539c52dc88d3, type: 3}
 --- !u!4 &5530109346076497754 stripped
@@ -2914,6 +3199,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pique_En_Fer (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4473881526279515489, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
         type: 3}
@@ -3065,6 +3360,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pique_En_Fer (47)
       objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08b0f77ce6a80504bbcb539c52dc88d3, type: 3}
 --- !u!4 &5530109346436855279 stripped
@@ -3150,6 +3455,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pique_En_Fer (38)
       objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08b0f77ce6a80504bbcb539c52dc88d3, type: 3}
 --- !u!4 &5530109346436417635 stripped
@@ -3169,6 +3484,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pique_En_Fer (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4473881526279515489, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
         type: 3}
@@ -3325,6 +3650,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pique_En_Fer (31)
       objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08b0f77ce6a80504bbcb539c52dc88d3, type: 3}
 --- !u!4 &5530109346433185756 stripped
@@ -3405,6 +3740,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pique_En_Fer (33)
       objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08b0f77ce6a80504bbcb539c52dc88d3, type: 3}
 --- !u!4 &5530109346441423012 stripped
@@ -3424,6 +3769,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pique_En_Fer (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4473881526279515489, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
         type: 3}
@@ -3575,6 +3930,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pique_En_Fer (45)
       objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08b0f77ce6a80504bbcb539c52dc88d3, type: 3}
 --- !u!4 &5530109346416682851 stripped
@@ -3659,6 +4024,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pique_En_Fer (40)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08b0f77ce6a80504bbcb539c52dc88d3, type: 3}
@@ -3745,6 +4120,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pique_En_Fer (53)
       objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08b0f77ce6a80504bbcb539c52dc88d3, type: 3}
 --- !u!4 &5530109346429129669 stripped
@@ -3764,6 +4149,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Tuyaux_Bout_Decaler Variant (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 203727396881454817, guid: 514ae061154c9c24f96d4c70dcfed7c9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 691329276432223323, guid: 514ae061154c9c24f96d4c70dcfed7c9,
         type: 3}
@@ -3834,6 +4224,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 1.4384143
+      objectReference: {fileID: 0}
+    - target: {fileID: 3171615966463358796, guid: 514ae061154c9c24f96d4c70dcfed7c9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 7054190266049591637, guid: 514ae061154c9c24f96d4c70dcfed7c9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 514ae061154c9c24f96d4c70dcfed7c9, type: 3}
@@ -3920,6 +4320,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pique_En_Fer (49)
       objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08b0f77ce6a80504bbcb539c52dc88d3, type: 3}
 --- !u!4 &5530109346381762020 stripped
@@ -4005,6 +4415,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pique_En_Fer (42)
       objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08b0f77ce6a80504bbcb539c52dc88d3, type: 3}
 --- !u!4 &5530109346379848262 stripped
@@ -4024,6 +4444,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pique_En_Fer (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4473881526279515489, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
         type: 3}
@@ -4165,6 +4595,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pique_En_Fer (43)
       objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08b0f77ce6a80504bbcb539c52dc88d3, type: 3}
 --- !u!4 &5530109346503999570 stripped
@@ -4184,6 +4624,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pique_En_Fer (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4473881526279515489, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
         type: 3}
@@ -4275,6 +4725,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pique_En_Fer (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 4473881526279515489, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4359,6 +4819,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pique_En_Fer (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4473881526279515489, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
         type: 3}
@@ -4445,6 +4915,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pique_En_Fer (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 4473881526279515489, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4529,6 +5009,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pique_En_Fer (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4473881526279515489, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
         type: 3}
@@ -4680,6 +5170,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pique_En_Fer (51)
       objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08b0f77ce6a80504bbcb539c52dc88d3, type: 3}
 --- !u!4 &5530109346472612112 stripped
@@ -4699,6 +5199,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pique_En_Fer (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4473881526279515489, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
         type: 3}
@@ -4784,6 +5294,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pique_En_Fer (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4473881526279515489, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
         type: 3}
@@ -4925,6 +5445,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pillier_Pique Variant (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 5555963363943516542, guid: a72ee64fa07cf02448f415de5e144707,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 5555963363943516542, guid: a72ee64fa07cf02448f415de5e144707,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a72ee64fa07cf02448f415de5e144707, type: 3}
 --- !u!4 &8754271240511837098 stripped
@@ -4944,6 +5474,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pique_En_Fer (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4473881526279515489, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
         type: 3}
@@ -5094,6 +5634,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pique_En_Fer (46)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08b0f77ce6a80504bbcb539c52dc88d3, type: 3}
@@ -5255,6 +5805,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pique_En_Fer (45)
       objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08b0f77ce6a80504bbcb539c52dc88d3, type: 3}
 --- !u!4 &5530109346273285120 stripped
@@ -5274,6 +5834,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pique_En_Fer (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4473881526279515489, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
         type: 3}
@@ -5425,6 +5995,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pique_En_Fer (40)
       objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08b0f77ce6a80504bbcb539c52dc88d3, type: 3}
 --- !u!4 &5530109346260949868 stripped
@@ -5444,6 +6024,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pique_En_Fer (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4473881526279515489, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
         type: 3}
@@ -5529,6 +6119,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pique_En_Fer (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4473881526279515489, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
         type: 3}
@@ -5690,6 +6290,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pique_En_Fer (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 4473881526279515489, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5845,6 +6455,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pique_En_Fer (39)
       objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08b0f77ce6a80504bbcb539c52dc88d3, type: 3}
 --- !u!4 &5530109346330919895 stripped
@@ -5864,6 +6484,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pique_En_Fer (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4473881526279515489, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
         type: 3}
@@ -6015,6 +6645,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pique_En_Fer (53)
       objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08b0f77ce6a80504bbcb539c52dc88d3, type: 3}
 --- !u!4 &5530109346698525761 stripped
@@ -6100,6 +6740,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pique_En_Fer (30)
       objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08b0f77ce6a80504bbcb539c52dc88d3, type: 3}
 --- !u!4 &5530109346673734213 stripped
@@ -6174,6 +6824,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pillier_Pique Variant (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5555963363943516542, guid: a72ee64fa07cf02448f415de5e144707,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 5555963363943516542, guid: a72ee64fa07cf02448f415de5e144707,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a72ee64fa07cf02448f415de5e144707, type: 3}
@@ -6260,6 +6920,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pique_En_Fer (52)
       objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08b0f77ce6a80504bbcb539c52dc88d3, type: 3}
 --- !u!4 &5530109346648329294 stripped
@@ -6279,6 +6949,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pique_En_Fer (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4473881526279515489, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
         type: 3}
@@ -6430,6 +7110,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pique_En_Fer (39)
       objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08b0f77ce6a80504bbcb539c52dc88d3, type: 3}
 --- !u!4 &5530109346771820901 stripped
@@ -6515,6 +7205,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pique_En_Fer (51)
       objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08b0f77ce6a80504bbcb539c52dc88d3, type: 3}
 --- !u!4 &5530109346769953742 stripped
@@ -6534,6 +7234,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pique_En_Fer (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4473881526279515489, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
         type: 3}
@@ -6690,6 +7400,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pique_En_Fer (50)
       objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08b0f77ce6a80504bbcb539c52dc88d3, type: 3}
 --- !u!4 &5530109346765876886 stripped
@@ -6774,6 +7494,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pique_En_Fer (30)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08b0f77ce6a80504bbcb539c52dc88d3, type: 3}
@@ -6860,6 +7590,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pique_En_Fer (40)
       objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08b0f77ce6a80504bbcb539c52dc88d3, type: 3}
 --- !u!4 &5530109346751443210 stripped
@@ -6879,6 +7619,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pique_En_Fer (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4473881526279515489, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
         type: 3}
@@ -6964,6 +7714,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pique_En_Fer (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4473881526279515489, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
         type: 3}
@@ -7055,6 +7815,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pique_En_Fer (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 4473881526279515489, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7145,6 +7915,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pique_En_Fer (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 4473881526279515489, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7219,6 +7999,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pique_En_Fer (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4473881526279515489, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
         type: 3}
@@ -7375,6 +8165,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pique_En_Fer (48)
       objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08b0f77ce6a80504bbcb539c52dc88d3, type: 3}
 --- !u!4 &5530109346575160936 stripped
@@ -7394,6 +8194,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pique_En_Fer (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4473881526279515489, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
         type: 3}
@@ -7545,6 +8355,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pique_En_Fer (49)
       objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08b0f77ce6a80504bbcb539c52dc88d3, type: 3}
 --- !u!4 &5530109346548429383 stripped
@@ -7629,6 +8449,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pique_En_Fer (28)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08b0f77ce6a80504bbcb539c52dc88d3, type: 3}
@@ -7715,6 +8545,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pique_En_Fer (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08b0f77ce6a80504bbcb539c52dc88d3, type: 3}
 --- !u!4 &5530109346535799243 stripped
@@ -7800,6 +8640,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pique_En_Fer (39)
       objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08b0f77ce6a80504bbcb539c52dc88d3, type: 3}
 --- !u!4 &5530109346632246673 stripped
@@ -7819,6 +8669,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pique_En_Fer (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4473881526279515489, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
         type: 3}
@@ -7904,6 +8764,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pique_En_Fer (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4473881526279515489, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
         type: 3}
@@ -8045,6 +8915,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pique_En_Fer (30)
       objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08b0f77ce6a80504bbcb539c52dc88d3, type: 3}
 --- !u!4 &5530109346617406199 stripped
@@ -8129,6 +9009,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pique_En_Fer (41)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08b0f77ce6a80504bbcb539c52dc88d3, type: 3}
@@ -8224,6 +9114,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pique_En_Fer (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4473881526279515489, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
         type: 3}
@@ -8370,6 +9270,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pique_En_Fer (27)
       objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08b0f77ce6a80504bbcb539c52dc88d3, type: 3}
 --- !u!4 &5530109346594052117 stripped
@@ -8389,6 +9299,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pique_En_Fer (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4473881526279515489, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
         type: 3}
@@ -8545,6 +9465,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pique_En_Fer (44)
       objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08b0f77ce6a80504bbcb539c52dc88d3, type: 3}
 --- !u!4 &5530109346972049426 stripped
@@ -8564,6 +9494,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pique_En_Fer (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4473881526279515489, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
         type: 3}
@@ -8650,6 +9590,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pique_En_Fer (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 4473881526279515489, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8735,6 +9685,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pique_En_Fer (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 4473881526279515489, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8814,6 +9774,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pique_En_Fer (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4473881526279515489, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
         type: 3}
@@ -8899,6 +9869,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pique_En_Fer (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4473881526279515489, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
         type: 3}
@@ -9055,6 +10035,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pique_En_Fer (31)
       objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08b0f77ce6a80504bbcb539c52dc88d3, type: 3}
 --- !u!4 &5530109347037768224 stripped
@@ -9139,6 +10129,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pique_En_Fer (51)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08b0f77ce6a80504bbcb539c52dc88d3, type: 3}
@@ -9234,6 +10234,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pique_En_Fer (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4473881526279515489, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
         type: 3}
@@ -9390,6 +10400,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pique_En_Fer (35)
       objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08b0f77ce6a80504bbcb539c52dc88d3, type: 3}
 --- !u!4 &5530109347033055427 stripped
@@ -9475,6 +10495,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pique_En_Fer (50)
       objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08b0f77ce6a80504bbcb539c52dc88d3, type: 3}
 --- !u!4 &5530109346838467316 stripped
@@ -9494,6 +10524,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pique_En_Fer (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4473881526279515489, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
         type: 3}
@@ -9650,6 +10690,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pique_En_Fer (50)
       objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08b0f77ce6a80504bbcb539c52dc88d3, type: 3}
 --- !u!4 &5530109346842475648 stripped
@@ -9734,6 +10784,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pique_En_Fer (43)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08b0f77ce6a80504bbcb539c52dc88d3, type: 3}
@@ -9895,6 +10955,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pique_En_Fer
       objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08b0f77ce6a80504bbcb539c52dc88d3, type: 3}
 --- !u!4 &5530109346823891279 stripped
@@ -9914,6 +10984,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pique_En_Fer (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4473881526279515489, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
         type: 3}
@@ -9999,6 +11079,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pique_En_Fer (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4473881526279515489, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
         type: 3}
@@ -10155,6 +11245,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pique_En_Fer (35)
       objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08b0f77ce6a80504bbcb539c52dc88d3, type: 3}
 --- !u!4 &5530109346795339031 stripped
@@ -10229,6 +11329,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pillier_Pique Variant (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5555963363943516542, guid: a72ee64fa07cf02448f415de5e144707,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 5555963363943516542, guid: a72ee64fa07cf02448f415de5e144707,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a72ee64fa07cf02448f415de5e144707, type: 3}
@@ -10314,6 +11424,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pique_En_Fer (48)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08b0f77ce6a80504bbcb539c52dc88d3, type: 3}
@@ -10410,6 +11530,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pique_En_Fer (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 4473881526279515489, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10489,6 +11619,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pique_En_Fer (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4473881526279515489, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
         type: 3}
@@ -10575,6 +11715,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pique_En_Fer (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 4473881526279515489, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10660,6 +11810,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tuyaux_Bout_Decaler Variant (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 203727396881454817, guid: 514ae061154c9c24f96d4c70dcfed7c9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 691329276432223323, guid: 514ae061154c9c24f96d4c70dcfed7c9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10729,6 +11884,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 1.4384143
+      objectReference: {fileID: 0}
+    - target: {fileID: 3171615966463358796, guid: 514ae061154c9c24f96d4c70dcfed7c9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 7054190266049591637, guid: 514ae061154c9c24f96d4c70dcfed7c9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 514ae061154c9c24f96d4c70dcfed7c9, type: 3}
@@ -10814,6 +11979,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pique_En_Fer (42)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08b0f77ce6a80504bbcb539c52dc88d3, type: 3}
@@ -10905,6 +12080,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Valve Variant (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1118198501930219851, guid: 72862678558fe2845abb48a4ee303fc5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 72862678558fe2845abb48a4ee303fc5, type: 3}
 --- !u!4 &4315424728634322969 stripped
@@ -10924,6 +12104,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pique_En_Fer (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4473881526279515489, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
         type: 3}
@@ -11080,6 +12270,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Valve Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 1118198501930219851, guid: 72862678558fe2845abb48a4ee303fc5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 72862678558fe2845abb48a4ee303fc5, type: 3}
 --- !u!4 &4315424728622168820 stripped
@@ -11099,6 +12294,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pique_En_Fer (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4473881526279515489, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
         type: 3}
@@ -11184,6 +12389,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pique_En_Fer (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4473881526279515489, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
         type: 3}
@@ -11335,6 +12550,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pique_En_Fer (37)
       objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08b0f77ce6a80504bbcb539c52dc88d3, type: 3}
 --- !u!4 &5530109347229135273 stripped
@@ -11354,6 +12579,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Tuyaux_Bout_Decaler Variant (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 203727396881454817, guid: 514ae061154c9c24f96d4c70dcfed7c9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 691329276432223323, guid: 514ae061154c9c24f96d4c70dcfed7c9,
         type: 3}
@@ -11424,6 +12654,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 1.4384145
+      objectReference: {fileID: 0}
+    - target: {fileID: 3171615966463358796, guid: 514ae061154c9c24f96d4c70dcfed7c9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 7054190266049591637, guid: 514ae061154c9c24f96d4c70dcfed7c9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 514ae061154c9c24f96d4c70dcfed7c9, type: 3}
@@ -11510,6 +12750,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pique_En_Fer (42)
       objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08b0f77ce6a80504bbcb539c52dc88d3, type: 3}
 --- !u!4 &5530109347227450995 stripped
@@ -11594,6 +12844,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pique_En_Fer (28)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08b0f77ce6a80504bbcb539c52dc88d3, type: 3}
@@ -11680,6 +12940,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pique_En_Fer (47)
       objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08b0f77ce6a80504bbcb539c52dc88d3, type: 3}
 --- !u!4 &5530109347214238572 stripped
@@ -11754,6 +13024,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pillier_Pique Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 5555963363943516542, guid: a72ee64fa07cf02448f415de5e144707,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 5555963363943516542, guid: a72ee64fa07cf02448f415de5e144707,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a72ee64fa07cf02448f415de5e144707, type: 3}
@@ -11839,6 +13119,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pique_En_Fer (29)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08b0f77ce6a80504bbcb539c52dc88d3, type: 3}
@@ -11929,6 +13219,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pique_En_Fer (35)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08b0f77ce6a80504bbcb539c52dc88d3, type: 3}
@@ -12090,6 +13390,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pique_En_Fer (44)
       objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08b0f77ce6a80504bbcb539c52dc88d3, type: 3}
 --- !u!4 &5530109347309894156 stripped
@@ -12109,6 +13419,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pique_En_Fer (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4473881526279515489, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
         type: 3}
@@ -12260,6 +13580,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pique_En_Fer (47)
       objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08b0f77ce6a80504bbcb539c52dc88d3, type: 3}
 --- !u!4 &5530109347310382699 stripped
@@ -12279,6 +13609,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pique_En_Fer (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4473881526279515489, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
         type: 3}
@@ -12435,6 +13775,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Valve Variant (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1118198501930219851, guid: 72862678558fe2845abb48a4ee303fc5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 72862678558fe2845abb48a4ee303fc5, type: 3}
 --- !u!4 &4315424728561013693 stripped
@@ -12520,6 +13865,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pique_En_Fer (45)
       objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08b0f77ce6a80504bbcb539c52dc88d3, type: 3}
 --- !u!4 &5530109347269933906 stripped
@@ -12539,6 +13894,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pique_En_Fer (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4473881526279515489, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
         type: 3}
@@ -12624,6 +13989,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pique_En_Fer (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4473881526279515489, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
         type: 3}
@@ -12850,6 +14225,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pique_En_Fer (44)
       objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08b0f77ce6a80504bbcb539c52dc88d3, type: 3}
 --- !u!4 &5530109347072720572 stripped
@@ -12869,6 +14254,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pique_En_Fer (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4473881526279515489, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
         type: 3}
@@ -13025,6 +14420,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pique_En_Fer (32)
       objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08b0f77ce6a80504bbcb539c52dc88d3, type: 3}
 --- !u!4 &5530109347081999093 stripped
@@ -13109,6 +14514,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pique_En_Fer (45)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08b0f77ce6a80504bbcb539c52dc88d3, type: 3}
@@ -13195,6 +14610,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pique_En_Fer (37)
       objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08b0f77ce6a80504bbcb539c52dc88d3, type: 3}
 --- !u!4 &5530109347175042558 stripped
@@ -13275,6 +14700,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pique_En_Fer (33)
       objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08b0f77ce6a80504bbcb539c52dc88d3, type: 3}
 --- !u!4 &5530109347183515418 stripped
@@ -13294,6 +14729,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pique_En_Fer (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4473881526279515489, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
         type: 3}
@@ -13379,6 +14824,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pique_En_Fer (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4473881526279515489, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
         type: 3}
@@ -13530,6 +14985,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pique_En_Fer (41)
       objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08b0f77ce6a80504bbcb539c52dc88d3, type: 3}
 --- !u!4 &5530109347149722333 stripped
@@ -13604,6 +15069,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pillier_Pique Variant (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5555963363943516542, guid: a72ee64fa07cf02448f415de5e144707,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 5555963363943516542, guid: a72ee64fa07cf02448f415de5e144707,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a72ee64fa07cf02448f415de5e144707, type: 3}
@@ -13690,6 +15165,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pique_En_Fer (34)
       objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08b0f77ce6a80504bbcb539c52dc88d3, type: 3}
 --- !u!4 &5530109347120945860 stripped
@@ -13709,6 +15194,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pique_En_Fer (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4473881526279515489, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
         type: 3}
@@ -13794,6 +15289,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pique_En_Fer (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4473881526279515489, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
         type: 3}
@@ -13935,6 +15440,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pillier_Pique Variant (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5555963363943516542, guid: a72ee64fa07cf02448f415de5e144707,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 5555963363943516542, guid: a72ee64fa07cf02448f415de5e144707,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a72ee64fa07cf02448f415de5e144707, type: 3}
 --- !u!4 &8754271241722342497 stripped
@@ -14020,6 +15535,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pique_En_Fer (34)
       objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08b0f77ce6a80504bbcb539c52dc88d3, type: 3}
 --- !u!4 &5530109347505322684 stripped
@@ -14095,6 +15620,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pique_En_Fer (27)
       objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08b0f77ce6a80504bbcb539c52dc88d3, type: 3}
 --- !u!4 &5530109347512639004 stripped
@@ -14114,6 +15649,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pique_En_Fer (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4473881526279515489, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
         type: 3}
@@ -14189,6 +15734,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pique_En_Fer (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4473881526279515489, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
         type: 3}
@@ -14345,6 +15900,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pique_En_Fer (53)
       objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08b0f77ce6a80504bbcb539c52dc88d3, type: 3}
 --- !u!4 &5530109347487895276 stripped
@@ -14430,6 +15995,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pique_En_Fer (44)
       objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08b0f77ce6a80504bbcb539c52dc88d3, type: 3}
 --- !u!4 &5530109347498001788 stripped
@@ -14504,6 +16079,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pillier_Pique Variant (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5555963363943516542, guid: a72ee64fa07cf02448f415de5e144707,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 5555963363943516542, guid: a72ee64fa07cf02448f415de5e144707,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a72ee64fa07cf02448f415de5e144707, type: 3}
@@ -14590,6 +16175,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pique_En_Fer (40)
       objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08b0f77ce6a80504bbcb539c52dc88d3, type: 3}
 --- !u!4 &5530109347476743818 stripped
@@ -14675,6 +16270,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pique_En_Fer (48)
       objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08b0f77ce6a80504bbcb539c52dc88d3, type: 3}
 --- !u!4 &5530109347471920392 stripped
@@ -14694,6 +16299,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pique_En_Fer (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4473881526279515489, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
         type: 3}
@@ -14779,6 +16394,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pique_En_Fer (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4473881526279515489, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
         type: 3}
@@ -14935,6 +16560,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pique_En_Fer (52)
       objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08b0f77ce6a80504bbcb539c52dc88d3, type: 3}
 --- !u!4 &5530109347572025179 stripped
@@ -15025,6 +16660,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pique_En_Fer (35)
       objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08b0f77ce6a80504bbcb539c52dc88d3, type: 3}
 --- !u!4 &5530109347560139415 stripped
@@ -15044,6 +16689,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pique_En_Fer (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4473881526279515489, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
         type: 3}
@@ -15185,6 +16840,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pique_En_Fer (46)
       objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08b0f77ce6a80504bbcb539c52dc88d3, type: 3}
 --- !u!4 &5530109347563909365 stripped
@@ -15204,6 +16869,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pique_En_Fer (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4473881526279515489, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
         type: 3}
@@ -15290,6 +16965,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pique_En_Fer (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 4473881526279515489, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -15375,6 +17060,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tuyaux_Bout_Decaler Variant (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 203727396881454817, guid: 514ae061154c9c24f96d4c70dcfed7c9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 691329276432223323, guid: 514ae061154c9c24f96d4c70dcfed7c9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -15444,6 +17134,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 1.4384145
+      objectReference: {fileID: 0}
+    - target: {fileID: 3171615966463358796, guid: 514ae061154c9c24f96d4c70dcfed7c9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 7054190266049591637, guid: 514ae061154c9c24f96d4c70dcfed7c9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 514ae061154c9c24f96d4c70dcfed7c9, type: 3}
@@ -15595,6 +17295,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pique_En_Fer (27)
       objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08b0f77ce6a80504bbcb539c52dc88d3, type: 3}
 --- !u!4 &5530109347374921744 stripped
@@ -15614,6 +17324,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pique_En_Fer (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4473881526279515489, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
         type: 3}
@@ -15704,6 +17424,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pique_En_Fer (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4473881526279515489, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
         type: 3}
@@ -15855,6 +17585,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pique_En_Fer (37)
       objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08b0f77ce6a80504bbcb539c52dc88d3, type: 3}
 --- !u!4 &5530109347324120055 stripped
@@ -15939,6 +17679,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pique_En_Fer (41)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08b0f77ce6a80504bbcb539c52dc88d3, type: 3}
@@ -16025,6 +17775,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pique_En_Fer (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08b0f77ce6a80504bbcb539c52dc88d3, type: 3}
 --- !u!4 &5530109347439714448 stripped
@@ -16109,6 +17869,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pique_En_Fer (34)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08b0f77ce6a80504bbcb539c52dc88d3, type: 3}
@@ -16270,6 +18040,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pique_En_Fer (36)
       objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08b0f77ce6a80504bbcb539c52dc88d3, type: 3}
 --- !u!4 &5530109347447997574 stripped
@@ -16289,6 +18069,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Tuyaux_Bout_Decaler Variant (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 203727396881454817, guid: 514ae061154c9c24f96d4c70dcfed7c9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 691329276432223323, guid: 514ae061154c9c24f96d4c70dcfed7c9,
         type: 3}
@@ -16360,6 +18145,16 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.4384143
       objectReference: {fileID: 0}
+    - target: {fileID: 3171615966463358796, guid: 514ae061154c9c24f96d4c70dcfed7c9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 7054190266049591637, guid: 514ae061154c9c24f96d4c70dcfed7c9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 514ae061154c9c24f96d4c70dcfed7c9, type: 3}
 --- !u!4 &3941806966668597236 stripped
@@ -16379,6 +18174,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pique_En_Fer (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4473881526279515489, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
         type: 3}
@@ -16464,6 +18269,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pique_En_Fer (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4473881526279515489, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
         type: 3}
@@ -16615,6 +18430,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pique_En_Fer (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08b0f77ce6a80504bbcb539c52dc88d3, type: 3}
 --- !u!4 &5530109347776217068 stripped
@@ -16700,6 +18525,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pique_En_Fer (38)
       objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08b0f77ce6a80504bbcb539c52dc88d3, type: 3}
 --- !u!4 &5530109347768642321 stripped
@@ -16719,6 +18554,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pique_En_Fer (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4473881526279515489, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
         type: 3}
@@ -16804,6 +18649,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pique_En_Fer (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4473881526279515489, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
         type: 3}
@@ -16955,6 +18810,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pique_En_Fer
       objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08b0f77ce6a80504bbcb539c52dc88d3, type: 3}
 --- !u!4 &5530109347739173505 stripped
@@ -16974,6 +18839,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pique_En_Fer (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4473881526279515489, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
         type: 3}
@@ -17125,6 +19000,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pique_En_Fer (52)
       objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08b0f77ce6a80504bbcb539c52dc88d3, type: 3}
 --- !u!4 &5530109347739916538 stripped
@@ -17144,6 +19029,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pique_En_Fer (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4473881526279515489, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
         type: 3}
@@ -17295,6 +19190,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pique_En_Fer (31)
       objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08b0f77ce6a80504bbcb539c52dc88d3, type: 3}
 --- !u!4 &5530109347726183708 stripped
@@ -17314,6 +19219,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pique_En_Fer (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4473881526279515489, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
         type: 3}
@@ -17455,6 +19370,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pique_En_Fer (43)
       objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08b0f77ce6a80504bbcb539c52dc88d3, type: 3}
 --- !u!4 &5530109347722029665 stripped
@@ -17540,6 +19465,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pique_En_Fer (52)
       objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08b0f77ce6a80504bbcb539c52dc88d3, type: 3}
 --- !u!4 &5530109347731258219 stripped
@@ -17559,6 +19494,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pique_En_Fer (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4473881526279515489, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
         type: 3}
@@ -17715,6 +19660,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pique_En_Fer (51)
       objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08b0f77ce6a80504bbcb539c52dc88d3, type: 3}
 --- !u!4 &5530109347818104223 stripped
@@ -17800,6 +19755,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pique_En_Fer (49)
       objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08b0f77ce6a80504bbcb539c52dc88d3, type: 3}
 --- !u!4 &5530109347819239886 stripped
@@ -17819,6 +19784,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Tuyaux_Bout_Decaler Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 203727396881454817, guid: 514ae061154c9c24f96d4c70dcfed7c9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 691329276432223323, guid: 514ae061154c9c24f96d4c70dcfed7c9,
         type: 3}
@@ -17890,6 +19860,16 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.4384143
       objectReference: {fileID: 0}
+    - target: {fileID: 3171615966463358796, guid: 514ae061154c9c24f96d4c70dcfed7c9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 7054190266049591637, guid: 514ae061154c9c24f96d4c70dcfed7c9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 514ae061154c9c24f96d4c70dcfed7c9, type: 3}
 --- !u!4 &3941806966012070692 stripped
@@ -17909,6 +19889,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pique_En_Fer (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4473881526279515489, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
         type: 3}
@@ -18050,6 +20040,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pique_En_Fer (33)
       objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08b0f77ce6a80504bbcb539c52dc88d3, type: 3}
 --- !u!4 &5530109347804381932 stripped
@@ -18069,6 +20069,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pique_En_Fer (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4473881526279515489, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
         type: 3}
@@ -18155,6 +20165,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pique_En_Fer (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 4473881526279515489, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -18234,6 +20254,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pique_En_Fer (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4473881526279515489, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
         type: 3}
@@ -18385,6 +20415,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pique_En_Fer (38)
       objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08b0f77ce6a80504bbcb539c52dc88d3, type: 3}
 --- !u!4 &5530109347618083224 stripped
@@ -18404,6 +20444,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pique_En_Fer (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4473881526279515489, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
         type: 3}
@@ -18490,6 +20540,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tuyaux_Bout_Decaler Variant (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 203727396881454817, guid: 514ae061154c9c24f96d4c70dcfed7c9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 691329276432223323, guid: 514ae061154c9c24f96d4c70dcfed7c9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -18559,6 +20614,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 1.4384145
+      objectReference: {fileID: 0}
+    - target: {fileID: 3171615966463358796, guid: 514ae061154c9c24f96d4c70dcfed7c9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 7054190266049591637, guid: 514ae061154c9c24f96d4c70dcfed7c9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 514ae061154c9c24f96d4c70dcfed7c9, type: 3}
@@ -18645,6 +20710,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pique_En_Fer (38)
       objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08b0f77ce6a80504bbcb539c52dc88d3, type: 3}
 --- !u!4 &5530109347694929616 stripped
@@ -18664,6 +20739,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pique_En_Fer (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4473881526279515489, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
         type: 3}
@@ -18820,6 +20905,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Valve Variant (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1118198501930219851, guid: 72862678558fe2845abb48a4ee303fc5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 72862678558fe2845abb48a4ee303fc5, type: 3}
 --- !u!4 &4315424728195079862 stripped
@@ -18839,6 +20929,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pique_En_Fer (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4473881526279515489, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
         type: 3}
@@ -18985,6 +21085,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pillier_Pique Variant (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 5555963363943516542, guid: a72ee64fa07cf02448f415de5e144707,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 5555963363943516542, guid: a72ee64fa07cf02448f415de5e144707,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a72ee64fa07cf02448f415de5e144707, type: 3}
 --- !u!4 &8754271241242982155 stripped
@@ -19069,6 +21179,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pique_En_Fer (37)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08b0f77ce6a80504bbcb539c52dc88d3, type: 3}
@@ -19155,6 +21275,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pique_En_Fer (43)
       objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08b0f77ce6a80504bbcb539c52dc88d3, type: 3}
 --- !u!4 &5530109348056884680 stripped
@@ -19240,6 +21370,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pique_En_Fer (30)
       objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08b0f77ce6a80504bbcb539c52dc88d3, type: 3}
 --- !u!4 &5530109348051004508 stripped
@@ -19259,6 +21399,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pique_En_Fer (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4473881526279515489, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
         type: 3}
@@ -19415,6 +21565,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pique_En_Fer (47)
       objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08b0f77ce6a80504bbcb539c52dc88d3, type: 3}
 --- !u!4 &5530109348036548973 stripped
@@ -19500,6 +21660,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pique_En_Fer (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08b0f77ce6a80504bbcb539c52dc88d3, type: 3}
 --- !u!4 &5530109348037362582 stripped
@@ -19519,6 +21689,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pique_En_Fer (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4473881526279515489, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
         type: 3}
@@ -19745,6 +21925,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pique_En_Fer (42)
       objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08b0f77ce6a80504bbcb539c52dc88d3, type: 3}
 --- !u!4 &5530109348000473196 stripped
@@ -19915,6 +22105,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pique_En_Fer (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 4473881526279515489, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -20075,6 +22275,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pique_En_Fer (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 4473881526279515489, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -20225,6 +22435,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pique_En_Fer (50)
       objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08b0f77ce6a80504bbcb539c52dc88d3, type: 3}
 --- !u!4 &5530109348105062068 stripped
@@ -20309,6 +22529,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pique_En_Fer
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08b0f77ce6a80504bbcb539c52dc88d3, type: 3}
@@ -20395,6 +22625,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pique_En_Fer (34)
       objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08b0f77ce6a80504bbcb539c52dc88d3, type: 3}
 --- !u!4 &5530109348082286373 stripped
@@ -20475,6 +22715,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pique_En_Fer (33)
       objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08b0f77ce6a80504bbcb539c52dc88d3, type: 3}
 --- !u!4 &5530109348068467102 stripped
@@ -20494,6 +22744,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pique_En_Fer (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4473881526279515489, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
         type: 3}
@@ -20579,6 +22839,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pique_En_Fer (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4473881526279515489, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
         type: 3}
@@ -20730,6 +23000,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pique_En_Fer (36)
       objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08b0f77ce6a80504bbcb539c52dc88d3, type: 3}
 --- !u!4 &5530109347912114955 stripped
@@ -20749,6 +23029,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pique_En_Fer (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4473881526279515489, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
         type: 3}
@@ -20835,6 +23125,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pique_En_Fer (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 4473881526279515489, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -20919,6 +23219,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pique_En_Fer (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4473881526279515489, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
         type: 3}
@@ -21005,6 +23315,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pique_En_Fer (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 4473881526279515489, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -21089,6 +23409,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pique_En_Fer (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4473881526279515489, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
         type: 3}
@@ -21240,6 +23570,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pique_En_Fer (32)
       objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08b0f77ce6a80504bbcb539c52dc88d3, type: 3}
 --- !u!4 &5530109347982873425 stripped
@@ -21259,6 +23599,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pique_En_Fer (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4473881526279515489, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
         type: 3}
@@ -21344,6 +23694,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pique_En_Fer (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4473881526279515489, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
         type: 3}
@@ -21500,6 +23860,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pique_En_Fer
       objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708045604529286756, guid: 08b0f77ce6a80504bbcb539c52dc88d3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08b0f77ce6a80504bbcb539c52dc88d3, type: 3}
 --- !u!4 &2352860360761418513 stripped
@@ -21594,6 +23964,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pique_En_Fer (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845435437311260635, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4473881526279515489, guid: 2efadbdf0f416574ca309e0dbe2dd3f5,
         type: 3}
