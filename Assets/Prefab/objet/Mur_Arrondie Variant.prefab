@@ -11,12 +11,12 @@ GameObject:
   - component: {fileID: 7775716584923278129}
   - component: {fileID: 2447358271064648095}
   - component: {fileID: 6105723198206806335}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &7775716584923278129
 Transform:
@@ -64,12 +64,12 @@ GameObject:
   - component: {fileID: 73641219762380401}
   - component: {fileID: 2144402737006912708}
   - component: {fileID: 2517030722670678150}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &73641219762380401
 Transform:
@@ -182,6 +182,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Mur_Arrondie Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 00dbe20d896992f44abea1b5b5c429dc,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 00dbe20d896992f44abea1b5b5c429dc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 00dbe20d896992f44abea1b5b5c429dc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00dbe20d896992f44abea1b5b5c429dc, type: 3}

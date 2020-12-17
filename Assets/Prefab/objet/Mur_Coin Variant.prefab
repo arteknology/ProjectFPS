@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6509566012549104880}
   - component: {fileID: 1103402836557594638}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Cube (1)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -53,7 +53,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2443290608955151752}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: COLLIDERS
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -87,7 +87,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6566747737147120860}
   - component: {fileID: 1599540928331598244}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Cube (2)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -131,7 +131,7 @@ GameObject:
   m_Component:
   - component: {fileID: 828965373813296724}
   - component: {fileID: 6462610941199975873}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Cube
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -241,6 +241,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TagString
       value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c1850eb262c96f44ea65e41b83ba6efb,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1850eb262c96f44ea65e41b83ba6efb, type: 3}

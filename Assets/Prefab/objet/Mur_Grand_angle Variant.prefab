@@ -10,12 +10,12 @@ GameObject:
   m_Component:
   - component: {fileID: 6712973519418602452}
   - component: {fileID: 4358308492595295470}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Cube
   m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6712973519418602452
 Transform:
@@ -54,12 +54,12 @@ GameObject:
   m_Component:
   - component: {fileID: 8557701151883829158}
   - component: {fileID: 8495414139856708815}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Cube (1)
   m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &8557701151883829158
 Transform:
@@ -97,12 +97,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4909346499102933310}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: COLLIDERS
   m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &4909346499102933310
 Transform:
@@ -196,6 +196,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TagString
       value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 083bf7e51212a604f83ce92121886e7a,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 083bf7e51212a604f83ce92121886e7a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 083bf7e51212a604f83ce92121886e7a, type: 3}

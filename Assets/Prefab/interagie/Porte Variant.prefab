@@ -1,5 +1,53 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!95 &2032392399428481226
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1593474055204327439}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: de37292d6504ae44c85579e5e499a74c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!208 &5691786153935469106
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6437300854980878990}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.24100001, y: 8.755, z: 6.5150003}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
+--- !u!65 &6371181579279385211
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6437300854980878990}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.4829855, y: 17.510027, z: 13.030327}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1935494387627486558
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -62,6 +110,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -4356772075202392112, guid: f1a85764583f0444bbf08ed8925d33da,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: -2652683247579454476, guid: f1a85764583f0444bbf08ed8925d33da,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: -2652683247579454476, guid: f1a85764583f0444bbf08ed8925d33da,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: -2652683247579454476, guid: f1a85764583f0444bbf08ed8925d33da,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f1a85764583f0444bbf08ed8925d33da,
         type: 3}
       propertyPath: m_Name
@@ -79,3 +147,15 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: f83517556e77b674ba4927d0907fb1db, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f1a85764583f0444bbf08ed8925d33da, type: 3}
+--- !u!1 &1593474055204327439 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: f1a85764583f0444bbf08ed8925d33da,
+    type: 3}
+  m_PrefabInstance: {fileID: 1935494387627486558}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6437300854980878990 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -4356772075202392112, guid: f1a85764583f0444bbf08ed8925d33da,
+    type: 3}
+  m_PrefabInstance: {fileID: 1935494387627486558}
+  m_PrefabAsset: {fileID: 0}

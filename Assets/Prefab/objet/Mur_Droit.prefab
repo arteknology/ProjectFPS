@@ -12,12 +12,12 @@ GameObject:
   - component: {fileID: 1262768839412495865}
   - component: {fileID: 3918895665677975859}
   - component: {fileID: 4190045622239000445}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Mur_Droit
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &2749898393425951324
 Transform:
