@@ -83,6 +83,7 @@ public class DistAIV2 : MonoBehaviour, IDamageable, IHarpoonable
         _isAlive = true;
         _playerIsInSight = true;
         _currentState = State.Idle;
+        _nextFire = fireRate * Random.Range(0.8f, 1.2f);
     }
 
     private void Update()

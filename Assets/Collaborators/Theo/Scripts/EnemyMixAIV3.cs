@@ -83,6 +83,7 @@ public class EnemyMixAIV3 : MonoBehaviour, IDamageable, IHarpoonable
         _hasAttacked = false;
         _playerIsInSight = true;
         _currentState = State.Idle;
+        _nextFire = fireRate * UnityEngine.Random.Range(0.8f, 1.2f);
     }
 
     private void Update()
