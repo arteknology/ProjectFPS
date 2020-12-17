@@ -1,5 +1,7 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using UnityEngine;
+using UnityEngine.Assertions.Must;
 
 public class DoorScript : MonoBehaviour
 {
@@ -11,6 +13,7 @@ public class DoorScript : MonoBehaviour
 
     private AudioSource _audio;
     public AudioClip ArenaWin, Intro, Loop;
+    
 
     private void Awake()
     {
@@ -20,8 +23,6 @@ public class DoorScript : MonoBehaviour
         _audio = GetComponent<AudioSource>();
         _audio.clip = Intro;
         _audio.loop = false;
-        _audio.Play();
-        StartCoroutine( AttendreFinMorceau() );
         foreach (Transform child in Enemies.transform)
             if (child.gameObject.CompareTag("Enemy"))
                 enemiesAlive += 1;
@@ -30,13 +31,22 @@ public class DoorScript : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (Enemies.activeSelf == false && other.gameObject.CompareTag("Player")) Enemies.SetActive(true);
+        if (Enemies.activeSelf == false && other.gameObject.CompareTag("Player"))
+        {
+            Enemies.SetActive(true);
+            _audio.Play();
+            StartCoroutine( AttendreFinMorceau());
+        }
+        
     }
 
     public void RemoveEnemy()
     {
         enemiesAlive -= 1;
-        if (enemiesAlive < 1 && DoorCollider.enabled != false) OpenDoor();
+        if (enemiesAlive < 1 && DoorCollider.enabled != false)
+        {
+            OpenDoor();
+        }
     }
 
 
@@ -47,14 +57,16 @@ public class DoorScript : MonoBehaviour
         _player.currentHealth = _player.maxHealth;
         DoorCollider.enabled = false;
         _anim.SetBool("IsOpen", true);
+        _audio.loop = false;
+        StopAllCoroutines();
     }
     
     IEnumerator AttendreFinMorceau()
     {
         yield return 1;
-        while (_audio.isPlaying) yield return null;
-        _audio.clip = Loop;
-        _audio.loop = true;
-        _audio.Play();
+            while (_audio.isPlaying) yield return null;
+            _audio.clip = Loop;
+                _audio.loop = true;
+                _audio.Play();
     }
 }
