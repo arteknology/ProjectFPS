@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 2749898393425951324}
   - component: {fileID: 1262768839412495865}
   - component: {fileID: 3918895665677975859}
+  - component: {fileID: 4190045622239000445}
   m_Layer: 0
   m_Name: Mur_Droit
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -80,3 +81,16 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &4190045622239000445
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3270258366821327078}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.96918, y: 19.983494, z: 21.173702}
+  m_Center: {x: 0.000000059604645, y: 0, z: 0.00000047683716}
