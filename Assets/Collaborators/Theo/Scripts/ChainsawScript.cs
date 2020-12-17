@@ -25,10 +25,10 @@ public class ChainsawScript : MonoBehaviour
             //SetAnimation("IsIdle");
         }
         
-        if (Input.GetButtonDown("Fire1") && EnemiesInside.Count >0)
+        if (Input.GetButtonDown("Fire1") && EnemiesInside.Count >0 && PauseMenu.GameIsPaused == false)
         {
             _animator.SetTrigger("ATTACK");
-            InvokeRepeating("Chainsaw", 0f, 0.5f);
+            StartCoroutine(WaitForDamage());
         }
         if (Input.GetButtonUp("Fire1"))
         {
@@ -69,6 +69,13 @@ public class ChainsawScript : MonoBehaviour
         }
     }
 
+    public IEnumerator WaitForDamage()
+    {
+        yield return new WaitForSeconds(0.2f);
+        InvokeRepeating("Chainsaw", 0f, 0.5f);
+
+    }
+
     public void Chainsaw()
     {
         foreach (IDamageable enemy in EnemiesInside)
@@ -76,6 +83,7 @@ public class ChainsawScript : MonoBehaviour
             enemy.TakeDamage(10);
         }
         Debug.Log("COUPE COUPE COUPE");
+        ScreenShake.Shake(2f);
     }
     
     /*void SetAnimation(string animationSelected)

@@ -1,13 +1,6 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using TMPro;
-using UnityEditor;
+﻿using TMPro;
 using UnityEngine;
-using UnityEngine.Events;
 using UnityEngine.SceneManagement;
-using UnityEngine.Serialization;
-using UnityEngine.UI;
 
 
 public class PlayerHandler : MonoBehaviour, IDamageable
@@ -22,7 +15,6 @@ public class PlayerHandler : MonoBehaviour, IDamageable
 
     public float maxHealth = 100f;
     public float currentHealth;
-    public TextMeshProUGUI healthDisplay;
     public HealthBarScript HealthBar;
 
     private bool godMod;
@@ -80,7 +72,7 @@ public class PlayerHandler : MonoBehaviour, IDamageable
         currentHealth = maxHealth;
         transform.Find("GRAPHICS").gameObject.SetActive(false);
         releasedEnemy = transform.Find("ReleasedEnemy");
-        //HealthBar.SetMaxHealth(maxHealth);
+        HealthBar.SetMaxHealth(maxHealth);
         _pointeStartPos = Pointe.transform.localPosition;
 
     }
@@ -96,7 +88,7 @@ public class PlayerHandler : MonoBehaviour, IDamageable
             case State.Normal:
                 HandleCharacterLook();
                 HandleCharacterMovement();
-                    if (TestInputLeftClick() && !isDetectingEnemy) HandleHarpoonShotStart();
+                    if (TestInputLeftClick() && !isDetectingEnemy && PauseMenu.GameIsPaused == false) HandleHarpoonShotStart();
                 break;
             case State.HarpoonThrown:
                 //Debug.Log("Harpoon Thrown");
@@ -121,8 +113,7 @@ public class PlayerHandler : MonoBehaviour, IDamageable
                 break;
         }
         
-        healthDisplay.text = currentHealth + "";
-        //HealthBar.SetHealth(currentHealth);
+        HealthBar.SetHealth(currentHealth);
         if (currentHealth <= 0 && _state!= State.Dead)
         {
             Die();
@@ -131,15 +122,18 @@ public class PlayerHandler : MonoBehaviour, IDamageable
 
     void HandleCharacterLook()
     {
-        float lookX = Input.GetAxisRaw("Mouse X");
-        
-        if (lookX != 0)
-            
-            transform.Rotate(new Vector3(0f, lookX * mouseSensivity, 0f), Space.Self);
+        if (PauseMenu.GameIsPaused == false)
+        {
+            float lookX = Input.GetAxisRaw("Mouse X");
 
-        _cameraVerticalAngle = Mathf.Clamp(_cameraVerticalAngle, 0f, 0f);
+            if (lookX != 0)
 
-        _playerCamera.transform.localEulerAngles = new Vector3(_cameraVerticalAngle, 0, 0);
+                transform.Rotate(new Vector3(0f, lookX * mouseSensivity, 0f), Space.Self);
+
+            _cameraVerticalAngle = Mathf.Clamp(_cameraVerticalAngle, 0f, 0f);
+
+            _playerCamera.transform.localEulerAngles = new Vector3(_cameraVerticalAngle, 0, 0);
+        }
     }
 
     void HandleCharacterMovement()
@@ -316,7 +310,7 @@ public class PlayerHandler : MonoBehaviour, IDamageable
 
     void SceneReload()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex -1);
+        SceneManager.LoadScene("Menu");
     }
     
 }
