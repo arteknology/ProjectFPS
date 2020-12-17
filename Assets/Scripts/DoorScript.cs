@@ -6,10 +6,12 @@ public class DoorScript : MonoBehaviour
     public BoxCollider DoorCollider;
     public GameObject Enemies;
     public int enemiesAlive;
+    private PlayerHandler _player;
 
 
     private void Awake()
     {
+        _player = GameObject.FindWithTag("Player").GetComponent<PlayerHandler>();
         Enemies.SetActive(false);
         enemiesAlive = 0;
         foreach (Transform child in Enemies.transform)
@@ -26,12 +28,13 @@ public class DoorScript : MonoBehaviour
     public void RemoveEnemy()
     {
         enemiesAlive -= 1;
-        if (enemiesAlive < 1 && DoorCollider.enabled == false) OpenDoor();
+        if (enemiesAlive < 1 && DoorCollider.enabled != false) OpenDoor();
     }
 
 
     private void OpenDoor()
     {
+        _player.currentHealth = _player.maxHealth;
         DoorCollider.enabled = false;
         _anim.SetBool("IsOpen", true);
     }
