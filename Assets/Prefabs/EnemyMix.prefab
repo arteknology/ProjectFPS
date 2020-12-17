@@ -60,7 +60,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4650491987791435653}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 2.29, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4650491987997195967}
@@ -80,7 +80,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.5, y: 4, z: 0.19999999}
+  m_Size: {x: 2, y: 4.6, z: 0.19999999}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!195 &4650491987791435660
 NavMeshAgent:
@@ -91,7 +91,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 4650491987791435653}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 1
+  m_Radius: 1.3
   m_Speed: 4.5
   m_Acceleration: 8
   avoidancePriority: 50
@@ -100,8 +100,8 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 4
-  m_BaseOffset: 2
+  m_Height: 4.6
+  m_BaseOffset: 2.3
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
 --- !u!54 &3935216037154462097
@@ -166,7 +166,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4650491987997195966}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.38, y: 0.96, z: 0.43}
+  m_LocalPosition: {x: 0.04, y: 0.58, z: 0.43}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4650491987791435654}
@@ -367,7 +367,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: eb5a4a6cb2add4b46a06da5aa7a8d9d3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e4ab8ab92deaa0d488a0d1098fe484d3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

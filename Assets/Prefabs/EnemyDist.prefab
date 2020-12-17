@@ -28,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2518687143325803047}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 1.26, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2518687143358250882}
@@ -100,14 +100,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eaaf4ec76e2c5de4f9669c16d599d74d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectile: {fileID: 6029688768466960176, guid: 9c932f86c72a35f408bc436b213d4177,
-    type: 3}
-  bulletPoint: {fileID: 2518687143358250882}
-  constant: 15
-  fireRate: 5
-  Door: {fileID: 0}
   blood: {fileID: 8593932318071101729}
   deathGeyser: {fileID: 324164305393761523}
+  bulletPoint: {fileID: 2518687143358250882}
+  constant: 15
+  Door: {fileID: 0}
+  fireRate: 5
+  projectile: {fileID: 6029688768466960176, guid: 9c932f86c72a35f408bc436b213d4177,
+    type: 3}
 --- !u!1 &2518687143358250885
 GameObject:
   m_ObjectHideFlags: 0

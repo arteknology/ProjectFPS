@@ -25,7 +25,7 @@ public class ChainsawScript : MonoBehaviour
             //SetAnimation("IsIdle");
         }
         
-        if (Input.GetButtonDown("Fire1") && EnemiesInside.Count >0)
+        if (Input.GetButtonDown("Fire1") && EnemiesInside.Count >0 && PauseMenu.GameIsPaused == false)
         {
             _animator.SetTrigger("ATTACK");
             StartCoroutine(WaitForDamage());
