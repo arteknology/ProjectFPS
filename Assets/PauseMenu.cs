@@ -56,4 +56,9 @@ public class PauseMenu : MonoBehaviour
         pauseMenuUI.SetActive(true);
         optionMenuUI.SetActive(false);
     }
+
+    public void SetVolume(float volume)
+    {
+        
+    }
 }

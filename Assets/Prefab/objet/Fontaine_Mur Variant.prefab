@@ -82,11 +82,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tuyaux_2_Arrondie Variant (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 5713778472911527586, guid: a55bfb57a2c3abf4699932d29cbb0a92,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a55bfb57a2c3abf4699932d29cbb0a92, type: 3}
 --- !u!1001 &5036134146402068374
@@ -171,11 +166,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tuyaux_2_Arrondie Variant
       objectReference: {fileID: 0}
-    - target: {fileID: 5713778472911527586, guid: a55bfb57a2c3abf4699932d29cbb0a92,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a55bfb57a2c3abf4699932d29cbb0a92, type: 3}
 --- !u!1001 &6611446478109231233
@@ -249,11 +239,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Fontaine_Mur Variant
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: f55f09b48242b344481f5aeb5880fa24,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f55f09b48242b344481f5aeb5880fa24, type: 3}
@@ -329,11 +314,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Particle System
-      objectReference: {fileID: 0}
-    - target: {fileID: 6967405137741206181, guid: f03f4fea20b5733468828e13383f8e25,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f03f4fea20b5733468828e13383f8e25, type: 3}

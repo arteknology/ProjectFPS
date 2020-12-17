@@ -80,11 +80,6 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: c5fc0715d0380e84596b6c8eda1fdc34, type: 2}
-    - target: {fileID: -3206092112294254575, guid: e6b04fd2a12c5cb40b05a6813b7956f9,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: e6b04fd2a12c5cb40b05a6813b7956f9,
         type: 3}
       propertyPath: m_Name
@@ -95,21 +90,11 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Wall
       objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: e6b04fd2a12c5cb40b05a6813b7956f9,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
     - target: {fileID: 6304783792548824048, guid: e6b04fd2a12c5cb40b05a6813b7956f9,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: da9a82068c32cf944834762a217805ac, type: 2}
-    - target: {fileID: 7321144004571033514, guid: e6b04fd2a12c5cb40b05a6813b7956f9,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e6b04fd2a12c5cb40b05a6813b7956f9, type: 3}
 --- !u!1 &7505518265399030729 stripped
