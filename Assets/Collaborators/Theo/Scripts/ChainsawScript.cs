@@ -11,10 +11,14 @@ public class ChainsawScript : MonoBehaviour
         
     private List<IDamageable> EnemiesInside = new List<IDamageable>();
 
+    private AudioSource _audio;
+    public AudioClip Frappe;
+
     private void Awake()
     {
         //_animator = GetComponentInChildren<Animator>();
         //SetAnimation("IsIdle");
+        _audio = GetComponent<AudioSource>();
     }
 
     private void Update()
@@ -27,6 +31,11 @@ public class ChainsawScript : MonoBehaviour
         
         if (Input.GetButtonDown("Fire1") && EnemiesInside.Count >0 && PauseMenu.GameIsPaused == false)
         {
+            if (!_audio.isPlaying)
+            {
+                _audio.PlayOneShot(Frappe);
+            }
+
             _animator.SetTrigger("ATTACK");
             StartCoroutine(WaitForDamage());
         }
@@ -82,9 +91,9 @@ public class ChainsawScript : MonoBehaviour
         {
             enemy.TakeDamage(10);
         }
-        Debug.Log("COUPE COUPE COUPE");
         ScreenShake.Shake(2f);
     }
+    
     
     /*void SetAnimation(string animationSelected)
     {

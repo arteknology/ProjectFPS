@@ -48,6 +48,12 @@ public class EnemyMixAIV3 : MonoBehaviour, IDamageable, IHarpoonable
     
     float unhookedSince = 0;
 
+    private AudioSource _audio;
+    public AudioClip CacToDist;
+    public AudioClip Frappe;
+    public AudioClip ProjectileLaunched;
+    public AudioClip Mort;
+
     public ParticleSystem blood, deathGeyser;
     private enum State
     {
@@ -66,6 +72,7 @@ public class EnemyMixAIV3 : MonoBehaviour, IDamageable, IHarpoonable
         _playerHealth = _player.GetComponent<IDamageable>();
         _animator = GetComponentInChildren<Animator>();
         _navMeshAgent = GetComponent<NavMeshAgent>();
+        _audio = GetComponent<AudioSource>();
     }
 
     private void Start()
@@ -76,6 +83,7 @@ public class EnemyMixAIV3 : MonoBehaviour, IDamageable, IHarpoonable
         _hasAttacked = false;
         _playerIsInSight = true;
         _currentState = State.Idle;
+        _nextFire = fireRate * UnityEngine.Random.Range(0.8f, 1.2f);
     }
 
     private void Update()
@@ -141,6 +149,7 @@ public class EnemyMixAIV3 : MonoBehaviour, IDamageable, IHarpoonable
                 if (_playerIsInRangeAttack)
                 {
                     _currentState = State.Distance;
+                    _audio.PlayOneShot(CacToDist);
                 }
 
                 if (_playerIsOnWalkingDistance)
@@ -160,10 +169,12 @@ public class EnemyMixAIV3 : MonoBehaviour, IDamageable, IHarpoonable
                 if (_playerIsInMeleeRange)
                 {
                     _currentState = State.Melee;
+                    _audio.PlayOneShot(CacToDist);
                 }
                 if (_playerIsOnWalkingDistance)
                 {
                     _currentState = State.Melee;
+                    _audio.PlayOneShot(CacToDist);
                 }
                 break;
             
@@ -194,6 +205,7 @@ public class EnemyMixAIV3 : MonoBehaviour, IDamageable, IHarpoonable
         {
             if (attack == null)
             {
+                _audio.PlayOneShot(Frappe);
                 attack = StartCoroutine(Attack());
             }
         }
@@ -201,7 +213,6 @@ public class EnemyMixAIV3 : MonoBehaviour, IDamageable, IHarpoonable
     
     IEnumerator Attack()
     {
-        Debug.Log("PAF");
         _navMeshAgent.speed = 0;
         _navMeshAgent.SetDestination(transform.position);
         yield return new WaitForSeconds(1f);
@@ -245,6 +256,7 @@ public class EnemyMixAIV3 : MonoBehaviour, IDamageable, IHarpoonable
             Debug.Log("je lance le projectile");
             GameObject bullet = Instantiate(projectilePrefab, bulletPoint.position, bulletPoint.rotation);
             Rigidbody bulletRb = bullet.GetComponent<Rigidbody>();
+            _audio.PlayOneShot(ProjectileLaunched);
             bulletRb.velocity = (_player.transform.position - bullet.transform.position).normalized * constant;
             yield return new WaitForSeconds(1f);
             Debug.Log("j'ai terminé mon attaque");
@@ -274,6 +286,7 @@ public class EnemyMixAIV3 : MonoBehaviour, IDamageable, IHarpoonable
         {
             box.isTrigger = true;
         }
+        _audio.PlayOneShot(Mort);
         _animator.SetTrigger("Die");
         deathGeyser.Play();
         Door.RemoveEnemy();

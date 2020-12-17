@@ -38,6 +38,10 @@ public class CacAIV2 : MonoBehaviour, IDamageable, IHarpoonable
 
     public DoorScript Door;
 
+    private AudioSource _audio;
+    public AudioClip Frappe;
+    public AudioClip Mort;
+
 
     private enum State
     {
@@ -56,6 +60,7 @@ public class CacAIV2 : MonoBehaviour, IDamageable, IHarpoonable
         _playerHealth = _player.GetComponent<IDamageable>();
         _animator = GetComponentInChildren<Animator>();
         _navMeshAgent = GetComponent<NavMeshAgent>();
+        _audio = GetComponent<AudioSource>();
     }
 
     private void Start()
@@ -129,6 +134,7 @@ public class CacAIV2 : MonoBehaviour, IDamageable, IHarpoonable
         SetAnimation("IsMelee");
         if (attack ==null)
         {
+            _audio.PlayOneShot(Frappe);
             attack = StartCoroutine(Attack());
         }
 
@@ -182,7 +188,6 @@ public class CacAIV2 : MonoBehaviour, IDamageable, IHarpoonable
     public void Harpooned() // LE MOMENT OÙ IL EST HARPONNÉ
     {
         if (!_isAlive) return;
-        Debug.Log("Crochet crochet j't'ai accroché");
         _navMeshAgent.isStopped = true;
         unhookedSince = 0;
         _currentState = State.Hooked;
@@ -226,6 +231,7 @@ public class CacAIV2 : MonoBehaviour, IDamageable, IHarpoonable
             box.isTrigger = true;
         }
         _currentState = State.Dead;
+        _audio.PlayOneShot(Mort);
         _animator.SetTrigger("Die");
         Door.RemoveEnemy();
         deathGeyser.Play();

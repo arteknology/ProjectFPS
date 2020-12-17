@@ -43,6 +43,9 @@ public class PlayerHandler : MonoBehaviour, IDamageable
     // Feedback stuff
     public AudioSource damageSound;
     public AudioClip deathSound;
+    public AudioClip HarponMur;
+    public AudioClip HarponEnnemi;
+    public AudioClip TirHarpon;
     public ParticleSystem hookParticles;
     
     
@@ -164,6 +167,9 @@ public class PlayerHandler : MonoBehaviour, IDamageable
         harpoonTransform.gameObject.SetActive(true);
         _oldPointePos = Pointe.position;
         _state = State.HarpoonThrown;
+        if (TirHarpon!=null) damageSound.clip = TirHarpon;
+        damageSound.Play();
+        
         
     }
 
@@ -200,6 +206,7 @@ public class PlayerHandler : MonoBehaviour, IDamageable
         _characterController.Move(Movement);
         _harpoonSize -= Movement.magnitude;
         Pointe.localPosition = Vector3.forward * _harpoonSize;
+
         if (_harpoonSize <= 2f)
         {
             StopHarpoon();
@@ -209,7 +216,7 @@ public class PlayerHandler : MonoBehaviour, IDamageable
     void HandleHarpoonBack() // LE HARPON REVIENT SANS RIEN
     {
         MoveHarpoon(-80f);
-    
+
         if (_harpoonSize <= 2f)
         {
             StopHarpoon();
@@ -253,12 +260,15 @@ public class PlayerHandler : MonoBehaviour, IDamageable
                     enemy = tructouche;
                     enemy.Harpooned();
                     enemyTransform = hit.transform;
-                    Debug.Log(enemyTransform.name);  
                     _state = State.HarpoonRetract;
+                    if (HarponEnnemi!=null) damageSound.clip = HarponEnnemi;
+                    damageSound.Play();
                 }
                 else if (speed > 0 && hit.transform.CompareTag("Wall")) // SI LE HARPON A TOUCHÉ UN MUR HARPONNABLE
                 {
                     _state = State.HarpoonMovingPlayer;
+                    if (HarponMur!=null) damageSound.clip = HarponMur;
+                    damageSound.Play();
                     
                 }
                 else // SI LE HARPON A TOUCHÉ N'IMPORTE QUOI D'AUTRE
