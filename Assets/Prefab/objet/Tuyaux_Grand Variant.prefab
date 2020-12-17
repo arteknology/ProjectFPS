@@ -72,5 +72,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tuyaux_Grand Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 86a11a44f969df944b6ad392e825f278,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 86a11a44f969df944b6ad392e825f278, type: 3}
