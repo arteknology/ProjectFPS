@@ -34,7 +34,10 @@ public class DistAIV2 : MonoBehaviour, IDamageable, IHarpoonable
 
     private Coroutine WaitToEndStunRoutine;
     private bool _isFarEnough => Vector3.Distance(transform.position, _player.transform.position) > 20;
-
+    
+    private AudioSource _audio;
+    public AudioClip ProjectileLaunched;
+    public AudioClip Mort;
 
     public void TakeDamage(int amount)
     {
@@ -71,6 +74,7 @@ public class DistAIV2 : MonoBehaviour, IDamageable, IHarpoonable
         _navMeshAgent = GetComponent<NavMeshAgent>();
         _player = GameObject.FindWithTag("Player");
         _animator = GetComponentInChildren<Animator>();
+        _audio = GetComponent<AudioSource>();
     }
 
     private void Start()
@@ -79,6 +83,7 @@ public class DistAIV2 : MonoBehaviour, IDamageable, IHarpoonable
         _isAlive = true;
         _playerIsInSight = true;
         _currentState = State.Idle;
+        _nextFire = fireRate * Random.Range(0.8f, 1.2f);
     }
 
     private void Update()
@@ -172,6 +177,7 @@ public class DistAIV2 : MonoBehaviour, IDamageable, IHarpoonable
             //Debug.Log("je lance le projectile");
             var bullet = Instantiate(projectile, bulletPoint.position, bulletPoint.rotation);
             var bulletRb = bullet.GetComponent<Rigidbody>();
+            _audio.PlayOneShot(ProjectileLaunched);
             bulletRb.velocity = (_player.transform.position - bullet.transform.position).normalized * constant;
             yield return new WaitForSeconds(0.5f);
             //Debug.Log("j'ai terminé mon attaque");
@@ -196,11 +202,10 @@ public class DistAIV2 : MonoBehaviour, IDamageable, IHarpoonable
     {
         if (_isAlive == false) return;
         _isAlive = false;
-        Debug.Log("J'AI MAAAAAAAAAAAAAAAAL");
         _navMeshAgent.isStopped = true;
         foreach (var box in GetComponentsInChildren<BoxCollider>()) box.isTrigger = true;
         _currentState = State.Dead;
-        deathGeyser.Play();
+        _audio.PlayOneShot(Mort);
         _animator.SetTrigger("Die");
         Door.RemoveEnemy();
     }

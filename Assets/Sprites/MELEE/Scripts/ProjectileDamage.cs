@@ -6,10 +6,19 @@ using UnityEngine;
 public class ProjectileDamage : MonoBehaviour
 {
     public int damages = 10;
+    private AudioSource _audio;
+    public AudioClip Touch;
+
+    private void Start()
+    {
+        _audio = GetComponent<AudioSource>();
+    }
+    
     public void DestroyBullet()
     {
-        Destroy(gameObject);
+        Destroy(gameObject, 0.7f);
     }
+    
     private void OnTriggerEnter(Collider other)
     {
         PlayerHandler player = other.GetComponentInParent<PlayerHandler>();
@@ -17,6 +26,7 @@ public class ProjectileDamage : MonoBehaviour
         if (player != null)
         {
             player.TakeDamage(damages);
+            _audio.PlayOneShot(Touch);
             DestroyBullet();
         }
         
@@ -25,8 +35,10 @@ public class ProjectileDamage : MonoBehaviour
         {
             
         }
+        
         else
         {
+            _audio.PlayOneShot(Touch);
             DestroyBullet();
         }
     }

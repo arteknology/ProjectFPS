@@ -41,9 +41,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 9ca6b21bf500a9e4abe45939c19992d9, type: 3}
+  m_audioClip: {fileID: 8300000, guid: c83da862916a5134f819a64f8c23b81d, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.95
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -841,10 +841,12 @@ MonoBehaviour:
   maximumRange: 50
   maxHealth: 100
   currentHealth: 0
-  healthDisplay: {fileID: 0}
   HealthBar: {fileID: 0}
   damageSound: {fileID: 613069350140886908}
   deathSound: {fileID: 8300000, guid: e284e5c8ae4267b45aede17f22e96e41, type: 3}
+  HarponMur: {fileID: 8300000, guid: 1fb7ce7e201daf447acf23cedf7c4f8f, type: 3}
+  HarponEnnemi: {fileID: 8300000, guid: 9b75cd6b00facc74d98718011eb421a7, type: 3}
+  TirHarpon: {fileID: 8300000, guid: 7e1570ccbaa784f4981ab6432b12fbd0, type: 3}
   hookParticles: {fileID: 1346690043368951968}
   isDetectingEnemy: 0
 --- !u!1 &6134258092190995233
@@ -5982,6 +5984,7 @@ GameObject:
   - component: {fileID: 2999837989907747072}
   - component: {fileID: 6495325270891763835}
   - component: {fileID: 3827405726642818760}
+  - component: {fileID: 257422667058349005}
   m_Layer: 9
   m_Name: ChainsawCollider
   m_TagString: Untagged
@@ -6030,6 +6033,103 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 6134258091809834305}
   _animator: {fileID: 3693415087468828431}
+  Frappe: {fileID: 8300000, guid: 1641042ca2be4174399f3e3bcd7e4663, type: 3}
+--- !u!82 &257422667058349005
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9211322931468594481}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 0.6
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &8784599729683030729
 PrefabInstance:
   m_ObjectHideFlags: 0
