@@ -115,6 +115,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pillier_Pique Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: aca1384b8e45292429e723e66577f9b1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: aca1384b8e45292429e723e66577f9b1,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aca1384b8e45292429e723e66577f9b1, type: 3}
 --- !u!1 &5555963363943516542 stripped

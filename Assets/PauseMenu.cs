@@ -30,6 +30,7 @@ public class PauseMenu : MonoBehaviour
     void Resume()
     {
         pauseMenuUI.SetActive(false);
+        optionMenuUI.SetActive(false);
         Time.timeScale = 1f;
         GameIsPaused = false;
         Cursor.lockState = CursorLockMode.Locked;
@@ -40,7 +41,7 @@ public class PauseMenu : MonoBehaviour
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
         GameIsPaused = true;
-        Cursor.lockState = CursorLockMode.Confined;
+        Cursor.lockState = CursorLockMode.None;
     }
 
     public void LoadMenu()
@@ -63,7 +64,6 @@ public class PauseMenu : MonoBehaviour
 
     public void SetVolume(float volume)
     {
-        Debug.Log("Set volume to " + volume);
         audioMixer.SetFloat("Volume", volume);
     }
 }

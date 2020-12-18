@@ -4,11 +4,20 @@ using UnityEngine;
 
 public class ScieCirculaireRotation : MonoBehaviour
 {
-    private float speed = 30f;
+    private float speed = 300f;
+
+    public bool isRightToLeft;
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        transform.Rotate(transform.up * speed * Time.deltaTime);
+        if (isRightToLeft)
+        {
+            transform.Rotate(transform.up * speed * Time.deltaTime);
+        }
+        else
+        {
+            transform.Rotate(transform.up *-speed * Time.deltaTime);
+        }
     }
 }

@@ -266,6 +266,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lustre Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 42f3113745d10064e8ea137f8d949c9f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 6884197233264200275, guid: 42f3113745d10064e8ea137f8d949c9f,
         type: 3}
       propertyPath: m_Materials.Array.data[1]

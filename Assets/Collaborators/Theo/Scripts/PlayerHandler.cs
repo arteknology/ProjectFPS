@@ -19,8 +19,6 @@ public class PlayerHandler : MonoBehaviour, IDamageable
 
     private bool godMod;
     
-
-    //private float _clampedXRotation = 30f;
     
     //Harpoon stuff
     private Vector3 _harpoonPosition;
@@ -31,6 +29,8 @@ public class PlayerHandler : MonoBehaviour, IDamageable
     Transform enemyTransform;
     private bool hasHarpooned = false;
 
+    public GameObject pointe;
+    public GameObject pointeImage;
 
     private Vector3 _pointeStartPos;
     
@@ -77,7 +77,8 @@ public class PlayerHandler : MonoBehaviour, IDamageable
         releasedEnemy = transform.Find("ReleasedEnemy");
         HealthBar.SetMaxHealth(maxHealth);
         _pointeStartPos = Pointe.transform.localPosition;
-
+        pointe.SetActive(false);
+        pointeImage.SetActive(true);
     }
 
     private void Update()
@@ -163,6 +164,8 @@ public class PlayerHandler : MonoBehaviour, IDamageable
 
     void HandleHarpoonShotStart() // PAN ! LE HARPON PART
     {
+        pointe.SetActive(true);
+        pointeImage.SetActive(false);
         _harpoonSize = 0f;
         harpoonTransform.gameObject.SetActive(true);
         _oldPointePos = Pointe.position;
@@ -227,7 +230,6 @@ public class PlayerHandler : MonoBehaviour, IDamageable
     {
         if (enemy!= null)
         {
-            Debug.Log("Je relâche l'ennemi");
             enemy.Released();
             enemy = null;
         }
@@ -235,6 +237,8 @@ public class PlayerHandler : MonoBehaviour, IDamageable
         _state = State.Normal;
         ResetGravityEffect();
         hasHarpooned = false;
+        pointe.SetActive(false);
+        pointeImage.SetActive(true);
     }
 
 
@@ -249,7 +253,6 @@ public class PlayerHandler : MonoBehaviour, IDamageable
             if (Physics.Raycast(_oldPointePos, Pointe.forward, out hit, (Pointe.position - _oldPointePos).magnitude))
             {
                 hasHarpooned = true;
-                Debug.Log("Le harpon a touché "+hit.transform.name);
                 _harpoonSize = (hit.point - harpoonTransform.position).magnitude;
                 IHarpoonable tructouche = hit.transform.GetComponentInParent<IHarpoonable>();
                 
@@ -314,7 +317,7 @@ public class PlayerHandler : MonoBehaviour, IDamageable
         damageSound.Play();
         currentHealth = 0;
         _state= State.Dead;
-        Debug.Log("T MOR");
+        Cursor.lockState = CursorLockMode.None;
         Invoke("SceneReload", 2f);
     }
 

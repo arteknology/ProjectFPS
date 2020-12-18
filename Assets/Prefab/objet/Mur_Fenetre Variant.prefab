@@ -90,6 +90,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 11
       objectReference: {fileID: 0}
+    - target: {fileID: -3206092112294254575, guid: e6b04fd2a12c5cb40b05a6813b7956f9,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: e6b04fd2a12c5cb40b05a6813b7956f9,
         type: 3}
       propertyPath: m_Name
@@ -124,6 +129,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 7321144004571033514, guid: e6b04fd2a12c5cb40b05a6813b7956f9,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e6b04fd2a12c5cb40b05a6813b7956f9, type: 3}

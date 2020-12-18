@@ -13,11 +13,11 @@ public class ChainsawScript : MonoBehaviour
 
     private AudioSource _audio;
     public AudioClip Frappe;
-
+    
+    public GameObject pointeImage;
+    
     private void Awake()
     {
-        //_animator = GetComponentInChildren<Animator>();
-        //SetAnimation("IsIdle");
         _audio = GetComponent<AudioSource>();
     }
 
@@ -26,7 +26,6 @@ public class ChainsawScript : MonoBehaviour
         if (EnemiesInside.Count < 1)
         {
             CancelInvoke("Chainsaw");
-            //SetAnimation("IsIdle");
         }
         
         if (Input.GetButtonDown("Fire1") && EnemiesInside.Count >0 && PauseMenu.GameIsPaused == false)
@@ -37,13 +36,13 @@ public class ChainsawScript : MonoBehaviour
             }
 
             _animator.SetTrigger("ATTACK");
+            pointeImage.SetActive(false);
             StartCoroutine(WaitForDamage());
+            StartCoroutine(WaitForPointe());
         }
         if (Input.GetButtonUp("Fire1"))
         {
             CancelInvoke("Chainsaw");
-            //SetAnimation("IsIdle");
-            
         }
     }
 
@@ -80,9 +79,14 @@ public class ChainsawScript : MonoBehaviour
 
     public IEnumerator WaitForDamage()
     {
-        yield return new WaitForSeconds(0.2f);
-        InvokeRepeating("Chainsaw", 0f, 0.5f);
+        yield return new WaitForSeconds(0.3f);
+        Chainsaw();
 
+    }
+    public IEnumerator WaitForPointe()
+    {
+        yield return new WaitForSeconds(0.8f);
+        pointeImage.SetActive(true);
     }
 
     public void Chainsaw()
@@ -94,12 +98,4 @@ public class ChainsawScript : MonoBehaviour
         ScreenShake.Shake(2f);
     }
     
-    
-    /*void SetAnimation(string animationSelected)
-    {
-        _animator.SetBool("IsIdle", false);
-        _animator.SetBool("IsChainsaw", false);
-        
-        _animator.SetBool(animationSelected, true);
-    }*/
 }

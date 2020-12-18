@@ -25,7 +25,6 @@ public class AcidScript : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
         IDamageable entity = other.GetComponentInParent<IDamageable>();
-        Debug.Log(entity + "S'en va");
 
         if (entity!=null && EntitiesInside.Contains(entity)) EntitiesInside.Remove(entity);
     }
@@ -34,14 +33,9 @@ public class AcidScript : MonoBehaviour
     {
         foreach (IDamageable entity in EntitiesInside)
         {
-            Debug.Log("Ouille");
             entity.TakeDamage(damage);
         }
-
-        /*if (EntitiesInside.Count<1)
-        {
-            Debug.Log("Y'a personne wesh");
-        }*/
+        
 
     }
 }

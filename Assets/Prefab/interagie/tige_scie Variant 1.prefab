@@ -15,8 +15,8 @@ GameObject:
   m_Name: PARTICLE SYSTEM
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 3
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &2108711062906685967
 Transform:
@@ -4769,7 +4769,7 @@ GameObject:
   m_Name: COLLIDERS
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 3
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &3666919252002577266
@@ -4864,8 +4864,8 @@ GameObject:
   m_Name: tige
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 3
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &7380541591197035404
 Transform:
@@ -4943,8 +4943,8 @@ GameObject:
   m_Name: PARTICLE SYSTEM (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 3
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &5585083764937187
 Transform:
@@ -9697,8 +9697,8 @@ GameObject:
   m_Name: scie_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 3
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &375780667847005188
 Transform:
@@ -9777,8 +9777,8 @@ GameObject:
   m_Name: scie_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 3
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &6928932829985931530
 Transform:
@@ -9857,8 +9857,8 @@ GameObject:
   m_Name: PARTICLE SYSTEM (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 3
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &8997308351314173415
 Transform:
@@ -14605,11 +14605,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9088552228880100676}
+  - component: {fileID: 4013564812852018244}
   m_Layer: 0
   m_Name: SCIES DROITES
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 3
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &9088552228880100676
@@ -14628,6 +14629,19 @@ Transform:
   m_Father: {fileID: 2369254202825611444}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4013564812852018244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5817173828110645195}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474fb5f12f3737e4fa3bb107d7fd8f80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isRightToLeft: 0
 --- !u!1 &6867202079074895662
 GameObject:
   m_ObjectHideFlags: 0
@@ -14643,8 +14657,8 @@ GameObject:
   m_Name: PARTICLE SYSTEM (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 3
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &2579695466587543579
 Transform:
@@ -19397,8 +19411,8 @@ GameObject:
   m_Name: scie2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 3
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &2541796160954787964
 Transform:
@@ -19477,8 +19491,8 @@ GameObject:
   m_Name: scie1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 3
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &6585109929876602709
 Transform:
@@ -19551,11 +19565,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 383018682949123802}
+  - component: {fileID: 6821159251024405692}
   m_Layer: 0
   m_Name: SCIES GAUCHE
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 3
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &383018682949123802
@@ -19574,3 +19589,16 @@ Transform:
   m_Father: {fileID: 2369254202825611444}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6821159251024405692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8386315379460973089}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474fb5f12f3737e4fa3bb107d7fd8f80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isRightToLeft: 1

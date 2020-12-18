@@ -49,8 +49,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.5, y: 2.5, z: 0.19999999}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1.9692726, y: 3.0204716, z: 0.19999999}
+  m_Center: {x: 0.0128002465, y: 0.004265785, z: 0}
 --- !u!195 &2518687143325803102
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -69,8 +69,8 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 2.5
-  m_BaseOffset: 1.25
+  m_Height: 3.04
+  m_BaseOffset: 1.51
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
 --- !u!54 &6059536615031390481
@@ -5059,6 +5059,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 765432543799926594}
+  - component: {fileID: 6905539133154492749}
   m_Layer: 0
   m_Name: PARTICLES
   m_TagString: Untagged
@@ -5082,6 +5083,18 @@ Transform:
   m_Father: {fileID: 2518687143325803044}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6905539133154492749
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3616074126043751508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 846521fddcffa3a4aae5b488a919f050, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3810448478128178838
 GameObject:
   m_ObjectHideFlags: 0
@@ -10044,7 +10057,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 33d9332c64dfabd44ab96ea5d9fa6ce6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 34f640a381661c44aa86c8b0891ce73c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
