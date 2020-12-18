@@ -25,6 +25,7 @@
             </e>
           </e>
         </e>
+        <e p="CreditsScripts.cs" t="Include" />
         <e p="PauseMenu.cs" t="Include" />
         <e p="PrefabReplacement.cs" t="Include" />
         <e p="ReplaceByPrefab.cs" t="Include" />

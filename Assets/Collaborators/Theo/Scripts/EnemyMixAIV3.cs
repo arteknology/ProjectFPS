@@ -251,15 +251,15 @@ public class EnemyMixAIV3 : MonoBehaviour, IDamageable, IHarpoonable
     {
         if (_isAlive)
         {
-            Debug.Log("je commence mon shoot");
+
             yield return new WaitForSeconds(0.5f);
-            Debug.Log("je lance le projectile");
+
             GameObject bullet = Instantiate(projectilePrefab, bulletPoint.position, bulletPoint.rotation);
             Rigidbody bulletRb = bullet.GetComponent<Rigidbody>();
             _audio.PlayOneShot(ProjectileLaunched);
             bulletRb.velocity = (_player.transform.position - bullet.transform.position).normalized * constant;
             yield return new WaitForSeconds(1f);
-            Debug.Log("j'ai terminé mon attaque");
+
             ShootProjectileRoutine = null;
         }
     }
@@ -296,13 +296,11 @@ public class EnemyMixAIV3 : MonoBehaviour, IDamageable, IHarpoonable
     {
         _currentHealth = _currentHealth - amount;
         blood.Play();
-        Debug.Log(_currentHealth);
     }
     
     public void Harpooned() // LE MOMENT OÙ IL EST HARPONNÉ
     {
         if (!_isAlive) return;
-        Debug.Log("Crochet crochet j't'ai accroché");
         _navMeshAgent.isStopped = true;
         unhookedSince = 0;
         _currentState = State.Hooked;

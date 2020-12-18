@@ -8,7 +8,11 @@ public class ChiottesScript : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
-        GetComponent<PlayerHandler>()._state = PlayerHandler.State.Dead;
-        SceneManager.LoadScene(Credits);
+        GoToCredits();
+    }
+
+    void GoToCredits()
+    {
+        SceneManager.LoadScene("Credits");
     }
 }
