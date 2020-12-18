@@ -8,6 +8,7 @@ public class ChiottesScript : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+        GetComponent<PlayerHandler>()._state = PlayerHandler.State.Dead;
+        SceneManager.LoadScene(Credits);
     }
 }

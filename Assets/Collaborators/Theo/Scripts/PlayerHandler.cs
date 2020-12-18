@@ -54,8 +54,8 @@ public class PlayerHandler : MonoBehaviour, IDamageable
 
     
     //State machine stuff
-    private State _state;
-    private enum  State 
+    public State _state;
+    public enum  State 
     {
         Normal,
         HarpoonThrown,
